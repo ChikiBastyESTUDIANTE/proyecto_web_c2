@@ -16,10 +16,10 @@
                         <span class="text-white">Universidad lorem ipsum</span>
                         <h3 class="text-white">Elegir inicio de sesion</h3>
                     </div>
-                    <div class="col-6">
-                        
+                    <div class="d-none d-lg-block col-lg-6">
+                        (imagen)
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6">
                         <form>
                             <div class="p-2">
                                 <a href="{{route('inicio.ingresar')}}" class="btn d-flex justify-content-center btn-secondary mb-2">
