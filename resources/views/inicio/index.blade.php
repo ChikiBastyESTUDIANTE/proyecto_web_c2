@@ -12,22 +12,27 @@
         <div class="row ">
             <div class="col-lg-4 offset-lg-4 bg-primary py-5 rounded">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-12">
                         <span class="text-white">Universidad lorem ipsum</span>
                         <h3 class="text-white">Elegir inicio de sesion</h3>
+                    </div>
+                    <div class="col-6">
+                        
+                    </div>
+                    <div class="col-6">
                         <form>
-                            <div class="text-end p-2">
-                                <a href="{{route('inicio.ingresar')}}" class="btn btn-secondary mb-2">
+                            <div class="p-2">
+                                <a href="{{route('inicio.ingresar')}}" class="btn d-flex justify-content-center btn-secondary mb-2">
                                     <h4> Iniciar como administrador</h4>
                                 </a>
                             </div>
                             <div class="text-end p-2">
-                                <a href="{{route('inicio.ingresar')}}" class="btn btn-secondary mb-2">
+                                <a href="{{route('inicio.ingresar')}}" class="btn d-flex justify-content-center btn-secondary mb-2">
                                     <h4> Iniciar como estudiante</h4>
                                 </a>
                             </div>
                             <div class="text-end p-2">
-                                <a href="{{route('inicio.ingresar')}}" class="btn btn-secondary">
+                                <a href="{{route('inicio.ingresar')}}" class="btn d-flex justify-content-center btn-secondary">
                                     <h4> Iniciar como profesor</h4>
                                 </a>
                             </div>
