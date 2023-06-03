@@ -12,7 +12,16 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('profesor_propuesta', function (Blueprint $table) {
-            $table->id();
+            //tipos de datos
+            $table->integer('propuesta_id'); //primary key
+            $table->ingeter('profesor_id'); //primary key
+            $table->primary(['propuesta_id','profesor_id']); 
+            $table->date('fecha');
+            $table->time('hora');
+            $table->text('comentario');
+            $table->foreing('propuesta_id')->references('id')->on('propuestas'); //foreing key
+            $table->foreing('profesor_id')->references('id')->on('profesores'); //foreing key
+            //cuando fue creado y modificado por default
             $table->timestamps();
         });
     }

@@ -12,7 +12,14 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('propuestas', function (Blueprint $table) {
-            $table->id();
+            //tipos de datos
+            $table->integer('id')->autoIncrement(); //primary key
+            $table->date('fecha');
+            $table->string('documento',100);
+            $table->tinyInteger('estado');
+            $table->string('estudiante_rut',10); //foreing key
+            $table->foreing('estudiante_rut')->references('rut')->on('estudiantes'); //foreing key
+            //cuando fue creado y modificado por default
             $table->timestamps();
         });
     }
