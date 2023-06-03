@@ -12,7 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('estudiantes', function (Blueprint $table) {
-            $table->id();
+            //tipos de datos
+            $table->string('rut',10)->primary();
+            $table->string('nombre',20);
+            $table->string('apellido',20);
+            $table->string('email',50);
+            //cuando fue creado y modificado por default
             $table->timestamps();
         });
     }
