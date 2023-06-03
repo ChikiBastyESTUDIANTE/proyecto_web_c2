@@ -12,6 +12,6 @@ use App\Http\Controllers\InicioSesionConroller;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+//hola
 Route::get('/',[InicioSesionConroller::class,'index'])->name('inicio.index');
 Route::get('/inicio-sesion',[InicioSesionConroller::class,'ingresar'])->name('inicio.ingresar');
