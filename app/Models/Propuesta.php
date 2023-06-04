@@ -13,4 +13,8 @@ class Propuesta extends Model
     public function proponedor():HasMany{
         return $this->HasMany(Estudiante::class);
     }
+
+    public function propuestaComentada():BelongsTo{
+        return $this->BelongsTo(ProfesorPropuesta::class);
+    }
 }
