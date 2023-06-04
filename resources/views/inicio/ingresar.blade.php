@@ -57,14 +57,16 @@
                 <div class="row">
                     <div class="col offset-1">
                         <div class="card mt-5">
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
+                            <div class="card-body">
+                                <li>Lorem Ipsum</li>
+                                <li>Lorem Ipsum</li>
+                                <li>Lorem Ipsum</li>
+                                <li>Lorem Ipsum</li>
+                                <li>Lorem Ipsum</li>
+                                <li>Lorem Ipsum</li>
+                                <li>Lorem Ipsum</li>
+                                <li>Lorem Ipsum</li>
+                            </div>
                         </div>
                     </div>
                 </div>
