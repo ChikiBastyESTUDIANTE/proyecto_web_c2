@@ -17,8 +17,7 @@
                         <h3 class="text-white">Elegir inicio de sesion</h3>
                     </div>
                     <div class="d-none d-lg-block col-lg-6">
-                        (imagen)
-                        ASJKLDASJKLD
+                        {{asset('imagenes/placeholderUni.jpg')}}
                     </div>
                     <div class="col-lg-6">
                         <form>
