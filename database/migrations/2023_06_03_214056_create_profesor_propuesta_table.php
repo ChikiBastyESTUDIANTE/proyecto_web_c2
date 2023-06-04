@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('profesor_propuesta', function (Blueprint $table) {
             //tipos de datos
-            $table->integer('propuesta_id')->autoIncrement(); //primary key
-            $table->integer('profesor_id')->autoIncrement(); //primary key
-            //$table->primary(['propuesta_id','profesor_id']); 
+            $table->integer('propuesta_id'); //primary key
+            $table->integer('profesor_id'); //primary key
+            $table->primary(['propuesta_id','profesor_id']); 
             $table->date('fecha');
             $table->time('hora');
             $table->text('comentario');
