@@ -10,7 +10,7 @@
 <body>
     <div class="container-fluid min-vh-100 d-flex  justify-content-lg-center bg-light">
         <div class="row">
-            <div class="col-12 offset-1 d-flex">
+            <div class="col-6 offset-1 d-flex">
                 <div class="bg-primary p-5 rounded">
                     <h4 class="text-white">Inicio de Sesión</h4>
                     <h5 class="text-white my-2">Ingrese sus datos</h5>
@@ -36,10 +36,11 @@
                             </form>
                         </div>
                     </div>
-
-                    <div>
-                        <h2 class="text-white">Universidad Lorem Ipsum</h2>
-                    </div>
+            </div> 
+            <div class="col-6">
+                <div>
+                    <h2 class="text-white">Universidad Lorem Ipsum</h2>
+                </div>
                     <div class="card mt-5 mb-5">
                         <li>Lorem Ipsum</li>
                         <li>Lorem Ipsum</li>
@@ -50,7 +51,6 @@
                         <li>Lorem Ipsum</li>
                         <li>Lorem Ipsum</li>
                     </div>
-                    
                 </div>
             </div>
         </div>
