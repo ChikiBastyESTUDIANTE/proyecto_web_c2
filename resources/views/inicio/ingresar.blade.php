@@ -8,6 +8,7 @@
     <title>Universidad Lorem Ipsum</title>
 </head>
 <body>
+    @if(Route::current()->getName()=='inicio.admin') <span> ERES ADMIN</span> @endif
     <div class="container-fluid min-vh-100 d-flex flex-column justify-content-lg-center bg-light">
         <div class="row">
             <div class="col-5 offset-1 d-flex flex-column bg-primary">
