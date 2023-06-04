@@ -26,7 +26,7 @@
                                     <input type="password" id="password" class="form-control">
                                 </div>
                                 <div class="mb-3 text-left">
-                                    <a href="index.html" class="btn btn-success">Iniciar Sesión</a>
+                                    <a href="index.html" class="btn btn-secondary">Iniciar Sesión</a>
                                     <small><a href="index.html">Volver</a></small>
                                 </div>
                             </form>
