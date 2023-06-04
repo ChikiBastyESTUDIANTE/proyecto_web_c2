@@ -22,7 +22,7 @@
                             <form method="POST" action="
                                         @if(Route::current()->getName()=='inicio.profesor') {{route('profesor.iniciar')}} 
                                         @elseif(Route::current()->getName()=='inicio.admin'){{route('admin.index')}}
-                                        @elseif(Route::current()->getName()=='inicio.estudiante'){{route('estudinte.iniciar')}} 
+                                        @elseif(Route::current()->getName()=='inicio.estudiante'){{route('estudiante.iniciar')}} 
                                         @endif">
                             @csrf
                                 <div class="mb-3">
@@ -32,7 +32,7 @@
                                                 @foreach($profesores as $profesor)
                                                     <option value="{{$profesor->id_rut}}">{{$profesor->email}}</option>
                                                 @endforeach
-                                            @if(Route::current()->getName()=='inicio.estudiante')
+                                            @elseif(Route::current()->getName()=='inicio.estudiante')
                                                 @foreach($estudiantes as $estudiante)
                                                     <option value="{{$estudiante->rut}}">{{$estudiante->rut}}</option>
                                                 @endforeach
