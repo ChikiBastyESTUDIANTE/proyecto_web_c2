@@ -8,12 +8,11 @@
     <title>Universidad Lorem Ipsum</title>
 </head>
 <body>
-    @if(Route::current()->getName()=='inicio.admin') <span> ERES ADMIN</span> @endif
     <div class="container-fluid min-vh-100 d-flex flex-column justify-content-lg-center bg-light">
         <div class="row">
             <div class="col-5 offset-1 d-flex flex-column bg-primary">
                 <div>
-                    <h4 class="text-white mt-3 text-center">Inicio de Sesión</h4>
+                    <h4 class="text-white">Inicio de Sesión</h4>
                     <h5 class="text-white my-2">Ingrese sus datos</h5>
                     <div class="card mb-3">
                         <div class="card-body">
@@ -39,10 +38,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-5 d-flex flex-column bg-primary">
+            <div class="col-5 d-flex bg-primary">
                 <div>
                     <div>
-                        <h2 class="text-white text-center mt-3">Universidad Lorem Ipsum</h2>
+                        <h2 class="text-white">Universidad Lorem Ipsum</h2>
                     </div>
                     <div class="card mt-5 mb-5">
                             <li>Lorem Ipsum</li>

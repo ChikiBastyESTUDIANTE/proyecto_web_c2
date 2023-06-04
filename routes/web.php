@@ -18,4 +18,4 @@ Route::get('/inicio-sesion-admin',[InicioSesionController::class,'ingresarAdmin'
 Route::get('/inicio-sesion-estudiante',[InicioSesionController::class,'ingresarEstudiante'])->name('inicio.estudiante');
 Route::get('/inicio-sesion-profesor',[InicioSesionController::class,'ingresarProfesor'])->name('inicio.profesor');
 
-Route::get('/index-profesor',[ProfesorController]::class,'index')->name('profesor.index');
+Route::get('/index-profesor',[ProfesorController::class,'index'])->name('profesor.index');
