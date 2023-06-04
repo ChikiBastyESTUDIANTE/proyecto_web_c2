@@ -46,7 +46,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-5 d-flex flex-column rounded">
+            <div class="col-5 d-flex flex-column">
                 <div class="row">
                     <div class="col-12">
                         <div>
