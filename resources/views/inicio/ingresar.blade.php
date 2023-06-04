@@ -40,10 +40,22 @@
                 <div class="bg-primary p-5">
                     <div class="row">
                         <div>
-                            <h2>Universidad Lorem Ipsum</h2>
+                            <h2 class="text-white">Universidad Lorem Ipsum</h2>
                         </div>
                         <div class="card">
-                            hola2
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
                         </div>
                     </div>
                 </div>
