@@ -19,8 +19,7 @@
                         <div class="bg-white p-2 mb-3 rounded">
                             <img src="{{ asset('images/isotipo_usm_color.jpg') }}" style="width: 7rem;">
                         </div>
-                        <h5>Sistema de Campeonato de Fútbol</h5>
-                        <h6>EIN133_A Diseño y Programación Orientada a la Web</h6>
+                        <h5>Universidad Lorem Ipsum</h5>
                     </div>
 
                     <!-- formulario -->
