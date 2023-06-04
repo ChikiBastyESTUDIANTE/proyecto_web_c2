@@ -36,7 +36,7 @@
                     </div>
                 </div>
 
-                <div class="col-5">
+                <div class="col">
                     <div class="bg-primary p-5 rounded">
                         <div class="row">
                             <div>
