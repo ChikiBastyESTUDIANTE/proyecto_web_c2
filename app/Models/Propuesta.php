@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquebt\Relations\HasMany;
 use Illuminate\Database\Eloquebt\Relations\BelongsTo;
+use Illuminate\Database\Eloquebt\Relations\BelongsToMany;
 
 class Propuesta extends Model
 {
@@ -18,5 +19,9 @@ class Propuesta extends Model
 
     public function propuestaComentada():HasMany{
         return $this->BelongsTo(ProfesorPropuesta::class);
+    }
+
+    public function comentarioPivot():BelongsToMany{
+        return $this->BelongsToMany(Profesor::class)->withPivot(['fecha','hora','comentario']);
     }
 }
