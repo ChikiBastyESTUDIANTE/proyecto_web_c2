@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-4 offset-1 d-flex flex-column bg-primary rounded">
                 <div class="mb-2 ml-3">
-                    <h4 class="text-white mt-3">Inicio de Sesión @if(Route::current()->getName()=='inicio.profesor') como profesor 
+                    <h4 class="text-white mt-3 text-center">Inicio de Sesión @if(Route::current()->getName()=='inicio.profesor') como profesor 
                                         @elseif(Route::current()->getName()=='inicio.admin') como admin
                                         @elseif(Route::current()->getName()=='inicio.estudiante') como estudiante
                                         @endif</h4>
@@ -21,7 +21,7 @@
                         <div class="card-body">
                             <form>
                                 <div class="mb-3">
-                                    <label for="username" class="form-label">Nombre de Usuario</label>
+                                    <label for="username" class="form-label">Usuario</label>
                                     <input type="text" id="username" class="form-control">
                                 </div>
                                 <div class="mb-3">
