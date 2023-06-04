@@ -10,11 +10,11 @@
 <body>
     <div class="container-fluid min-vh-100 d-flex flex-column justify-content-lg-center bg-light">
         <div class="row">
-            <div class="col-5 offset-1 d-flex bg-primary">
+            <div class="col-5 offset-1 d-flex flex-column bg-primary">
                 <div>
                     <h4 class="text-white">Inicio de Sesión</h4>
                     <h5 class="text-white my-2">Ingrese sus datos</h5>
-                    <div class="card">
+                    <div class="card mb-3">
                         <div class="card-body">
                             <form>
                                 <div class="mb-3">
