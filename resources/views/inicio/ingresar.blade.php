@@ -19,8 +19,8 @@
                     <h5 class="text-white mt-2">Ingrese sus datos</h5>
                     <div class="card mb-3">
                         <div class="card-body">
-                            <form method="GET" action="
-                                        @if(Route::current()->getName()=='inicio.profesor'){{route('profesor.iniciar')}} 
+                            <form method="POST" action="
+                                        @if(Route::current()->getName()=='inicio.profesor') {{route('profesor.iniciar')}} 
                                         @elseif(Route::current()->getName()=='inicio.admin'){{route('admin.index')}}
                                         @elseif(Route::current()->getName()=='inicio.estudiante'){{route('estudinte.index')}} 
                                         @endif">

@@ -8,7 +8,8 @@ use App\Models\Profesor;
 class ProfesorController extends Controller
 {
     public function iniciar(Request $request, Profesor $profesor){
-        return route('profesor.menu',$request->correo);
+        dd($request);
+        return redirect()->route('profesor.menu',$request->correo);
     }
 
     public function index(Profesor $profesor){
