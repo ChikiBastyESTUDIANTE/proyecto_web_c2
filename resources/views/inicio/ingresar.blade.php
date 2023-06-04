@@ -29,7 +29,7 @@
                                     <a href="index.html" class="btn btn-secondary">Iniciar Sesión</a>
                                 </div>
                                 <div>
-                                    <small><a href="index.html" class="text-light">Volver</a></small>
+                                    <small><a href="index.html" class="text-secondary">Volver</a></small>
                                 </div>
                             </form>
                         </div>
