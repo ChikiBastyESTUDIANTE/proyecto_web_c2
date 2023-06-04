@@ -26,8 +26,8 @@
                                     <input type="password" id="password" class="form-control">
                                 </div>
                                 <div class="mb-3">
-                                    <a href="index.html" class="btn btn-secondary">Iniciar Sesión</a>
-                                    <a href="index.html" class="text-secondary text-end">Volver</a>
+                                    <a href="index.html" class="btn btn-secondary d-flex">Iniciar Sesión</a>
+                                    <a href="index.html" class="text-secondary d-flex justify-content-end">Volver</a>
                                 </div>
                             </form>
                         </div>
