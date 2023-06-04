@@ -11,11 +11,11 @@
     <div class="container-fluid min-vh-100 d-flex flex-column justify-content-lg-center bg-light">
         <div class="row">
             <div class="col-5 offset-1">
-                <div class="bg-primary p-5">
+                <div class="bg-primary p-5 rounded">
                     <h4 class="text-white">Inicio de Sesión</h4>
                     <h5 class="text-white my-2">Ingrese sus datos</h5>
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body bg-primary">
                             <form>
                                 <div class="mb-3">
                                     <label for="username" class="form-label">Nombre de Usuario</label>
@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="col-5">
-                
+
                 </div>
             </div>
         </div>
