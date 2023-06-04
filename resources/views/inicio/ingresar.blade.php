@@ -13,7 +13,7 @@
             <div class="col-5 offset-1">
                 <div class="bg-primary p-5">
                     <h4 class="text-white">Inicio de Sesión</h4>
-                    Ingresar datos
+                    <h5 class="text-white my-2">Ingrese sus datos</h5>
                     <div class="card">
                         <div class="card-body">
                             <form>
