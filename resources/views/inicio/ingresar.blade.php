@@ -48,14 +48,14 @@
             </div>
             <div class="col-5 d-flex flex-column">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col">
                         <div>
                             <h2 class="text-dark text-center">Universidad Lorem Ipsum</h2>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 offset-1">
+                    <div class="col offset-1">
                         <div class="card mt-5">
                             <li>Lorem Ipsum</li>
                             <li>Lorem Ipsum</li>
