@@ -19,7 +19,8 @@
                     <h5 class="text-white mt-2">Ingrese sus datos</h5>
                     <div class="card mb-3">
                         <div class="card-body">
-                            <form>
+                            <form method="POST" action="">
+                            @csfr
                                 <div class="mb-3">
                                     <label for="correo" class="form-label">Usuario</label>
                                     <select name="correo" id="correo" class="form-control">
@@ -32,7 +33,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="contraseña" class="form-label">Contraseña</label>
-                                    <input type="password" id="contraseña" class="form-control">
+                                    <input type="password" id="contraseña" class="form-control" value="contraseñaprueba">
                                 </div>
                                 <div class="row mb-2">
                                     <div class="col-6">
