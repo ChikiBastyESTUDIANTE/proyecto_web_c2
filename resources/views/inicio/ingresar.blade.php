@@ -64,8 +64,7 @@
                                 <li>Lorem Ipsum</li>
                                 <li>Lorem Ipsum</li>
                                 <li>Lorem Ipsum</li>
-                    </div>
-                </div>
+                        </div>
                 </div>
             </div>
         </div>
