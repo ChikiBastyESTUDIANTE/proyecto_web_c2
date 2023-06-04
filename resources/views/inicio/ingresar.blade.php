@@ -37,7 +37,7 @@
                                 <div class="row mb-2">
                                     <div class="col-6">
                                         <a href="
-                                        @if(Route::current()->getName()=='inicio.profesor'){{route('profesor.index','correo')}} 
+                                        @if(Route::current()->getName()=='inicio.profesor'){{route('profesor.index',"correo")}} 
                                         @elseif(Route::current()->getName()=='inicio.admin'){{route('admin.index')}}
                                         @elseif(Route::current()->getName()=='inicio.estudiante'){{route('estudinte.index')}} 
                                         @endif
