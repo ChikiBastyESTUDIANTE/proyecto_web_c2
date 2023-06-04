@@ -46,7 +46,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-5 d-flex rounded pl-5">
+            <div class="col-5 d-flex flex-column rounded">
                 <div>
                     <div>
                         <h2 class="text-dark text-center">Universidad Lorem Ipsum</h2>
