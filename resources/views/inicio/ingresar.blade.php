@@ -25,42 +25,39 @@
                                     <label for="password" class="form-label">Contraseña</label>
                                     <input type="password" id="password" class="form-control">
                                 </div>
-                                <div class="mb-3 text-left">
-                                    <a href="index.html" class="btn btn-secondary">Iniciar Sesión</a>
-                                </div>
-                                <div>
-                                    <small><a href="index.html" class="text-secondary">Volver</a></small>
+                                <div class="row mb-2">
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-secondary">Iniciar Sesión</a>
+                                    </div>
+                                    <div class="col-6">
+                                        <small><a href="{{route('inicio.index')}}" class="text-secondary d-flex justify-content-end pt-3">Volver</a></small>
+                                    </div>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
-
-                <div class="col">
-                    <div class="bg-primary p-5 rounded">
-                        <div class="row">
-                            <div>
-                                <h2 class="text-white">Universidad Lorem Ipsum</h2>
-                            </div>
+            </div>
+            <div class="col-5 d-flex align-self-stretch">
+                <div class="bg-primary p-5 rounded">
+                    <div class="row">
+                        <div>
+                            <h2 class="text-white">Universidad Lorem Ipsum</h2>
                         </div>
-                        <div class="row">
-                            <div class="card mt-5 mb-5">
-                                <li>Lorem Ipsum</li>
-                                <li>Lorem Ipsum</li>
-                                <li>Lorem Ipsum</li>
-                                <li>Lorem Ipsum</li>
-                                <li>Lorem Ipsum</li>
-                                <li>Lorem Ipsum</li>
-                                <li>Lorem Ipsum</li>
-                                <li>Lorem Ipsum</li>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="card mt-5 mb-5">
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
                         </div>
                     </div>
                 </div>
-
-
-
-                
             </div>
         </div>
     </div>
