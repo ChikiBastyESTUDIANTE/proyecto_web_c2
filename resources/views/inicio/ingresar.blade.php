@@ -10,7 +10,7 @@
 <body>
     <div class="container-fluid min-vh-100 d-flex flex-column justify-content-lg-center bg-light">
         <div class="row">
-            <div class="col-5 offset-2 d-flex flex-column align-items-stretch">
+            <div class="col-5 offset-1 d-flex flex-column">
                 <div class="bg-primary p-5 rounded">
                     <h4 class="text-white">Inicio de Sesión</h4>
                     <h5 class="text-white my-2">Ingrese sus datos</h5>
@@ -38,7 +38,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-5 d-flex align-items-stretch">
+            <div class="col-5 d-flex">
                 <div class="bg-primary p-5 rounded">
                     <div class="row">
                         <div>
