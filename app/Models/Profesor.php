@@ -12,10 +12,10 @@ class Profesor extends Model
     use HasFactory;
     protected $table = 'profesores';
     
-    public function propuestaProfesor():HasMany{
-        return $this->BelongsTo(ProfesorPropuesta::class);
+    public function comentario():BelongsToMany{
+        return $this->BelongsToMany(Propuesta::class);
     }
-
+    
     public function comentarioPivot():BelongsToMany{
         return $this->BelongsToMany(Propuesta::class)->withPivot(['fecha','hora','comentario']);
     }
