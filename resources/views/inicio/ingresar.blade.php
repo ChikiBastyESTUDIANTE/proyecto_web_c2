@@ -10,7 +10,7 @@
 <body>
     <div class="container-fluid min-vh-100 d-flex flex-column justify-content-lg-center bg-light">
         <div class="row">
-            <div class="col-5 offset-1 d-flex flex-column bg-primary">
+            <div class="col-5 offset-1 d-flex flex-column bg-primary rounded">
                 <div>
                     <h4 class="text-white">Inicio de Sesión @if(Route::current()->getName()=='inicio.profesor') como profesor 
                                         @elseif(Route::current()->getName()=='inicio.admin') como admin
@@ -46,10 +46,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-5 d-flex bg-primary">
+            <div class="col-5 d-flex rounded">
                 <div>
                     <div>
-                        <h2 class="text-white text-center">Universidad Lorem Ipsum</h2>
+                        <h2 class="text-dark text-center">Universidad Lorem Ipsum</h2>
                     </div>
                     <div class="card mt-5 mb-5">
                             <li>Lorem Ipsum</li>
