@@ -19,8 +19,12 @@
                     <h5 class="text-white mt-2">Ingrese sus datos</h5>
                     <div class="card mb-3">
                         <div class="card-body">
-                            <form method="POST" action="">
-                            @csfr
+                            <form method="POST" action="
+                                        @if(Route::current()->getName()=='inicio.profesor'){{route('profesor.index',)}} 
+                                        @elseif(Route::current()->getName()=='inicio.admin'){{route('admin.index')}}
+                                        @elseif(Route::current()->getName()=='inicio.estudiante'){{route('estudinte.index')}} 
+                                        @endif">
+                            @csrf
                                 <div class="mb-3">
                                     <label for="correo" class="form-label">Usuario</label>
                                     <select name="correo" id="correo" class="form-control">
