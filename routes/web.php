@@ -13,4 +13,6 @@ use App\Http\Controllers\InicioSesionConroller;
 |
 */
 Route::get('/',[InicioSesionConroller::class,'index'])->name('inicio.index');
-Route::get('/inicio-sesion',[InicioSesionConroller::class,'ingresar'])->name('inicio.ingresar');
+Route::get('/inicio-sesion-admin',[InicioSesionConroller::class,'ingresarAdmin'])->name('inicio.admin');
+Route::get('/inicio-sesion-estudiante',[InicioSesionConroller::class,'ingresarEstudiante'])->name('inicio.estudiante');
+Route::get('/inicio-sesion-profesor',[InicioSesionConroller::class,'ingresarProfesor'])->name('inicio.profesor');
