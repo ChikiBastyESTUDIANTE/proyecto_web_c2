@@ -8,7 +8,6 @@ use App\Models\Profesor;
 class ProfesorController extends Controller
 {
     public function iniciar(Request $request){
-        dd($request);
         return redirect()->route('profesor.menu',$request->id);
     }
 

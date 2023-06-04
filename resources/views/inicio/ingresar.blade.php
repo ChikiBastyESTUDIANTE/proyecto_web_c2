@@ -30,7 +30,7 @@
                                     <select name="id" id="correo" class="form-control">
                                             @if(Route::current()->getName()=='inicio.profesor')
                                                 @foreach($profesores as $profesor)
-                                                    <option value="{{$profesor->email}}">{{$profesor->email}}</option>
+                                                    <option value="{{$profesor->id_rut}}">{{$profesor->email}}</option>
                                                 @endforeach
                                             @endif
                                     </select>
