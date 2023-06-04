@@ -17,23 +17,23 @@
                         <h3 class="text-white">Elegir inicio de sesion</h3>
                         <hr class="text-white">
                     </div>
-                    <div class="d-none d-lg-block col-lg-6 pt-4 bg-secondary">
+                    <div class="d-none d-lg-block col-lg-6 bg-secondary d-flex aling-items-center justify-content-center">
                         <img src="{{asset('imagenes/placeholderUni.png')}}" class="img-fluid border-5 border-dark rounded">
                     </div>
                     <div class="col-lg-6 bg-secondary">
                         <form>
                             <div class="p-2">
-                                <a href="{{route('inicio.admin')}}" class="btn d-flex justify-content-center btn-secondary mb-2">
+                                <a href="{{route('inicio.admin')}}" class="btn d-flex justify-content-center btn-outline-light mb-2">
                                     <h4> Iniciar como administrador</h4>
                                 </a>
                             </div>
                             <div class="text-end p-2">
-                                <a href="{{route('inicio.estudiante')}}" class="btn d-flex justify-content-center btn-secondary mb-2">
+                                <a href="{{route('inicio.estudiante')}}" class="btn d-flex justify-content-center btn-outline-light mb-2">
                                     <h4> Iniciar como estudiante</h4>
                                 </a>
                             </div>
                             <div class="text-end p-2">
-                                <a href="{{route('inicio.profesor')}}" class="btn d-flex justify-content-center btn-secondary">
+                                <a href="{{route('inicio.profesor')}}" class="btn d-flex justify-content-center btn-outline-light">
                                     <h4> Iniciar como profesor</h4>
                                 </a>
                             </div>
