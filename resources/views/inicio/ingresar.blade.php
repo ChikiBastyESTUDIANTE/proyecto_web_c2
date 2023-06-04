@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-4 offset-1 d-flex flex-column bg-primary rounded">
                 <div class="mb-2 ml-3">
-                    <h4 class="text-white mt-3 text-center">Inicio de Sesión @if(Route::current()->getName()=='inicio.profesor') como profesor 
+                    <h4 class="text-white mt-3">Inicio de Sesión @if(Route::current()->getName()=='inicio.profesor') como profesor 
                                         @elseif(Route::current()->getName()=='inicio.admin') como admin
                                         @elseif(Route::current()->getName()=='inicio.estudiante') como estudiante
                                         @endif</h4>
@@ -48,17 +48,22 @@
             </div>
             <div class="col-5 d-flex flex-column">
                 <div class="row">
-                    <div class="col">
+                    <div class="col offset-1">
                         <div>
-                            <h2 class="text-dark text-center">Universidad Lorem Ipsum</h2>
+                            <h2 class="text-dark text-start">Universidad</h2>
+                        </div>
+                        <div>
+                            <h1 class="text-dark text-start">Lorem Ipsum</h2>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col offset-1">
-                        <div class="card mt-5">
+                        <div class="card mt-4">
+                            <div class="card-header bg-secondary">
+                                <h5 class="pt-2">Informacion</h5>
+                            </div>
                             <div class="card-body">
-                                <li>Lorem Ipsum</li>
                                 <li>Lorem Ipsum</li>
                                 <li>Lorem Ipsum</li>
                                 <li>Lorem Ipsum</li>
