@@ -47,11 +47,14 @@
                 </div>
             </div>
             <div class="col-5 d-flex flex-column rounded">
-                <div>
+                <div class="row">
                     <div>
-                        <h2 class="text-dark text-center">Universidad Lorem Ipsum</h2>
-                    </div>
-                    <div class="card mt-5 mb-5">
+                        <div>
+                            <h2 class="text-dark text-center">Universidad Lorem Ipsum</h2>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="card mt-5 mb-5 ml-5">
                             <li>Lorem Ipsum</li>
                             <li>Lorem Ipsum</li>
                             <li>Lorem Ipsum</li>
@@ -61,6 +64,7 @@
                             <li>Lorem Ipsum</li>
                             <li>Lorem Ipsum</li>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
