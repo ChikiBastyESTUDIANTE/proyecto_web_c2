@@ -39,7 +39,7 @@
             <div class="col-5">
                 <div class="bg-primary p-5">
                     <div class="card">
-                        
+                        Lorem Ipsum
                     </div>
                 </div>
             </div>
