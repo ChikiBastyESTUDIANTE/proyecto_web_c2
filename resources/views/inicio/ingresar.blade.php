@@ -9,26 +9,28 @@
 </head>
 <body>
     <div class="container-flex min-vh-100">
-        <div class="col">
-            <div class="col-12 col-lg-8 py-4">
-                <h4>Inicio de Sesión</h4>
-                <small>Ingrese datos</small>
-                <div class="card">
-                    <div class="card-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="username" class="form-label">Nombre de Usuario</label>
-                                <input type="text" id="username" class="form-control">
-                            </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label">Contraseña</label>
-                                <input type="password" id="password" class="form-control">
-                            </div>
-                            <div class="mb-3 text-left">
-                                <a href="index.html" class="btn btn-success">Iniciar Sesión</a>
-                                <small><a href="index.html">Volver</a></small>
-                            </div>
-                        </form>
+        <div class="row">
+            <div class="col">
+                <div class="col-12 col-lg-8 py-4">
+                    <h4>Inicio de Sesión</h4>
+                    <small>Ingrese datos</small>
+                    <div class="card">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="username" class="form-label">Nombre de Usuario</label>
+                                    <input type="text" id="username" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Contraseña</label>
+                                    <input type="password" id="password" class="form-control">
+                                </div>
+                                <div class="mb-3 text-left">
+                                    <a href="index.html" class="btn btn-success">Iniciar Sesión</a>
+                                    <small><a href="index.html">Volver</a></small>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
