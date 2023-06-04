@@ -19,8 +19,8 @@
                     <h5 class="text-white mt-2">Ingrese sus datos</h5>
                     <div class="card mb-3">
                         <div class="card-body">
-                            <form method="POST" action="
-                                        @if(Route::current()->getName()=='inicio.profesor'){{route('profesor.index',)}} 
+                            <form method="GET" action="
+                                        @if(Route::current()->getName()=='inicio.profesor'){{route('profesor.iniciar')}} 
                                         @elseif(Route::current()->getName()=='inicio.admin'){{route('admin.index')}}
                                         @elseif(Route::current()->getName()=='inicio.estudiante'){{route('estudinte.index')}} 
                                         @endif">
@@ -41,12 +41,7 @@
                                 </div>
                                 <div class="row mb-2">
                                     <div class="col-6">
-                                        <a href="
-                                        @if(Route::current()->getName()=='inicio.profesor'){{route('profesor.index',1)}} 
-                                        @elseif(Route::current()->getName()=='inicio.admin'){{route('admin.index')}}
-                                        @elseif(Route::current()->getName()=='inicio.estudiante'){{route('estudinte.index')}} 
-                                        @endif
-                                        " class="btn btn-secondary">Iniciar Sesión</a>
+                                        <button class="btn btn-secondary">Iniciar Sesión</button>
                                     </div>
                                     <div class="col-6">
                                         <small><a href="{{route('inicio.index')}}" class="text-secondary d-flex justify-content-end pt-3">Volver</a></small>
