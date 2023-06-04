@@ -41,7 +41,7 @@
                                 </div>
                                 <div class="row mb-2">
                                     <div class="col-6">
-                                        <button class="btn btn-secondary">Iniciar Sesión</button>
+                                        <button class="btn btn-secondary" type="submit">Iniciar Sesión</button>
                                     </div>
                                     <div class="col-6">
                                         <small><a href="{{route('inicio.index')}}" class="text-secondary d-flex justify-content-end pt-3">Volver</a></small>
