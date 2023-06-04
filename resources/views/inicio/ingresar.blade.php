@@ -27,7 +27,7 @@
                             @csrf
                                 <div class="mb-3">
                                     <label for="correo" class="form-label">Usuario</label>
-                                    <select name="correo" id="correo" class="form-control">
+                                    <select name="id" id="correo" class="form-control">
                                             @if(Route::current()->getName()=='inicio.profesor')
                                                 @foreach($profesores as $profesor)
                                                     <option value="{{$profesor->id}}">{{$profesor->email}}</option>
