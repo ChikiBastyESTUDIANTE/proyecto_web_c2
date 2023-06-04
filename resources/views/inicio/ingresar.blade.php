@@ -22,7 +22,7 @@
                             <form>
                                 <div class="mb-3">
                                     <label for="correo" class="form-label">Usuario</label>
-                                    <select name="correo" id="correo" class="form-label">
+                                    <select name="correo" id="correo" class="form-control">
                                         <option value="">
                                             @if(Route::current()->getName()=='inicio.profesor')
                                                 @foreach($profesores as $profesor)
