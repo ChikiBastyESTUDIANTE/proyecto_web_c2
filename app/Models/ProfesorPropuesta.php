@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquebt\Relations\BelongsTo;
 
-class ProfesorPropuesta extends Model
+class ProfesorPropuesta extends Model //Creo que mejor se hubiera llamado comentarios 
 {
     use HasFactory;
     protected $table = 'profesor_propuesta';
