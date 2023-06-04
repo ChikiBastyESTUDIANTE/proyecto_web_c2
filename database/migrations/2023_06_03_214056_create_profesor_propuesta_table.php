@@ -20,7 +20,7 @@ return new class extends Migration
             $table->time('hora');
             $table->text('comentario');
             $table->foreign('propuesta_id')->references('id')->on('propuestas'); //foreign key
-            $table->foreign('profesor_id')->references('id')->on('profesores'); //foreign key
+            $table->foreign('profesor_id')->references('id_rut')->on('profesores'); //foreign key
             //cuando fue creado y modificado por default
             $table->timestamps();
         });
