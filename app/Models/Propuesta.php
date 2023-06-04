@@ -17,8 +17,8 @@ class Propuesta extends Model
         return $this->HasMany(Estudiante::class,'estudiante_rut','rut'); //CREO QUE ESTO ESTA BIEN??
     }
 
-    public function propuestaComentada():HasMany{
-        return $this->BelongsTo(ProfesorPropuesta::class);
+    public function comentarioProfesor():BelongsToMany{
+        return $this->BelongsToMany(Profesor::class);
     }
 
     public function comentarioProfesorPivot():BelongsToMany{
