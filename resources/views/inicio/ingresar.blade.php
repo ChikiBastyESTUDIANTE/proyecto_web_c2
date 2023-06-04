@@ -49,7 +49,7 @@
             <div class="col-5 d-flex bg-primary">
                 <div>
                     <div>
-                        <h2 class="text-white">Universidad Lorem Ipsum</h2>
+                        <h2 class="text-white text-center">Universidad Lorem Ipsum</h2>
                     </div>
                     <div class="card mt-5 mb-5">
                             <li>Lorem Ipsum</li>
