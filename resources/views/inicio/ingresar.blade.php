@@ -20,11 +20,7 @@
                     <div class="card mb-3">
                         <div class="card-body">
                             <form 
-                                method="
-                                    @if(Route::current()->getName()=='inicio.admin')GET
-                                    @elseif(Route::current()->getName()=='inicio.profesor')POST
-                                    @elseif(Route::current()->getName()=='inicio.estudiante')POST
-                                    @endif" 
+                                method="POST" 
                                 action="
                                     @if(Route::current()->getName()=='inicio.profesor'){{route('profesor.iniciar')}} 
                                     @elseif(Route::current()->getName()=='inicio.admin'){{route('admin.index')}}
