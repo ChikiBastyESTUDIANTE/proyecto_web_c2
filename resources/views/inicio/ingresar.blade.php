@@ -12,7 +12,10 @@
         <div class="row">
             <div class="col-5 offset-1 d-flex flex-column bg-primary">
                 <div>
-                    <h4 class="text-white">Inicio de Sesión</h4>
+                    <h4 class="text-white">Inicio de Sesión @if(Route::current()->getName()=='inicio.profesor') como profesor 
+                                        @elseif(Route::current()->getName()=='inicio.admin') como admin
+                                        @elseif(Route::current()->getName()=='inicio.estudiante') como estudiante
+                                        @endif</h4>
                     <h5 class="text-white my-2">Ingrese sus datos</h5>
                     <div class="card mb-3">
                         <div class="card-body">
