@@ -24,6 +24,7 @@ Route::get('/inicio-sesion-profesor',[InicioSesionController::class,'ingresarPro
 Route::post('/profesor/iniciar',[ProfesorController::class,'iniciar'])->name('profesor.iniciar');
 Route::get('/profesor/menu/{id}',[ProfesorController::class,'index'])->name('profesor.menu');
 //rutas relacionados a estudiante
-Route::get('/index-admin',[EstudianteController::class,'index'])->name('estudinte.index');
+Route::post('/estudiante/iniciar',[ProfesorController::class,'iniciar'])->name('estudiante.iniciar');
+Route::get('/estudiante/menu/{id}',[EstudianteController::class,'index'])->name('estudinte.index');
 //rutas relaciondas a administrador
-Route::get('/index-estuidante',[AdminController::class,'index'])->name('admin.index');
+Route::get('/admin/menu',[AdminController::class,'index'])->name('admin.index');
