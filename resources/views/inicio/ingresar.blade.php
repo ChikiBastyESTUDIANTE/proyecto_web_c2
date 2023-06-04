@@ -8,9 +8,9 @@
     <title>Universidad Lorem Ipsum</title>
 </head>
 <body>
-    <div class="container-flex min-vh-100">
+    <div class="container-flex min-vh-100 d-flex flex-column justify-content">
         <div class="row">
-            <div class="col">
+            <div class="col-12 ms-5">
                 <div class="col-12 col-lg-8 py-4">
                     <h4>Inicio de Sesión</h4>
                     <small>Ingrese datos</small>
