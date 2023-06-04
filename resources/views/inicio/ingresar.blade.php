@@ -23,7 +23,7 @@
                                 <div class="mb-3">
                                     <label for="correo" class="form-label">Usuario</label>
                                     <select name="correo" id="correo" class="form-control">
-                                        <option value="">
+                                        <option value="{{$profesor->id}}">
                                             @if(Route::current()->getName()=='inicio.profesor')
                                                 @foreach($profesores as $profesor)
                                                     {{$profesor->email}}
@@ -39,7 +39,7 @@
                                 <div class="row mb-2">
                                     <div class="col-6">
                                         <a href="
-                                        @if(Route::current()->getName()=='inicio.profesor'){{route('profesor.index')}} 
+                                        @if(Route::current()->getName()=='inicio.profesor'){{route('profesor.index',$profesor->id)}} 
                                         @elseif(Route::current()->getName()=='inicio.admin'){{route('admin.index')}}
                                         @elseif(Route::current()->getName()=='inicio.estudiante'){{route('estudinte.index')}} 
                                         @endif
