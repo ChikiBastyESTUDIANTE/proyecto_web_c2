@@ -48,10 +48,11 @@
             </div>
             <div class="col-5 d-flex flex-column rounded">
                 <div class="row">
-                    <div>
+                    <div class="col-6">
                         <div>
                             <h2 class="text-dark text-center">Universidad Lorem Ipsum</h2>
                         </div>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-6">
@@ -64,9 +65,7 @@
                                 <li>Lorem Ipsum</li>
                                 <li>Lorem Ipsum</li>
                                 <li>Lorem Ipsum</li>
-                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
