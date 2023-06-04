@@ -10,7 +10,15 @@ class InicioSesionConroller extends Controller
         //Acá se elige tipo de login
         return view('inicio.index');
     }
-    public function ingresar(){
+    public function ingresarAdmin(){
+        //Acá se ponen los datos y se entra
+        return view('inicio.ingresar');
+    }
+    public function ingresarEstudiante(){
+        //Acá se ponen los datos y se entra
+        return view('inicio.ingresar');
+    }
+    public function ingresarProfesor(){
         //Acá se ponen los datos y se entra
         return view('inicio.ingresar');
     }
