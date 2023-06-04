@@ -25,12 +25,12 @@
                                     <label for="password" class="form-label">Contraseña</label>
                                     <input type="password" id="password" class="form-control">
                                 </div>
-                                <div class="row mb-3">
+                                <div class="row mb-2">
                                     <div class="col-6">
                                         <a href="index.html" class="btn btn-secondary">Iniciar Sesión</a>
                                     </div>
                                     <div class="col-6">
-                                        <a href="index.html" class="text-secondary d-flex justify-content-end">Volver</a>
+                                        <small><a href="index.html" class="text-secondary d-flex justify-content-end pt-3">Volver</a></small>
                                     </div>
                                 </div>
                             </form>
