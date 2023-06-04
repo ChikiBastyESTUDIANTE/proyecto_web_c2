@@ -14,14 +14,14 @@ class Propuesta extends Model
     protected $table = 'propuestas';
 
     public function proponedor():BelongsTo{
-        return $this->HasMany(Estudiante::class);
+        return $this->HasMany(Estudiante::class,'estudiante_rut','rut'); //CREO QUE ESTO ESTA BIEN??
     }
 
     public function propuestaComentada():HasMany{
         return $this->BelongsTo(ProfesorPropuesta::class);
     }
 
-    public function comentarioPivot():BelongsToMany{
+    public function comentarioProfesorPivot():BelongsToMany{
         return $this->BelongsToMany(Profesor::class)->withPivot(['fecha','hora','comentario']);
     }
 }
