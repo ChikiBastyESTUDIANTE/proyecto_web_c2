@@ -15,6 +15,10 @@ class ProfesorSeeder extends Seeder
     public function run(): void
     {
         DB::table('profesores')->insert([
+            ['email'=>'profe@gmail','nombre'=>'Profesor','apellido'=>'Prueba','created_at'=>Carbon::now()],
+            ['email'=>'profe@gmail','nombre'=>'Profesor','apellido'=>'Prueba','created_at'=>Carbon::now()],
+            ['email'=>'profe@gmail','nombre'=>'Profesor','apellido'=>'Prueba','created_at'=>Carbon::now()],
+            ['email'=>'profe@gmail','nombre'=>'Profesor','apellido'=>'Prueba','created_at'=>Carbon::now()],
             ['email'=>'profe@gmail','nombre'=>'Profesor','apellido'=>'Prueba','created_at'=>Carbon::now()]
         ]);
     }
