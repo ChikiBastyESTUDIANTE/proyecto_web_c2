@@ -11,7 +11,7 @@
     <div class="container-fluid min-vh-100 d-flex flex-column justify-content-lg-center bg-light">
         <div class="row">
             <div class="col-4 offset-1 d-flex flex-column bg-primary rounded">
-                <div>
+                <div class="mb-2 ml-3">
                     <h4 class="text-white mt-3">Inicio de Sesión @if(Route::current()->getName()=='inicio.profesor') como profesor 
                                         @elseif(Route::current()->getName()=='inicio.admin') como admin
                                         @elseif(Route::current()->getName()=='inicio.estudiante') como estudiante
