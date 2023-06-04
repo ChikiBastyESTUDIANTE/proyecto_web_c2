@@ -27,4 +27,5 @@ Route::get('/profesor/menu/{id}',[ProfesorController::class,'index'])->name('pro
 Route::post('/estudiante/iniciar',[EstudianteController::class,'iniciar'])->name('estudiante.iniciar');
 Route::get('/estudiante/menu/{id}',[EstudianteController::class,'index'])->name('estudiante.menu');
 //rutas relaciondas a administrador
+Route::get('/admin/iniciar',[AdminController::class,'iniciar'])->name('admin.iniciar');
 Route::get('/admin/menu',[AdminController::class,'index'])->name('admin.index');

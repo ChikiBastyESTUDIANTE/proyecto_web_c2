@@ -23,7 +23,7 @@
                                 method="POST" 
                                 action="
                                     @if(Route::current()->getName()=='inicio.profesor'){{route('profesor.iniciar')}} 
-                                    @elseif(Route::current()->getName()=='inicio.admin'){{route('admin.index')}}
+                                    @elseif(Route::current()->getName()=='inicio.admin'){{route('admin.iniciar')}}
                                     @elseif(Route::current()->getName()=='inicio.estudiante'){{route('estudiante.iniciar')}} 
                                     @endif">
                             @csrf
