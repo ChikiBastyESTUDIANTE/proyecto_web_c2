@@ -38,6 +38,8 @@
                                                 @foreach($estudiantes as $estudiante)
                                                     <option value="{{$estudiante->rut}}">{{$estudiante->rut}}</option>
                                                 @endforeach
+                                            @elseif(Route::current()->getName()=='inicio.admin')
+                                                <option value="admin">admin</option>
                                             @endif
                                     </select>
                                 </div>
