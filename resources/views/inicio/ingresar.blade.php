@@ -44,8 +44,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="card mt-8">
-                            <li>Lorem Ipsum</li>
+                        <div class="card mt-5 mb-5">
                             <li>Lorem Ipsum</li>
                             <li>Lorem Ipsum</li>
                             <li>Lorem Ipsum</li>
