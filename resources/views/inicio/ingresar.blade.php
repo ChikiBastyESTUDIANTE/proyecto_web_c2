@@ -36,19 +36,21 @@
                             </form>
                         </div>
                     </div>
-                        <div>
-                            <h2 class="text-white">Universidad Lorem Ipsum</h2>
-                        </div>
-                        <div class="card mt-5 mb-5">
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                        </div>
+
+                    <div>
+                        <h2 class="text-white">Universidad Lorem Ipsum</h2>
+                    </div>
+                    <div class="card mt-5 mb-5">
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                    </div>
+                    
                 </div>
             </div>
         </div>
