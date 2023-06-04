@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\InicioSesionConroller;
+use App\Http\Controllers\InicioSesionController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +12,7 @@ use App\Http\Controllers\InicioSesionConroller;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/',[InicioSesionConroller::class,'index'])->name('inicio.index');
-Route::get('/inicio-sesion-admin',[InicioSesionConroller::class,'ingresarAdmin'])->name('inicio.admin');
-Route::get('/inicio-sesion-estudiante',[InicioSesionConroller::class,'ingresarEstudiante'])->name('inicio.estudiante');
-Route::get('/inicio-sesion-profesor',[InicioSesionConroller::class,'ingresarProfesor'])->name('inicio.profesor');
+Route::get('/',[InicioSesionController::class,'index'])->name('inicio.index');
+Route::get('/inicio-sesion-admin',[InicioSesionController::class,'ingresarAdmin'])->name('inicio.admin');
+Route::get('/inicio-sesion-estudiante',[InicioSesionController::class,'ingresarEstudiante'])->name('inicio.estudiante');
+Route::get('/inicio-sesion-profesor',[InicioSesionController::class,'ingresarProfesor'])->name('inicio.profesor');
