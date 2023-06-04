@@ -8,12 +8,12 @@
     <title>Universidad Lorem Ipsum</title>
 </head>
 <body>
-    <div class="container-fluid min-vh-100 d-flex flex-column justify-content-lg-center">
+    <div class="container-fluid min-vh-100 d-flex flex-column justify-content-lg-center bg-light">
         <div class="row">
-            <div class="col-6 offset-1">
-                <div class="col-12 col-lg-8 py-4">
-                    <h4>Inicio de Sesión</h4>
-                    <small>Ingrese datos</small>
+            <div class="col-5 offset-1">
+                <div class="bg-primary p-5">
+                    <h4 class="text-white">Inicio de Sesión</h4>
+                    Ingresar datos
                     <div class="card">
                         <div class="card-body">
                             <form>
