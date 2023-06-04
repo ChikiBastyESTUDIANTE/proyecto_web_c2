@@ -21,6 +21,6 @@ class InicioSesionController extends Controller
     public function ingresarProfesor(){
         //Acá se ponen los datos y se entra
         $profesores = Profesor::all();
-        return view('inicio.ingresar');
+        return view('inicio.ingresar',compact('profesores'));
     }
 }
