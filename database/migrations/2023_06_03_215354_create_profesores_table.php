@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('profesores', function (Blueprint $table) {
             //tipos de datos
-            $table->integer('id')->autoIncrement(); //primary key
-            $table-string('email',50);
-            $table-string('nombre',20);
-            $table-string('apellido',20);
+            $table->integer('id_rut')->autoIncrement(); //primary key
+            $table->string('email',50);
+            $table->string('nombre',20);
+            $table->string('apellido',20);
             //cuando fue creado y modificado por default
             $table->timestamps();
         });
