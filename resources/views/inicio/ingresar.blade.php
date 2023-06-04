@@ -38,6 +38,26 @@
             </div>
             <div class="col-5">
                 <div class="bg-primary p-5">
+                    <div class="row">
+                        <div>
+                            <h2 class="text-white">Universidad Lorem Ipsum</h2>
+                        </div>
+                        <div class="card">
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
