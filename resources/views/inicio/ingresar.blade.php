@@ -36,8 +36,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-5">
-                <div class="bg-primary p-5 ">
+            <div class="col-5 d-flex align-items-stretch">
+                <div class="bg-primary p-5 rounded">
                     <div class="row">
                         <div>
                             <h2 class="text-white">Universidad Lorem Ipsum</h2>
