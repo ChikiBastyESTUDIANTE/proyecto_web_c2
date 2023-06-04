@@ -35,32 +35,27 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col">
-                    <div class="bg-primary p-5 rounded">
-                        <div class="row">
-                            <div>
-                                <h2 class="text-white">Universidad Lorem Ipsum</h2>
-                            </div>
+            </div>
+            <div class="col-5">
+                <div class="bg-primary p-5 ">
+                    <div class="row">
+                        <div>
+                            <h2 class="text-white">Universidad Lorem Ipsum</h2>
                         </div>
-                        <div class="row">
-                            <div class="card mt-5 mb-5">
-                                <li>Lorem Ipsum</li>
-                                <li>Lorem Ipsum</li>
-                                <li>Lorem Ipsum</li>
-                                <li>Lorem Ipsum</li>
-                                <li>Lorem Ipsum</li>
-                                <li>Lorem Ipsum</li>
-                                <li>Lorem Ipsum</li>
-                                <li>Lorem Ipsum</li>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="card mt-5 mb-5">
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
                         </div>
                     </div>
                 </div>
-
-
-
-                
             </div>
         </div>
     </div>
