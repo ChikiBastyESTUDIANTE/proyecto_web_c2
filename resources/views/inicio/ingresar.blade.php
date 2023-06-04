@@ -10,7 +10,7 @@
 <body>
     <div class="container-fluid min-vh-100 d-flex flex-column justify-content-lg-center">
         <div class="row">
-            <div class="col">
+            <div class="col-6 offset-1">
                 <div class="col-12 col-lg-8 py-4">
                     <h4>Inicio de Sesión</h4>
                     <small>Ingrese datos</small>
