@@ -36,7 +36,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-5">
                 hola
             </div>
         </div>
