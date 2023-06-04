@@ -19,8 +19,8 @@ return new class extends Migration
             $table->date('fecha');
             $table->time('hora');
             $table->text('comentario');
-            $table->foreign('propuesta_id')->references('id')->on('propuestas'); //foreing key
-            $table->foreign('profesor_id')->references('id')->on('profesores'); //foreing key
+            $table->foreign('propuesta_id')->references('id')->on('propuestas'); //foreign key
+            $table->foreign('profesor_id')->references('id')->on('profesores'); //foreign key
             //cuando fue creado y modificado por default
             $table->timestamps();
         });
