@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InicioSesionController;
 use App\Http\Controllers\ProfesorController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\EstudianteController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,6 +23,6 @@ Route::get('/inicio-sesion-profesor',[InicioSesionController::class,'ingresarPro
 //rutas relacionados a profesor
 Route::get('/index-profesor',[ProfesorController::class,'index'])->name('profesor.index');
 //rutas relacionados a estudiante
-Route::get('/index-admin',[ProfesorController::class,'index'])->name('admin.index');
+Route::get('/index-admin',[EstudianteController::class,'index'])->name('estudinte.index');
 //rutas relaciondas a administrador
-Route::get('/index-estuidante',[ProfesorController::class,'index'])->name('estudiante.index');
+Route::get('/index-estuidante',[AdminController::class,'index'])->name('admin.index');

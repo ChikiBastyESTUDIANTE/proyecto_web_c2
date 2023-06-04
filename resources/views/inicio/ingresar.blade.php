@@ -29,8 +29,8 @@
                                     <div class="col-6">
                                         <a href="
                                         @if(Route::current()->getName()=='inicio.profesor'){{route('profesor.index')}} 
-                                        @elseif(Route::current()->getName()=='inicio.admin'){{route('profesor.index')}}
-                                        @elseif(Route::current()->getName()=='inicio.estudiante'){{route('profesor.index')}} 
+                                        @elseif(Route::current()->getName()=='inicio.admin'){{route('admin.index')}}
+                                        @elseif(Route::current()->getName()=='inicio.estudiante'){{route('estudinte.index')}} 
                                         @endif
                                         " class="btn btn-secondary">Iniciar Sesión</a>
                                     </div>
