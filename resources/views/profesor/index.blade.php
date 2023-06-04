@@ -7,10 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <select name="" id="">
-        <option value="">
-            hasjdasjkldhlasda7dulasjdahsjk
-        </option>
-    </select>
+    profesor
 </body>
 </html>
