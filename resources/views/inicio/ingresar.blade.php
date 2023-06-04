@@ -37,7 +37,8 @@
                 </div>
             </div>
             <div class="col-5">
-                hola
+                <div class="bg-primary p-5">
+                </div>
             </div>
         </div>
     </div>
