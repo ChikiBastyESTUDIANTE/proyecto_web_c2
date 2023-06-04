@@ -17,7 +17,8 @@ class InicioSesionController extends Controller
     }
     public function ingresarEstudiante(){
         //Acá se ponen los datos y se entra
-        return view('inicio.ingresar');
+        $estudiantes = Estudiante::all();
+        return view('inicio.ingresar',compact('estudiantes'));
     }
     public function ingresarProfesor(){
         //Acá se ponen los datos y se entra
