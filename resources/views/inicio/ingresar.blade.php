@@ -38,21 +38,24 @@
                     </div>
                 </div>
             </div>
-            <div class="col-5 d-flex align-items-stretch bg-primary">
-                <div class="row">
-                    <div>
-                        <h2 class="text-white">Universidad Lorem Ipsum</h2>
+            <div class="col-5 d-flex align-self-stretch">
+                <div class="bg-primary p-5 rounded">
+                    <div class="row">
+                        <div>
+                            <h2 class="text-white">Universidad Lorem Ipsum</h2>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="card mt-5 mb-5">
-                        <li>Lorem Ipsum</li>                            
-                        <li>Lorem Ipsum</li>
-                        <li>Lorem Ipsum</li>
-                        <li>Lorem Ipsum</li>
-                        <li>Lorem Ipsum</li>
-                        <li>Lorem Ipsum</li>
-                        <li>Lorem Ipsum</li>
+                    <div class="row">
+                        <div class="card mt-5 mb-5">
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                        </div>
                     </div>
                 </div>
             </div>
