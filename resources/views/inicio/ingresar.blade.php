@@ -11,7 +11,7 @@
     <div class="container-fluid min-vh-100 d-flex flex-column justify-content-lg-center">
         <div class="row">
             <div class="col-5 offset-1">
-                <div class="col-12 col-lg-8 py-4">
+                <div class="col-12 col-lg-8">
                     <h4>Inicio de Sesión</h4>
                     <small>Ingrese datos</small>
                     <div class="card">
