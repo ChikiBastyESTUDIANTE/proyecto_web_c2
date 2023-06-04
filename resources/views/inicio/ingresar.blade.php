@@ -22,7 +22,7 @@
                             <form 
                                 method="POST" 
                                 action="
-                                    @if(Route::current()->getName()=='inicio.profesor'){{route('profesor.iniciar')}} 
+                                    @if(Route::current()->getName()=='inicio.profesor'){{route('profesor.iniciar')}}
                                     @elseif(Route::current()->getName()=='inicio.admin'){{route('admin.iniciar')}}
                                     @elseif(Route::current()->getName()=='inicio.estudiante'){{route('estudiante.iniciar')}} 
                                     @endif">
@@ -30,14 +30,17 @@
                                 <div class="mb-3">
                                     <label for="correo" class="form-label">Usuario</label>
                                     <select name="id" id="correo" class="form-control">
+                                            {{-- Profesor --}}
                                             @if(Route::current()->getName()=='inicio.profesor')
                                                 @foreach($profesores as $profesor)
                                                     <option value="{{$profesor->id_rut}}">{{$profesor->email}}</option>
                                                 @endforeach
+                                            {{-- Estudiante --}}
                                             @elseif(Route::current()->getName()=='inicio.estudiante')
                                                 @foreach($estudiantes as $estudiante)
                                                     <option value="{{$estudiante->rut}}">{{$estudiante->rut}}</option>
                                                 @endforeach
+                                            {{-- Admin --}}
                                             @elseif(Route::current()->getName()=='inicio.admin')
                                                 <option value="admin">admin</option>
                                             @endif
