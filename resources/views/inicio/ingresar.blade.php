@@ -11,7 +11,7 @@
     <div class="container-fluid min-vh-100 d-flex flex-column justify-content-lg-center bg-light">
         <div class="row">
             <div class="col-5 offset-1">
-                <div class="bg-primary p-5">
+                <div class="bg-primary p-5 rounded">
                     <h4 class="text-white">Inicio de Sesión</h4>
                     <h5 class="text-white my-2">Ingrese sus datos</h5>
                     <div class="card">
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="col-5">
-                <div class="bg-primary p-5">
+                <div class="bg-primary p-5 rounded">
                     <div class="row">
                         <div>
                             <h2 class="text-white">Universidad Lorem Ipsum</h2>
