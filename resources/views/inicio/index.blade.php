@@ -15,11 +15,12 @@
                     <div class="col-12">
                         <span class="text-white">Universidad lorem ipsum</span>
                         <h3 class="text-white">Elegir inicio de sesion</h3>
+                        <hr class="text-white">
                     </div>
-                    <div class="d-none d-lg-block col-lg-6">
-                        {{asset('imagenes/placeholderUni.png')}}
+                    <div class="d-none d-lg-block col-lg-6 pt-4 bg-secondary">
+                        <img src="{{asset('imagenes/placeholderUni.png')}}" class="img-fluid border-5 border-dark rounded">
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 bg-secondary">
                         <form>
                             <div class="p-2">
                                 <a href="{{route('inicio.admin')}}" class="btn d-flex justify-content-center btn-secondary mb-2">
