@@ -8,9 +8,9 @@
     <title>Universidad Lorem Ipsum</title>
 </head>
 <body>
-    <div class="container-fluid min-vh-100 d-flex flex-column justify-content-lg-center bg-light">
+    <div class="container-fluid min-vh-100 d-flex  justify-content-lg-center bg-light">
         <div class="row">
-            <div class="col-5 offset-2 d-flex flex-column align-items-stretch">
+            <div class="col-12 offset-1 d-flex">
                 <div class="bg-primary p-5 rounded">
                     <h4 class="text-white">Inicio de Sesión</h4>
                     <h5 class="text-white my-2">Ingrese sus datos</h5>
@@ -36,16 +36,9 @@
                             </form>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-5 d-flex align-items-stretch">
-                <div class="bg-primary p-5 rounded">
-                    <div class="row">
                         <div>
                             <h2 class="text-white">Universidad Lorem Ipsum</h2>
                         </div>
-                    </div>
-                    <div class="row">
                         <div class="card mt-5 mb-5">
                             <li>Lorem Ipsum</li>
                             <li>Lorem Ipsum</li>
@@ -56,7 +49,6 @@
                             <li>Lorem Ipsum</li>
                             <li>Lorem Ipsum</li>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
