@@ -23,13 +23,11 @@
                                 <div class="mb-3">
                                     <label for="correo" class="form-label">Usuario</label>
                                     <select name="correo" id="correo" class="form-control">
-                                        <option value="{{$profesor->id}}">
                                             @if(Route::current()->getName()=='inicio.profesor')
                                                 @foreach($profesores as $profesor)
-                                                    {{$profesor->email}}
+                                                    <option value="{{$profesor->id}}">{{$profesor->email}}</option>
                                                 @endforeach
                                             @endif
-                                        </option>
                                     </select>
                                 </div>
                                 <div class="mb-3">
