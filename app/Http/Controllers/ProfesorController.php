@@ -7,8 +7,8 @@ use App\Models\Profesor;
 
 class ProfesorController extends Controller
 {
-    public function iniciar(Profesor $profesor){
-        return view('profesor.menu',asdas);
+    public function iniciar(Request $request, Profesor $profesor){
+        return route('profesor.menu',$request->correo);
     }
 
     public function index(Profesor $profesor){
