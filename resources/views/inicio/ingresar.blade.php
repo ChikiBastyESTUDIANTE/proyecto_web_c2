@@ -38,8 +38,13 @@
             </div>
             <div class="col-5">
                 <div class="bg-primary p-5">
-                    <div class="card">
-                        Lorem Ipsum
+                    <div class="row">
+                        <div>
+                            <h2>Universidad Lorem Ipsum</h2>
+                        </div>
+                        <div class="card">
+                            hola2
+                        </div>
                     </div>
                 </div>
             </div>
