@@ -27,7 +27,12 @@
                                 </div>
                                 <div class="row mb-2">
                                     <div class="col-6">
-                                        <a href="#" class="btn btn-secondary">Iniciar Sesión</a>
+                                        <a href="
+                                        @if(Route::current()->getName()=='inicio.profesor'){{route('profesor.index')}} 
+                                        @elseif(Route::current()->getName()=='inicio.admin'){{route('profesor.index')}}
+                                        @elseif(Route::current()->getName()=='inicio.estudiante'){{route('profesor.index')}} 
+                                        @endif
+                                        " class="btn btn-secondary">Iniciar Sesión</a>
                                     </div>
                                     <div class="col-6">
                                         <small><a href="{{route('inicio.index')}}" class="text-secondary d-flex justify-content-end pt-3">Volver</a></small>
