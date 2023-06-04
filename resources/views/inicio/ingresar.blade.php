@@ -8,7 +8,7 @@
     <title>Universidad Lorem Ipsum</title>
 </head>
 <body>
-    <div class="container-fluid min-vh-100 d-flex  justify-content-lg-center bg-light">
+    <div class="container-fluid min-vh-100 d-flex flex-column justify-content-lg-center bg-light">
         <div class="row">
             <div class="col-5 offset-1 d-flex">
                 <div class="bg-primary p-5 rounded">
