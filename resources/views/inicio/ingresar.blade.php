@@ -21,12 +21,20 @@
                         <div class="card-body">
                             <form>
                                 <div class="mb-3">
-                                    <label for="username" class="form-label">Usuario</label>
-                                    <input type="text" id="username" class="form-control">
+                                    <label for="correo" class="form-label">Usuario</label>
+                                    <select name="correo" id="correo" class="form-label">
+                                        <option value="">
+                                            @if(Route::current()->getName()=='inicio.profesor')
+                                                @foreach($profesores as $profesor)
+                                                    {{$profesor->email}}
+                                                @endforeach
+                                            @endif
+                                        </option>
+                                    </select>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="password" class="form-label">Contraseña</label>
-                                    <input type="password" id="password" class="form-control">
+                                    <label for="contraseña" class="form-label">Contraseña</label>
+                                    <input type="password" id="contraseña" class="form-control">
                                 </div>
                                 <div class="row mb-2">
                                     <div class="col-6">
