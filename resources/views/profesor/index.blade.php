@@ -23,8 +23,14 @@
                                         <td>
                                             @if($propuesta->estado === 1)
                                                 Esperando revision
+                                            @elseif($propuesta->estado === 2)
+                                                Se sugiere modificar la propuesta
+                                            @elseif($propuesta->estado === 3)
+                                                Rechazado
+                                            @elseif($propuesta->estado === 4)
+                                                Aceptado
                                             @else
-                                                HGASGDASKDGKJ
+                                                Ingreso mal el formato por favor!!!
                                             @endif
                                         </td>
                                         <td>
