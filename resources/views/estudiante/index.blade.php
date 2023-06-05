@@ -49,8 +49,8 @@
                     </div>
                     <div class="card-body">
                         <form action="">
-                            <label for=""class="form-label"></label>
-                            <input type="file" class="form-label">
+                            <label for="archivo"class="form-label"></label>
+                            <input type="file" name="archivo" id="archivo" class="form-label">
                         </form>
                     </div>
                 </div>
