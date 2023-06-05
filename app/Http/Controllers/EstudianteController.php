@@ -14,8 +14,7 @@ class EstudianteController extends Controller
 
     public function index($id){
         $estudiante = Estudiante::where('rut',$id)->first();
-        $propuestas = Propuesta::where('estudiante_rut',$id)->all();
-        dd($propuestas);
+        $propuestas = Propuesta::where('estudiante_rut',$id)->get();
         return view('estudiante.index',compact(['estudiante','propuestas']));
     }
 }

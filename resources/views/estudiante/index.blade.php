@@ -20,8 +20,20 @@
                             <tbody>
                                 @foreach($propuestas as $propuesta)
                                     <tr>
-                                        <td>$propuesta->documento</td>
-                                        <td>$propuesta->estado</td>
+                                        <td>{{$propuesta->documento}}</td>
+                                        <td>
+                                            @if($propuesta->estado === 1)
+                                                Esperando revision
+                                            @elseif($propuesta->estado === 2)
+                                                Se sugiere modificar la propuesta
+                                            @elseif($propuesta->estado === 3)
+                                                Rechazado
+                                            @elseif($propuesta->estado === 4)
+                                                Aceptado
+                                            @else
+                                                Ingreso mal el formato por favor!!!
+                                            @endif
+                                        </td>
                                         <td>dolor sit amet</td>
                                     </tr>
                                 @endforeach
