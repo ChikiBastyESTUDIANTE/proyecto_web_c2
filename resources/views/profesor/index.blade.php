@@ -16,7 +16,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                                <!-- Insertar for each-->
+                                @foreach($variable as $key => $value)
                                     <tr>
                                         <th scope="row">11.111.111-1</th>
                                         <td>Nombre Apellido</td>
@@ -30,6 +30,7 @@
                                             </button>
                                         </td>
                                     </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
