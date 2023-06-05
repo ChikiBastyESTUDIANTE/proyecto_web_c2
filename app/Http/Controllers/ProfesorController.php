@@ -12,8 +12,8 @@ class ProfesorController extends Controller
         return redirect()->route('profesor.menu',$request->id);
     }
 
-    public function index(Request $request,Profesor $profesor){
-        dd($request);
+    public function index(Profesor $profesor){
+        dd($profesor);
         $propuestas = Propuesta::orderBy('id')->get();
         return view('profesor.index',compact(['profesor','propuestas']));
     }
