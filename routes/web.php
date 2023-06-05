@@ -23,6 +23,7 @@ Route::get('/inicio-sesion-profesor',[InicioSesionController::class,'ingresarPro
 //rutas relacionados a profesor
 Route::post('/profesor/iniciar',[ProfesorController::class,'iniciar'])->name('profesor.iniciar');
 Route::get('/profesor/menu/{id}',[ProfesorController::class,'index'])->name('profesor.menu');
+Route::get('/profesor/comentarios',[ProfesorController::class,'prueba'])->name('profesor.comentarios');
 //rutas relacionados a estudiante
 Route::post('/estudiante/iniciar',[EstudianteController::class,'iniciar'])->name('estudiante.iniciar');
 Route::get('/estudiante/menu/{id}',[EstudianteController::class,'index'])->name('estudiante.menu');
