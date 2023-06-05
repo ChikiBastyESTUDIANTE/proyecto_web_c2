@@ -21,8 +21,10 @@
                                         <th scope="row">{{$propuesta->estudiante_rut}}</th>
                                         <td>{{$propuesta->documento}}</td>
                                         <td>
-                                            @if({{$propuesta->estado}} === '1')
-                                                adsa
+                                            @if($propuesta->estado === 1)
+                                                ashjdjashk
+                                            @else
+                                                HGASGDASKDGKJ
                                             @endif
                                         </td>
                                         <td>
