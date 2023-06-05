@@ -21,7 +21,7 @@ class Propuesta extends Model
         return $this->BelongsToMany(Profesor::class);
     }
 
-    public function comentarioProfesorPivot():BelongsToMany{
+    public function comentarioProfesorConPivot():BelongsToMany{
         return $this->BelongsToMany(Profesor::class)->withPivot(['fecha','hora','comentario']);
     }
 }
