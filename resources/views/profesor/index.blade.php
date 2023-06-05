@@ -9,10 +9,10 @@
                         <table class="table table-bordered border-dark bg-white">
                             <thead class="bg-secondary">
                             <tr>
-                                <th scope="col">Rut</th>
-                                <th scope="col">Propuesta</th>
-                                <th scope="col">Estado</th>
-                                <th scope="col">Comentario</th>
+                                <th class="text-white"><h5 class="mt-2">Rut</h5></th>
+                                <th class="text-white"><h5 class="mt-2">Propuesta</h5></th>
+                                <th class="text-white"><h5 class="mt-2">Estado</h5></th>
+                                <th class="text-white"><h5 class="mt-2">Comentario</h5></th>
                             </tr>
                             </thead>
                             <tbody>
