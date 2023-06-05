@@ -42,7 +42,7 @@
                                             @elseif(Route::current()->getName()=='estudiante.menu')
                                                 Estudiante
                                             @elseif(Route::current()->getName()=='profesor.menu')
-                                                $profesor->nombre
+                                                {{$profesor->id_rut}}
                                             @endif
                                         </span>
                                         <a href="{{route('inicio.index')}}" class="btn btn-secondary d-flex justify-content-end">Cerrar sesion</a>
