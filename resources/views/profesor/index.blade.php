@@ -55,6 +55,7 @@
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Propuesta</th>
                                 <th scope="col">Añadir comentario</th>
+                                <th scope="col">Eliminar comentario</th>
                             </tr>
                             </thead>
                             <tbody>
