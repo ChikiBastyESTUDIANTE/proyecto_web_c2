@@ -21,7 +21,7 @@
                                         <th scope="row">{{$propuesta->estudiante_rut}}</th>
                                         <td>{{$propuesta->documento}}</td>
                                         <td>
-                                            @if({{$propuesta->estado}} = 1)
+                                            @if({{$propuesta->estado}} === '1')
                                                 adsa
                                             @endif
                                         </td>
