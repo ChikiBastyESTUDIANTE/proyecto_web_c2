@@ -15,6 +15,6 @@ class EstudianteController extends Controller
     public function index($id){
         $estudiante = Estudiante::where('rut',$id);
         $propuestas = Propuesta::where('estudiante_rut',$id);
-        return view('estudiante.index',);
+        return view('estudiante.index',compact(['estudiante','propuestas']));
     }
 }

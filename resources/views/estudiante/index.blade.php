@@ -18,11 +18,13 @@
                             </tr>
                             </thead>
                             <tbody>
+                                @foreach($propuestas as $propuesta)
                                     <tr>
-                                        <td>lorem</td>
-                                        <td>ipsum</td>
+                                        <td>$propuesta->documento</td>
+                                        <td>$propuesta->estado</td>
                                         <td>dolor sit amet</td>
                                     </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
