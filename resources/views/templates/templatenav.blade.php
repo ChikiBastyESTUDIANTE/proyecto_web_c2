@@ -40,9 +40,9 @@
                                             @if(Route::current()->getName()=='admin.menu')
                                                 Admin
                                             @elseif(Route::current()->getName()=='estudiante.menu')
-                                                Estudiante
+                                                Estudiante {{$estudiante->nombre}} {{$estudiante->apellido}}
                                             @elseif(Route::current()->getName()=='profesor.menu')
-                                                Profesor {{$profesor->nombre}}
+                                                Profesor {{$profesor->nombre}} {{$profesor->apellido}}
                                             @endif
                                         </span>
                                         <a href="{{route('inicio.index')}}" class="btn btn-secondary d-flex justify-content-end">Cerrar sesion</a>
