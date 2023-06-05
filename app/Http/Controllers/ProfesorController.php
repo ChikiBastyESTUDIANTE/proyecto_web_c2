@@ -9,12 +9,12 @@ use App\Models\Propuesta;
 class ProfesorController extends Controller
 {
     public function iniciar(Request $request){
-        echo $request->id;
+        //return $request->id;
         return redirect()->route('profesor.menu',$request->id);
     }
 
     public function index(Profesor $profesor){
-        echo $profesor->nombre;
+        return $profesor->nombre;
         // $propuestas = Propuesta::all();
         // return view('profesor.index',compact(['profesor','propuestas']));
     }
