@@ -13,6 +13,7 @@ class ProfesorController extends Controller
     }
 
     public function index(Profesor $profesor){
+        dd($profesor);
         $propuestas = Propuesta::orderBy('id')->get();
         return view('profesor.index',compact(['profesor','propuestas']));
     }
