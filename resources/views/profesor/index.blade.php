@@ -16,9 +16,9 @@
                             </tr>
                             </thead>
                             <tbody>
-                                @foreach($propuesta as $propuesta)
+                                {{-- @foreach($propuestas as $propuesta) --}}
                                     <tr>
-                                        <th scope="row">11.111.111-1</th>
+                                        <th scope="row">ddsa</th>
                                         <td>Nombre Apellido</td>
                                         <td>pppp.pdf</td>
                                         <td>
@@ -30,7 +30,7 @@
                                             </button>
                                         </td>
                                     </tr>
-                                @endforeach
+                                {{-- @endforeach --}}
                             </tbody>
                         </table>
                     </div>

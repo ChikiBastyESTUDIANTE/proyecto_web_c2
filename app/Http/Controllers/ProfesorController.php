@@ -14,6 +14,6 @@ class ProfesorController extends Controller
 
     public function index(Profesor $profesor){
         $propuestas = Propuesta::orderBy('id')->get();
-        return view('profesor.index');
+        return view('profesor.index',compact('propuestas'));
     }
 }
