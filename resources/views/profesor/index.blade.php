@@ -20,7 +20,11 @@
                                     <tr>
                                         <th scope="row">{{$propuesta->estudiante_rut}}</th>
                                         <td>{{$propuesta->documento}}</td>
-                                        <td>{{$propuesta->estado}}</td>
+                                        <td>
+                                            @if({{$propuesta->estado}} = 1)
+                                                adsa
+                                            @endif
+                                        </td>
                                         <td>
                                             <button class="btn btn-sm btn-success pt-2 text-white" type="submit">
                                                 <span class="material-symbols-outlined">add</span>
