@@ -10,17 +10,17 @@
                             <thead>
                             <tr>
                                 <th scope="col">Rut</th>
-                                <th scope="col">Nombre</th>
                                 <th scope="col">Propuesta</th>
+                                <th scope="col">Estado</th>
                                 <th scope="col">Comentario</th>
                             </tr>
                             </thead>
                             <tbody>
-                                {{-- @foreach($propuestas as $propuesta) --}}
+                                @foreach($propuestas as $propuesta)
                                     <tr>
-                                        <th scope="row">placeholder</th>
-                                        <td>placeholder</td>
-                                        <td>pppp.pdf</td>
+                                        <th scope="row">{{$propuesta->estudiante_rut}}</th>
+                                        <td>$propuesta->estudiante_rut</td>
+                                        <td>$propuesta->estudiante_rut</td>
                                         <td>
                                             <button class="btn btn-sm btn-success pt-2 text-white" type="submit">
                                                 <span class="material-symbols-outlined">add</span>
@@ -30,7 +30,7 @@
                                             </button>
                                         </td>
                                     </tr>
-                                {{-- @endforeach --}}
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
