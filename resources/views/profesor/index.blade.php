@@ -54,7 +54,7 @@
                                 <th scope="col">Rut</th>
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Propuesta</th>
-                                <th scope="col">Eliminar</th>
+                                <th scope="col">Añadir comentario</th>
                             </tr>
                             </thead>
                             <tbody>
