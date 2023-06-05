@@ -17,4 +17,8 @@ class EstudianteController extends Controller
         $propuestas = Propuesta::where('estudiante_rut',$id)->get();
         return view('estudiante.index',compact(['estudiante','propuestas']));
     }
+
+    public function subirArchivo(Request $request){
+        
+    }
 }
