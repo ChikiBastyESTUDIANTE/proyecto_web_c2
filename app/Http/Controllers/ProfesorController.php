@@ -9,9 +9,7 @@ use App\Models\Propuesta;
 class ProfesorController extends Controller
 {
     public function iniciar(Request $request){
-        $profesores = Profesor::first(1);
-        return $profesores->id;
-        // return redirect()->route('profesor.menu',$profesores->id);
+        return redirect()->route('profesor.menu',$request->id);
     }
 
     public function index(Profesor $profesor){
