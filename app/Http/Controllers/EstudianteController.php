@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Estudiante;
+use App\Models\Propuesta;
 
 class EstudianteController extends Controller
 {
@@ -12,6 +13,7 @@ class EstudianteController extends Controller
     }
 
     public function index(){
+        $propuestas = Propuesta::all();
         return view('estudiante.index');
     }
 }
