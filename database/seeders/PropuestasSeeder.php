@@ -15,7 +15,11 @@ class PropuestasSeeder extends Seeder
     public function run(): void
     {
         DB::table('propuestas')->insert([
-            ['fecha'=>Carbon::now(),'documento'=>'test.txt','estado'=>1,"estudiante_rut"=>'21403996-6']
+            ['fecha'=>Carbon::now(),'documento'=>'test.txt','estado'=>1,"estudiante_rut"=>'21403996-6'],
+            ['fecha'=>Carbon::now(),'documento'=>'test.txt','estado'=>1,"estudiante_rut"=>'21125670-2'],
+            ['fecha'=>Carbon::now(),'documento'=>'test.txt','estado'=>1,"estudiante_rut"=>'21125670-2'],
+            ['fecha'=>Carbon::now(),'documento'=>'test.txt','estado'=>1,"estudiante_rut"=>'21471167-2'],
+            ['fecha'=>Carbon::now(),'documento'=>'test.txt','estado'=>1,"estudiante_rut"=>'21471167-2']
         ]);
     }
 }
