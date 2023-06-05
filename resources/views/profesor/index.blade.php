@@ -65,6 +65,11 @@
                                         <td>Nombre Apellido</td>
                                         <td>pppp.pdf</td>
                                         <td>
+                                            <button class="btn btn-sm btn-warning" type="submit">
+                                                <span class="material-symbols-outlined">add</span>
+                                            </button>
+                                        </td>
+                                        <td>
                                             <button class="btn btn-sm btn-danger" type="submit">
                                                 <span class="material-symbols-outlined"> delete </span>
                                             </button>
