@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Profesor;
+use App\Models\Propuesta;
 
 class ProfesorController extends Controller
 {
@@ -12,6 +13,7 @@ class ProfesorController extends Controller
     }
 
     public function index(Profesor $profesor){
+        $propuestas = Propuesta::orderBy('id')->get();
         return view('profesor.index');
     }
 }
