@@ -19,7 +19,7 @@
                                 {{-- @foreach($propuestas as $propuesta) --}}
                                     <tr>
                                         <th scope="row">ddsa</th>
-                                        <td>Nombre Apellido</td>
+                                        <td>{{$profesor->nombre}}</td>
                                         <td>pppp.pdf</td>
                                         <td>
                                             <button class="btn btn-sm btn-success pt-2 text-white" type="submit">
