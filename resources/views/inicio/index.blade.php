@@ -34,8 +34,7 @@
                             </div>
                             <div class="text-end p-2">
                                 <a href="{{route('inicio.profesor')}}" class="btn d-flex justify-content-center btn-outline-light">
-                                    <h4>Iniciar como</h4>
-                                    <h4>profesor</h4>
+                                    <h4>Iniciar como aaaprofesor</h4>
                                 </a>
                             </div>
                         </form>
