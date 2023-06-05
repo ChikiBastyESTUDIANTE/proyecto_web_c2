@@ -22,7 +22,7 @@
                                     <textarea class="form-control" rows="5"></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Enviar comentario</button>
-                                <button href="{{route('profesores.blade.php')}}" class="btn btn-primary" type="submit">Volver</button>
+                                <button href="{{route('profesor.comentarios')}}" class="btn btn-primary" type="submit">Volver</button>
                             </form>
                     </div>
                 </div>

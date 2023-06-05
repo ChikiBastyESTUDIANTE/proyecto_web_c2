@@ -34,12 +34,12 @@
                                             @endif
                                         </td>
                                         <td>
-                                            <button class="btn btn-sm btn-success pt-2 text-white" type="submit">
+                                            <a class="btn btn-sm btn-success pt-2 text-white" href="{{route('profesor.comentarios')}}">
                                                 <span class="material-symbols-outlined">add</span>
-                                            </button>
-                                            <button class="btn btn-sm btn-danger pt-2 text-white" type="submit">
+                                            </a>
+                                            <a class="btn btn-sm btn-danger pt-2 text-white" href="">
                                                 <span class="material-symbols-outlined"> delete </span>
-                                            </button>
+                                            </a>
                                         </td>
                                     </tr>
                                 @endforeach
