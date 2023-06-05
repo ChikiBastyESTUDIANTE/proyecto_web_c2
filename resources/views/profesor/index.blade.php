@@ -22,7 +22,7 @@
                                         <td>{{$propuesta->documento}}</td>
                                         <td>
                                             @if($propuesta->estado === 1)
-                                                ashjdjashk
+                                                Esperando revision
                                             @else
                                                 HGASGDASKDGKJ
                                             @endif
