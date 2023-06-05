@@ -12,9 +12,9 @@
                         <table class="table table-bordered border-dark bg-white">
                             <thead class="bg-primary">
                             <tr>
-                                <th scope="col text-white">Propuesta</th>
-                                <th scope="col text-white">Estado</th>
-                                <th scope="col text-white">Comentario</th>
+                                <th class="text-white"><h5>Propuesta</h5></th>
+                                <th class="text-white"><h5>Estado</h5></th>
+                                <th class="text-white"><h5>Comentarios</h5></th>
                             </tr>
                             </thead>
                             <tbody>
