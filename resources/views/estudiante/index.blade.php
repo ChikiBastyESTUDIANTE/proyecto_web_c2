@@ -48,9 +48,10 @@
                         <h4 class="text-white">Crear propuesta</h4>
                     </div>
                     <div class="card-body">
-                        <form action="">
+                        <form action="" enctype="multipart/form-data">
                             <label for="archivo"class="form-label"></label>
                             <input type="file" name="archivo" id="archivo" class="form-label">
+                            
                         </form>
                     </div>
                 </div>
