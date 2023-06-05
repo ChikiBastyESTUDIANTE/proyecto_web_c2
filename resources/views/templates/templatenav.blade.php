@@ -36,7 +36,11 @@
                                         </ul>
                                     </li>
                                     </ul>
-                                        <span class="me-2 text-white"> (NOMBRE DEL USUARIO)</span>
+                                        <span class="me-2 text-white">
+                                            @if(Route::current()->getName()=='admin.menu')
+                                                Admin
+                                            @endif
+                                        </span>
                                         <a href="{{route('inicio.index')}}" class="btn btn-secondary d-flex justify-content-end">Cerrar sesion</a>
                                 </div>
                             </div>
