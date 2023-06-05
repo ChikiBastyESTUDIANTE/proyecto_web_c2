@@ -13,8 +13,7 @@ class ProfesorController extends Controller
     }
 
     public function index(Profesor $profesor){
-        return $profesor->id;
-        // $propuestas = Propuesta::all();
-        // return view('profesor.index',compact(['profesor','propuestas']));
+        $propuestas = Propuesta::all();
+        return view('profesor.index',compact(['profesor','propuestas']));
     }
 }
