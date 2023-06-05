@@ -9,10 +9,9 @@
     <title>Universidad Lorem Ipsum</title>
 </head>
 <body>
-    
-
+    {{--  navbar --}}
     @yield('scripts-sobre-bootstrap')
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    @yield('scripts-bajo-bootstrap')
+    @yield('scripts-bajo-bootstrap') {{--  No se si usaremos el popper xd --}}
 </body>
 
