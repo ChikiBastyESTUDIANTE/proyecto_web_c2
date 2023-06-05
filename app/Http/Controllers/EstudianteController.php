@@ -9,11 +9,12 @@ use App\Models\Propuesta;
 class EstudianteController extends Controller
 {
     public function iniciar(Request $request){
-        return redirect()->route('estudiante.menu',$request->id);
+        return redirect()->route('estudiante.menu',['id'=>$request->id]);
     }
 
-    public function index(){
-        $propuestas = Propuesta::all();
-        return view('estudiante.index');
+    public function index($id){
+        $estudiante = Estudiante::where('rut',$id);
+        $propuestas = Propuesta::where('estudiante_rut',$estudiante->rut);
+        return view('estudiante.index',);
     }
 }
