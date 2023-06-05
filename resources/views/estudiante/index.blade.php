@@ -50,7 +50,7 @@
                     <div class="card-body">
                         <form action="">
                             <label for=""class="form-label">HJKASDHJKASJKH</label>
-                            <input type="file" class="form-label">
+                            <input type="file" class="">
                         </form>
                     </div>
                 </div>
