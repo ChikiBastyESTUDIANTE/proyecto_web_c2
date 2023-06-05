@@ -13,7 +13,7 @@ class ProfesorController extends Controller
     }
 
     public function index(Profesor $profesor){
-        return $profesor->nombre;
+        return $profesor->id_rut;
         // $propuestas = Propuesta::all();
         // return view('profesor.index',compact(['profesor','propuestas']));
     }
