@@ -49,11 +49,9 @@
                     </div>
                     <div class="card-body">
                         <form action="" enctype="multipart/form-data">
-                            <label for="archivo" class="form-label">Elige tu archivo:</label>
                             <input type="file" name="archivo" id="archivo" class="form-label">
-
                             <label for="enviar" class="form-label"></label>
-                            <button type="submit" class="btn btn-secondary">Subir propuesta</button>
+                            <div><button type="submit" class="btn btn-secondary">Subir propuesta</button></div>
                         </form>
                     </div>
                 </div>
