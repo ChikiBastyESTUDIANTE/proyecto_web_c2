@@ -7,7 +7,7 @@
                 <div class="row">
                     <div class="col">
                         <table class="table table-bordered border-dark bg-white">
-                            <thead>
+                            <thead class="bg-secondary">
                             <tr>
                                 <th scope="col">Rut</th>
                                 <th scope="col">Propuesta</th>
