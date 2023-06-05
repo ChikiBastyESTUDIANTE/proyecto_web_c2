@@ -16,7 +16,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                                @foreach($variable as $key => $value)
+                                @foreach($propuesta as $propuesta)
                                     <tr>
                                         <th scope="row">11.111.111-1</th>
                                         <td>Nombre Apellido</td>
