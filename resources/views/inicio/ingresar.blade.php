@@ -17,6 +17,7 @@
                                         @elseif(Route::current()->getName()=='inicio.estudiante') como estudiante
                                         @endif</h4>
                     <h5 class="text-white mt-2">Ingrese sus datos</h5>
+                    <hr class="text-white">
                     <div class="card mb-3">
                         <div class="card-body">
                             <form 
