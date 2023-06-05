@@ -9,6 +9,22 @@
                         <h4 class="text-white">Tus propuestas</h4>
                     </div>
                     <div class="card-body">
+                        <table class="table table-bordered border-dark bg-white">
+                            <thead>
+                            <tr>
+                                <th scope="col">Propuesta</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Comentario</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                        <td>lorem</td>
+                                        <td>ipsum</td>
+                                        <td>dolor sit amet</td>
+                                    </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
