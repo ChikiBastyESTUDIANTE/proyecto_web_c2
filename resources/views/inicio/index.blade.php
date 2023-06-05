@@ -21,8 +21,8 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="d-none d-lg-block col-lg-6 ">
-                                        <img src="{{asset('imagenes/placeholderUni.png')}}" class="img-fluid border-5 border-dark rounded">
+                                    <div class="col-lg-6 d-none d-lg-block">
+                                        <img src="{{asset('imagenes/placeholderUni.png')}}" class="img-fluid border-dark img-thumbnail">
                                     </div>
                                     <div class="col-lg-6">
                                         <form>
