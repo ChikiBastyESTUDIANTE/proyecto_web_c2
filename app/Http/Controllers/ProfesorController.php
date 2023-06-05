@@ -9,7 +9,6 @@ use App\Models\Propuesta;
 class ProfesorController extends Controller
 {
     public function iniciar(Request $request){
-        //return $request->id;
         return redirect()->route('profesor.menu',$request->id);
     }
 
