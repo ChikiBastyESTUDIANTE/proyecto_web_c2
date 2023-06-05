@@ -21,7 +21,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="d-none d-lg-block col-lg-6  d-flex aling-items-center justify-content-center">
+                                    <div class="d-none d-lg-block col-lg-6 ">
                                         <img src="{{asset('imagenes/placeholderUni.png')}}" class="img-fluid border-5 border-dark rounded">
                                     </div>
                                     <div class="col-lg-6">
