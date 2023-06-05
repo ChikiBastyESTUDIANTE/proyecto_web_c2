@@ -10,11 +10,11 @@
                     </div>
                     <div class="card-body">
                         <table class="table table-bordered border-dark bg-white">
-                            <thead>
+                            <thead class="bg-primary">
                             <tr>
-                                <th scope="col">Propuesta</th>
-                                <th scope="col">Estado</th>
-                                <th scope="col">Comentario</th>
+                                <th scope="col text-white">Propuesta</th>
+                                <th scope="col text-white">Estado</th>
+                                <th scope="col text-white">Comentario</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -34,7 +34,9 @@
                         <h4 class="text-white">Crear propuesta</h4>
                     </div>
                     <div class="card-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ut enim blanditiis, alias veritatis, aliquam molestias repellat ab sit maxime facere aperiam expedita non iure aliquid consectetur sed. Quae, aliquam!
+                        <form action="">
+
+                        </form>
                     </div>
                 </div>
             </div>
