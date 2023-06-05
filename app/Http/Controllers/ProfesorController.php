@@ -10,7 +10,8 @@ class ProfesorController extends Controller
 {
     public function iniciar(Request $request){
         //return redirect()->route('profesor.menu',$request->id); NO FUNCIONO ESTO TUVE QUE BUSCAR PARA HACER QUE ESTO FUNCIONE
-        return redirect()->route('profesor.menu',['id'=>$request->id]);
+        ['id'=>$request->id];
+        return redirect()->route('profesor.menu','id');
     }
     //public function index(Profesor $profesor) ASI ESTABA ANTES 
     public function index($id){
