@@ -3,19 +3,6 @@
 @section('codigo-principal')
     <div class="container min-vh-100">
         <div class="row mt-lg-5">
-            <div class="col">
-                <div class="card">
-                    <div class="card-body">
-                        <select name="" id="">
-                            @foreach($estudiantes as $estudiante)
-                                <option value="{{$estudiante->rut}}">{{$estudiante->nombre}} {{$estudiante->apellido}}</option>
-                            @endforeach
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-lg-2">
             <div class="col-12 col-lg-6">
                 <div class="card">
                     <div class="card-header bg-secondary">
