@@ -24,7 +24,7 @@ Route::get('/profesor/menu',[ProfesorController::class,'menu'])->name('profesor.
 Route::get('/profesor/comentarios/{propuesta}',[ProfesorController::class,'comentarios'])->name('profesor.comentarios');
 Route::post('/profesor/comentarios/generar/{propuesta}',[ProfesorController::class,'crearComentario'])->name('profesor.crear.comentario');
 //rutas relacionados a estudiante
-Route::get('/estudiante/menu',[EstudianteController::class,'index'])->name('estudiante.menu');
+Route::get('/estudiante/menu',[EstudianteController::class,'menu'])->name('estudiante.menu');
 //rutas relaciondas a administrador
 Route::get('/admin/menu',[AdminController::class,'menu'])->name('admin.menu');
 
