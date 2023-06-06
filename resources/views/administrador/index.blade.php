@@ -1,39 +1,66 @@
 @extends('templates.templatenav')
 @section('codigo-principal')
 
-<div class="container">
+<div class="container min-vh-100">
     <div class="row">
-            <div class="col-6 offset-3 d-flex flex-column mt-5">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title text-center">Añadir comentario</h4>
-                            <form action="" method="POST">
-                            @csrf
-                            <div>
-                                <div><h5>Rut del estudiante</h5></div>
-                                <div>{{$propuesta->estudiante_rut}}</div>
-                                <hr>
-                                <div><h5>Documento</h5></div>
-                                <div>{{$propuesta->documento}}</div>
-                                <hr>
-                                {{-- Esto se me hace raro pero asi se hace en este caso? XD --}}
-                                <div><h5>Profesor</h5></div>
-                                <label for=""></label>
-                                <select name="" id="">
-                                    @foreach($profesores as $profesor)
-                                        <option value="{{$profesor->id_rut}}">{{}}</option>
+        <div class="col">
+            <div class="row mt-lg-5">
+                <div class="col-12 col-lg-6">
+                    <div class="card">
+                        <div class="card-header bg-secondary">
+                            <h4 class="text-white">Tus propuestas</h4>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-bordered border-dark bg-white">
+                                <thead class="bg-primary">
+                                <tr>
+                                    <th class="text-white"><h5>Propuesta</h5></th>
+                                    <th class="text-white"><h5>Estado</h5></th>
+                                    <th class="text-white"><h5>Comentarios</h5></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach($propuestas as $propuesta)
+                                        <tr>
+                                            <td>{{$propuesta->documento}}</td>
+                                            <td>
+                                                @if($propuesta->estado === 1)
+                                                    Esperando revision
+                                                @elseif($propuesta->estado === 2)
+                                                    Se sugiere modificar la propuesta
+                                                @elseif($propuesta->estado === 3)
+                                                    Rechazado
+                                                @elseif($propuesta->estado === 4)
+                                                    Aceptado
+                                                @else
+                                                    Ingreso mal el formato por favor!!!
+                                                @endif
+                                            </td>
+                                            <td>dolor sit amet</td>
+                                        </tr>
                                     @endforeach
-                                </select>
-                            </div>
-                                <div class="form-group mt-3 mb-3 d-flex">
-                                    <textarea class="form-control" rows="5"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Enviar comentario</button>
-                                <button type="reset" class="btn btn-primary">Volver</button>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="card">
+                        <div class="card-header bg-secondary">
+                            <h4 class="text-white">Crear propuesta</h4>
+                        </div>
+                        <div class="card-body">
+                            <form action="" enctype="multipart/form-data">
+                                <input type="file" name="archivo" id="archivo" class="form-label">
+                                <label for="enviar" class="form-label"></label>
+                                <div><button type="submit" class="btn btn-secondary">Subir propuesta</button></div>
                             </form>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+           
         <div class="col">
         
         </div>
