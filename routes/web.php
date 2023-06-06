@@ -18,6 +18,7 @@ use App\Http\Controllers\EstudianteController;
 //rutas de inicio de sesion
 
 //PROFE SI VE ESTO, SI ESTO NOS PASA POR NO LEER BIEN EL PDF Y QUERER HACER EL INICIO DE SESION 
+
 Route::get('/',[InicioSesionController::class,'index'])->name('inicio.index');
 // Route::get('/inicio-sesion-admin',[InicioSesionController::class,'ingresarAdmin'])->name('inicio.admin');
 // Route::get('/inicio-sesion-estudiante',[InicioSesionController::class,'ingresarEstudiante'])->name('inicio.estudiante');
