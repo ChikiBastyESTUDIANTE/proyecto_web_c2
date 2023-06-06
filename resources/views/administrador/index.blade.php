@@ -50,6 +50,7 @@
                                 <thead>
                                     <tr>
                                         <th scope="col">Nombre</th>
+                                        <th scope="col">Rut</th>
                                         <th scope="col">Email</th>
                                         <th scope="col">Modificar</th>
                                     </tr>
@@ -57,6 +58,7 @@
                                 <tbody>
                                     <tr>
                                         <td>Mark</td>
+                                        <td>22.222.222-2</td>
                                         <td>awdawd@usm.cl</td>
                                         <td>
                                             <a class="btn btn-sm btn-warning pt-2 text-white" href="">
