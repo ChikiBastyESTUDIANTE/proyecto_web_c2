@@ -23,8 +23,8 @@ class ProfesorController extends Controller
         $propuestas = Propuesta::all();
         return view('profesor.index',compact('propuestas'));
     }
-    public function comentarios(){
+    public function comentarios(Propuesta $propuesta){
         $profesores = Profesor::all();
-        return view('profesor.comentarios',compact('profesores'));
+        return view('profesor.comentarios',compact(['propuesta','profesores']));
     }
 }
