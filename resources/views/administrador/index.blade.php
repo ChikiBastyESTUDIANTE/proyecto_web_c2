@@ -23,13 +23,6 @@
                                     <tr>
                                         <td>Mark</td>
                                         <td>awdawd@usm.cl</td>
-                                        <span class="material-symbols-outlined"> delete </span>
-                                    </tr>
-                                    <tr>
-                                        <td>Jacob</td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -54,12 +47,6 @@
                                     <tr>
                                         <td>Mark</td>
                                         <td>awdawd@usm.cl</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jacob</td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
                                     </tr>
                                 </tbody>
                             </table>
