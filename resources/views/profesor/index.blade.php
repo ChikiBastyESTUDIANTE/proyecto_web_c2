@@ -34,7 +34,7 @@
                                             @endif
                                         </td>
                                         <td>
-                                            <a class="btn btn-sm btn-success pt-2 text-white" href="{{route('profesor.comentarios')}}">
+                                            <a class="btn btn-sm btn-success pt-2 text-white" href="{{route('profesor.comentarios',$propuesta->id)}}">
                                                 <span class="material-symbols-outlined">add</span>
                                             </a>
                                             <a class="btn btn-sm btn-danger pt-2 text-white" href="">
