@@ -37,7 +37,7 @@
                                                 </a>
                                             </div>
                                             <div class="text-end p-2">
-                                                <a href="" class="btn d-flex justify-content-center btn-secondary">
+                                                <a href="{{route('profesor.menu')}}" class="btn d-flex justify-content-center btn-secondary">
                                                     <h4>Iniciar como profesor</h4>
                                                 </a>
                                             </div>

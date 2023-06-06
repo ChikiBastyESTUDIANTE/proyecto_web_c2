@@ -20,6 +20,7 @@ class ProfesorController extends Controller
     // }
 
     public function menu(){
-        return view('profesor.index');
+        $propuestas = Propuesta::all();
+        return view('profesor.index',compact('propuestas'));
     }
 }
