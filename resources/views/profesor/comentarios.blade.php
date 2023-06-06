@@ -8,14 +8,13 @@
             <div class="col-6 offset-3 d-flex flex-column mt-5">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title text-center">Añadir comentario</h5>
-                            <div class="row">
-                                <div class="col-12">
-                                    Nombre
-                                </div>
-                                <div class="col">
-                                    {{$propuesta->documento}}
-                                </div>
+                        <h4 class="card-title text-center">Añadir comentario</h4>
+                            <div>
+                                <div><h5>Rut del estudiante</h5></div>
+                                <div>{{$propuesta->estudiante_rut}}</div>
+                                <hr>
+                                <div><h5>Documento</h5></div>
+                                <div>{{$propuesta->documento}}</div>
                             </div>
                             <form action="" method="POST">
                             @csrf
@@ -23,7 +22,7 @@
                                     <textarea class="form-control" rows="5"></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Enviar comentario</button>
-                                <a href=""  class="btn btn-primary">Volver</a>
+                                <button type="reset" class="btn btn-primary">Volver</button>
                             </form>
                     </div>
                 </div>
