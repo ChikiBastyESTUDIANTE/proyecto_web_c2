@@ -8,17 +8,37 @@
                 <div class="col-12 col-lg-6">
                     <div class="card">
                         <div class="card-header bg-secondary">
-                            <h4 class="text-white">Tus propuestas</h4>
+                            <h4 class="text-white">Profesores</h4>
                         </div>
                         <div class="card-body">
-                            <table class="table table-bordered border-dark bg-white">
-                                <thead class="bg-primary">
-                                <tr>
-                                    <th class="text-white"><h5>Propuesta</h5></th>
-                                    <th class="text-white"><h5>Estado</h5></th>
-                                    <th class="text-white"><h5>Comentarios</h5></th>
-                                </tr>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First</th>
+                                        <th scope="col">Last</th>
+                                        <th scope="col">Handle</th>
+                                    </tr>
                                 </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td colspan="2">Larry the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
                     </div>
@@ -26,14 +46,7 @@
                 <div class="col-12 col-lg-6">
                     <div class="card">
                         <div class="card-header bg-secondary">
-                            <h4 class="text-white">Crear propuesta</h4>
-                        </div>
-                        <div class="card-body">
-                            <form action="" enctype="multipart/form-data">
-                                <input type="file" name="archivo" id="archivo" class="form-label">
-                                <label for="enviar" class="form-label"></label>
-                                <div><button type="submit" class="btn btn-secondary">Subir propuesta</button></div>
-                            </form>
+                            qwdqwdq
                         </div>
                     </div>
                 </div>
