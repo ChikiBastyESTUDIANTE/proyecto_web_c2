@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col">
             <div class="row mt-lg-5">
-                <div class="col-6">
+                <div class="col-12">
                     <div class="card">
                         <div class="card-header bg-secondary">
                             <h4 class="text-white">Profesores</h4>
