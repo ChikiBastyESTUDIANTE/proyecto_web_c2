@@ -10,12 +10,10 @@
                     <div class="card-body">
                         <h5 class="card-title text-center">Añadir comentario</h5>
                             <div class="row">
-                                <div>
-                                    Nombre
-                                </div>
-                                <div>
-                                    {{$propuesta->documento}}
-                                </div>
+                                <div><h5>Rut del estudiante</h5></div>
+                                <div>{{$propuesta->estudiante_rut}}</div>
+                                <div><h5>Documento</h5></div>
+                                <div>{{$propuesta->documento}}</div>
                             </div>
                             <form action="" method="POST">
                             @csrf
