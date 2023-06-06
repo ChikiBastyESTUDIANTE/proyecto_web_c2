@@ -1,6 +1,6 @@
 @extends('templates.templatenav')
 @section('links')
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 @endsection
 @section('codigo-principal')
 
@@ -26,7 +26,9 @@
                                     <tr>
                                         <td>Mark</td>
                                         <td>awdawd@usm.cl</td>
-                                        <td><span class="material-symbols-outlined">delete</span></td>
+                                        <td><a class="btn btn-sm btn-danger pt-2 text-white" href="">
+                                            <span class="material-symbols-outlined">delete</span></a>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
