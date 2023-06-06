@@ -10,11 +10,11 @@
                     <div class="card-body">
                         <h5 class="card-title text-center">Añadir comentario</h5>
                             <div class="row">
-                                <div class="col-12">
+                                <div>
                                     Nombre
                                 </div>
-                                <div class="col">
-                                    {{$propuesta->id}}
+                                <div>
+                                    {{$propuesta->documento}}
                                 </div>
                             </div>
                             <form action="" method="POST">
