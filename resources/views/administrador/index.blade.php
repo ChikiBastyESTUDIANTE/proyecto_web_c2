@@ -1,4 +1,7 @@
 @extends('templates.templatenav')
+@section('links')
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+@endsection
 @section('codigo-principal')
 
 <div class="container min-vh-100">
@@ -23,6 +26,7 @@
                                     <tr>
                                         <td>Mark</td>
                                         <td>awdawd@usm.cl</td>
+                                        <td></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -47,6 +51,7 @@
                                     <tr>
                                         <td>Mark</td>
                                         <td>awdawd@usm.cl</td>
+                                        <td></td>
                                     </tr>
                                 </tbody>
                             </table>
