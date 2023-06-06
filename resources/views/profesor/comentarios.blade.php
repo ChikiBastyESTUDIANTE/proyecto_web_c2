@@ -14,7 +14,7 @@
                                     Nombre
                                 </div>
                                 <div class="col">
-                                    propuesta.pdf
+                                    {{$propuesta->documento}}
                                 </div>
                             </div>
                             <form action="" method="POST">
