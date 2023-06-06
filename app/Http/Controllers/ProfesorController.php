@@ -28,6 +28,6 @@ class ProfesorController extends Controller
         return view('profesor.comentarios',compact(['propuesta','profesores']));
     }
     public function crearComentario(Propuesta $propuesta, Profesor $profesor){
-        return redirect()->route('profeosr.menu');
+        return redirect()->route('profesor.menu');
     }
 }
