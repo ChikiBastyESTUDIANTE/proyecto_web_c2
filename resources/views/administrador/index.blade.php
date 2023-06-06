@@ -11,7 +11,7 @@
                             <h4 class="text-white">Profesores</h4>
                         </div>
                         <div class="card-body">
-                            <table class="table">
+                            <table class="table table-bordered">
                                 <thead>
                                     <tr>
                                         <th scope="col">Nombre</th>
@@ -23,6 +23,7 @@
                                     <tr>
                                         <td>Mark</td>
                                         <td>awdawd@usm.cl</td>
+                                        <span class="material-symbols-outlined"> delete </span>
                                     </tr>
                                     <tr>
                                         <td>Jacob</td>
@@ -41,7 +42,7 @@
                             <h4 class="text-white">Profesores</h4>
                         </div>
                         <div class="card-body">
-                            <table class="table">
+                            <table class="table table-bordered">
                                 <thead>
                                     <tr>
                                         <th scope="col">Nombre</th>
