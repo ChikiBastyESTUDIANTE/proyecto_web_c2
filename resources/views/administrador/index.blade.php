@@ -26,8 +26,13 @@
                                     <tr>
                                         <td>Mark</td>
                                         <td>awdawd@usm.cl</td>
-                                        <td><a class="btn btn-sm btn-danger pt-2 text-white" href="">
-                                            <span class="material-symbols-outlined">delete</span></a>
+                                        <td>
+                                            <a class="btn btn-sm btn-warning pt-2 text-white" href="">
+                                            <span class="material-symbols-outlined">edit</span>
+                                            </a>
+                                            <a class="btn btn-sm btn-danger pt-2 text-white" href="">
+                                            <span class="material-symbols-outlined">delete</span>
+                                            </a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -38,7 +43,7 @@
                 <div class="col-6">
                     <div class="card">
                         <div class="card-header bg-secondary">
-                            <h4 class="text-white">Profesores</h4>
+                            <h4 class="text-white">Alumnos</h4>
                         </div>
                         <div class="card-body">
                             <table class="table table-bordered">
@@ -53,7 +58,14 @@
                                     <tr>
                                         <td>Mark</td>
                                         <td>awdawd@usm.cl</td>
-                                        <td></td>
+                                        <td>
+                                            <a class="btn btn-sm btn-warning pt-2 text-white" href="">
+                                            <span class="material-symbols-outlined">edit</span>
+                                            </a>
+                                            <a class="btn btn-sm btn-danger pt-2 text-white" href="">
+                                            <span class="material-symbols-outlined">delete</span>
+                                            </a>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
