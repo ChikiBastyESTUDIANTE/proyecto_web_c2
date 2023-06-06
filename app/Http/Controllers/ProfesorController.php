@@ -29,6 +29,7 @@ class ProfesorController extends Controller
     }
     public function crearComentario(Propuesta $propuesta, Request $request){
         dd($request);
+        $propuesta->comentarioProfesor()->attach($request->profeComentador,[]);
         return redirect()->route('profesor.menu');
     }
 }
