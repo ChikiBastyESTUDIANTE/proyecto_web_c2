@@ -31,8 +31,8 @@
                                 <div class="form-group mt-3 mb-3 d-flex">
                                     <textarea name="comentario" class="form-control" rows="5"></textarea>
                                 </div>
-                                <button type="reset" class="btn btn-primary">Volver</button>
                                 <button type="submit" class="btn btn-primary">Enviar comentario</button>
+                                <button type="reset" class="btn btn-primary">Volver</button>
                             </form>
                     </div>
                 </div>
