@@ -27,7 +27,7 @@
                                     <div class="col-lg-6">
                                         <form>
                                             <div class="p-2">
-                                                <a href="" class="btn d-flex justify-content-center btn-secondary mb-2">
+                                                <a href="{{route('admin.menu')}}" class="btn d-flex justify-content-center btn-secondary mb-2">
                                                     <h4> Iniciar como administrador</h4>
                                                 </a>
                                             </div>

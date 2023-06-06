@@ -25,7 +25,7 @@ Route::get('/profesor/comentarios/{propuesta}',[ProfesorController::class,'comen
 //rutas relacionados a estudiante
 Route::get('/estudiante/menu',[EstudianteController::class,'index'])->name('estudiante.menu');
 //rutas relaciondas a administrador
-Route::get('/admin/menu',[AdminController::class,'index'])->name('admin.menu');
+Route::get('/admin/menu',[AdminController::class,'menu'])->name('admin.menu');
 
 //PROFE SI VE ESTO, SI ESTO NOS PASA POR NO LEER BIEN EL PDF Y QUERER HACER EL INICIO DE SESION 
 //RUTAS SIN USAR (TALVEZ SIRVAN EN ALGUN MOMENTO?)
