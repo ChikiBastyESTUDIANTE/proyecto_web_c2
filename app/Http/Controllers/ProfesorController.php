@@ -28,7 +28,7 @@ class ProfesorController extends Controller
         return view('profesor.comentarios',compact(['propuesta','profesores']));
     }
     public function crearComentario(Propuesta $propuesta, Request $request){
-        // ACA SE SUPONE QUE USE EL PIVOT XD
+        $propuesta->comentarioProfesor()->attach($request->profeComentador);
         return redirect()->route('profesor.menu');
     }
 }
