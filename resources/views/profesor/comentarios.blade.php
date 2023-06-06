@@ -23,7 +23,7 @@
                                     <textarea class="form-control" rows="5"></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Enviar comentario</button>
-                                <a href=""  class="btn btn-primary">Volver</a>
+                                <button type="reset" class="btn btn-primary">Volver</button>
                             </form>
                     </div>
                 </div>
