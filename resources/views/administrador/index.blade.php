@@ -26,7 +26,7 @@
                                     <tr>
                                         <td>Mark</td>
                                         <td>awdawd@usm.cl</td>
-                                        <td></td>
+                                        <td><span class="material-symbols-outlined">delete</span></td>
                                     </tr>
                                 </tbody>
                             </table>
