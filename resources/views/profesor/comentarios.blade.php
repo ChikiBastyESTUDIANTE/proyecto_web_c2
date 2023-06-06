@@ -25,6 +25,7 @@
                                         <option value="{{$profesor->id_rut}}">{{$profesor->nombre}} {{$profesor->apellido}} (id: {{$profesor->id_rut}})</option>
                                     @endforeach
                                 </select>
+                                <span class="pt-2">Escriba su comentario:</span>
                             </div>
                                 <div class="form-group mt-3 mb-3 d-flex">
                                     <textarea class="form-control" rows="5"></textarea>
