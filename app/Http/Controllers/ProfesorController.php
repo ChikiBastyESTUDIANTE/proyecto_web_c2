@@ -19,7 +19,7 @@ class ProfesorController extends Controller
     //     return view('profesor.index',compact(['profesor','propuestas']));
     // }
 
-    public function prueba(){
-        return view('profesor.comentarios');
+    public function menu(){
+        return view('profesor.index');
     }
 }
