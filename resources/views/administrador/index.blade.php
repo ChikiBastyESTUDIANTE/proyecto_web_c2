@@ -23,6 +23,7 @@
                                     <tr>
                                         <td>Mark</td>
                                         <td>awdawd@usm.cl</td>
+                                        <span class="material-symbols-outlined"> delete </span>
                                     </tr>
                                     <tr>
                                         <td>Jacob</td>
