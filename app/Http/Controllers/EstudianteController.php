@@ -21,7 +21,8 @@ class EstudianteController extends Controller
 
 
     public function menu(){
-        return view('estudiante.index');
+        $propuestas = Propuesta::all();
+        return view('estudiante.index',compact('propuestas'));
     }
 
     public function subirArchivo(Request $request){
