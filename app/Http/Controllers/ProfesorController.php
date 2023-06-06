@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Profesor;
 use App\Models\Propuesta;
+use Carbon\Carbon;
 
 class ProfesorController extends Controller
 {
@@ -28,8 +29,8 @@ class ProfesorController extends Controller
         return view('profesor.comentarios',compact(['propuesta','profesores']));
     }
     public function crearComentario(Propuesta $propuesta, Request $request){
-        dd($request);
-        $propuesta->comentarioProfesor()->attach($request->profeComentador,[]);
+        dd($propuesta);
+        $propuesta->comentarioProfesor()->attach($request->profeComentador,['fecha'=>Carbon::now(),'hora'=>Carbon::now(),'comentario'=>$request->comentario]);
         return redirect()->route('profesor.menu');
     }
 }
