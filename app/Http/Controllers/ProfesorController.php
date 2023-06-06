@@ -29,7 +29,6 @@ class ProfesorController extends Controller
         return view('profesor.comentarios',compact(['propuesta','profesores']));
     }
     public function crearComentario(Propuesta $propuesta, Request $request){
-        dd($propuesta);
         $propuesta->comentarioProfesor()->attach($request->profeComentador,['fecha'=>Carbon::now(),'hora'=>Carbon::now(),'comentario'=>$request->comentario]);
         return redirect()->route('profesor.menu');
     }
