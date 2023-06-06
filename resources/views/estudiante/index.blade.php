@@ -6,7 +6,11 @@
             <div class="col">
                 <div class="card">
                     <div class="card-body">
-                        Blabla
+                        <select name="" id="">
+                            @foreach($estudiantes as $estudiante)
+                                <option value="{{$estudiante->rut}}">{{$estudiante->nombre}} {{$estudiante->apellido}}</option>
+                            @endforeach
+                        </select>
                     </div>
                 </div>
             </div>
