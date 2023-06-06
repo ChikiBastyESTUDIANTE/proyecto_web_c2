@@ -14,7 +14,7 @@
                                     Nombre
                                 </div>
                                 <div class="col">
-                                    {{$propuesta->documento}}
+                                    {{$propuesta->id}}
                                 </div>
                             </div>
                             <form action="" method="POST">
