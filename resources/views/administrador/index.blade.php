@@ -11,7 +11,7 @@
                             <h4 class="text-white">Profesores</h4>
                         </div>
                         <div class="card-body">
-                            <table class="table">
+                            <table class="table table-bordered">
                                 <thead>
                                     <tr>
                                         <th scope="col">Nombre</th>
@@ -41,7 +41,7 @@
                             <h4 class="text-white">Profesores</h4>
                         </div>
                         <div class="card-body">
-                            <table class="table">
+                            <table class="table table-bordered">
                                 <thead>
                                     <tr>
                                         <th scope="col">Nombre</th>
