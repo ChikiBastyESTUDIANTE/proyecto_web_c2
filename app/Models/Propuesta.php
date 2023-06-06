@@ -14,7 +14,7 @@ class Propuesta extends Model
     protected $table = 'propuestas';
 
     public function proponedor():BelongsTo{
-        return $this->HasMany(Estudiante::class,'estudiante_rut','rut'); //CREO QUE ESTO ESTA BIEN??
+        return $this->belongsTo(Estudiante::class,'estudiante_rut','rut'); //CREO QUE ESTO ESTA BIEN??
     }
 
     public function comentarioProfesor():BelongsToMany{

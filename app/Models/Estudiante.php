@@ -15,6 +15,6 @@ class Estudiante extends Model
     public $incrementing = false;
 
     public function propuesta():HasMany{
-        return $this->belongsTo(Propuesta::class,'estudiante_rut','rut');
+        return $this->hasMany(Propuesta::class,'estudiante_rut','rut');
     }
 }
