@@ -12,18 +12,18 @@ class InicioSesionController extends Controller
         //Acá se elige tipo de login
         return view('inicio.index');
     }
-    public function ingresarAdmin(){
-        //Acá se ponen los datos y se entra
-        return view('inicio.ingresar');
-    }
-    public function ingresarEstudiante(){
-        //Acá se ponen los datos y se entra
-        $estudiantes = Estudiante::all();
-        return view('inicio.ingresar',compact('estudiantes'));
-    }
-    public function ingresarProfesor(){
-        //Acá se ponen los datos y se entra
-        $profesores = Profesor::all();
-        return view('inicio.ingresar',compact('profesores'));
-    }
+    // public function ingresarAdmin(){
+    //     //Acá se ponen los datos y se entra
+    //     return view('inicio.ingresar');
+    // }
+    // public function ingresarEstudiante(){
+    //     //Acá se ponen los datos y se entra
+    //     $estudiantes = Estudiante::all();
+    //     return view('inicio.ingresar',compact('estudiantes'));
+    // }
+    // public function ingresarProfesor(){
+    //     //Acá se ponen los datos y se entra
+    //     $profesores = Profesor::all();
+    //     return view('inicio.ingresar',compact('profesores'));
+    // }
 }
