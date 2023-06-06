@@ -19,6 +19,11 @@ class EstudianteController extends Controller
     //     return view('estudiante.index',compact(['estudiante','propuestas']));
     // }
 
+
+    public function menu(){
+        return view('estudiante.index');
+    }
+
     public function subirArchivo(Request $request){
         
     }
