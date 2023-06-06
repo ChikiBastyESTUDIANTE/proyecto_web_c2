@@ -17,12 +17,13 @@
                                     propuesta.pdf
                                 </div>
                             </div>
-                            <form>
+                            <form action="{{route('profesor.iniciar')}}" method="POST">
+                            @csrf
                                 <div class="form-group mt-3 mb-3 d-flex">
                                     <textarea class="form-control" rows="5"></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Enviar comentario</button>
-                                <button href="{{route('profesor.comentarios')}}" class="btn btn-primary" type="submit">Volver</button>
+                                <button class="btn btn-primary" type="submit">Volver</button>
                             </form>
                     </div>
                 </div>
