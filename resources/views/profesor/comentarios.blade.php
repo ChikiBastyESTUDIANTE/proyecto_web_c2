@@ -23,9 +23,8 @@
                                     <textarea class="form-control" rows="5"></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Enviar comentario</button>
-                                
+                                <a href=""  class="btn btn-primary">Volver</a>
                             </form>
-                            <a href="{{route('profesor.iniciar')}}" class="btn btn-primary" type="submit">Volver</a>
                     </div>
                 </div>
             </div>
