@@ -27,7 +27,8 @@ class ProfesorController extends Controller
         $profesores = Profesor::all();
         return view('profesor.comentarios',compact(['propuesta','profesores']));
     }
-    public function crearComentario(Propuesta $propuesta, Profesor $profesor){
+    public function crearComentario(Propuesta $propuesta, Request $request){
+        dd($request);
         return redirect()->route('profesor.menu');
     }
 }
