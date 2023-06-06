@@ -20,11 +20,13 @@
                                 <hr>
                                 {{-- Esto se me hace raro pero asi se hace en este caso? XD --}}
                                 <div><h5>Profesor</h5></div>
-                                <select name="" id="" class="form-control">
+                                <select name="profeComentador" class="form-control">
                                     @foreach($profesores as $profesor)
                                         <option value="{{$profesor->id_rut}}">{{$profesor->nombre}} {{$profesor->apellido}} (id: {{$profesor->id_rut}})</option>
                                     @endforeach
                                 </select>
+                                <hr>
+                                <div>Escriba su comentario:</div>
                             </div>
                                 <div class="form-group mt-3 mb-3 d-flex">
                                     <textarea class="form-control" rows="5"></textarea>
