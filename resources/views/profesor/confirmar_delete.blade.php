@@ -29,7 +29,7 @@
                                 <div>Comentario:</div>
                             </div>
                                 <div class="form-group mt-3 mb-3 d-flex">
-                                    <textarea name="comentario" class="form-control" rows="5">
+                                    <textarea name="comentario" class="form-control disabled" rows="5">
                                     @if(count($propuesta->comentarioProfesorConPivot)>0){{$propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id)->first()->pivot->comentario}}@else No hay comentarios @endif
                                     </textarea>
                                 </div>
