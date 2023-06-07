@@ -34,7 +34,7 @@ class ProfesorController extends Controller
     }
     public function borrar(Propuesta $propuesta){
         $profesores = Profesor::all();
-        return view('profesor.confirmar_delete',compact(['propuesta','profesores']));
+        return view('profesor.eliminar',compact(['propuesta','profesores']));
     }
 
     public function confirmarDelete(Propuesta $propuesta){
