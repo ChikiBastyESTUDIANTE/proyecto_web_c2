@@ -14,11 +14,11 @@
                         </div>
                         <div class="card-body">
                             <table class="table table-bordered">
-                                <thead>
+                                <thead class="bg-primary">
                                     <tr>
-                                        <th scope="col">Nombre</th>
-                                        <th scope="col">Email</th>
-                                        <th scope="col">Modificar</th>
+                                        <th class="text-white"><h5>Nombre</h5></th>
+                                        <th class="text-white"><h5>Email</h5></th>
+                                        <th class="text-white"><h5>Modificar</h5></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -48,11 +48,11 @@
                         </div>
                         <div class="card-body">
                             <table class="table table-bordered">
-                                <thead>
+                                <thead class="bg-primary">
                                     <tr>
-                                        <th scope="col">Nombre</th>
-                                        <th scope="col">Rut</th>
-                                        <th scope="col">Modificar</th>
+                                        <th class="text-white"><h5>Nombre</h5></th>
+                                        <th class="text-white"><h5>Rut</h5></th>
+                                        <th class="text-white"><h5>Modificar</h5></th>
                                     </tr>
                                 </thead>
                                 <tbody>
