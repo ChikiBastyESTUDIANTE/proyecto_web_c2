@@ -24,14 +24,9 @@ class EstudianteController extends Controller
         return view('estudiante.login',compact('estudiantes'));
     }
 
-    public function login2(Request $request){
-        dd($request);
-        return redirect()->route('estudiante.menu',$request->estudiante);
-    }
-
     public function menu(Estudiante $estudiante){
         $propuestas = Propuesta::all();
-        return view('estudiante.menu',compact(['propuestas','estudiante']));
+        return view('estudiante.menu',compact(['estudiante','propuestas']));
     }
 
 
