@@ -31,9 +31,9 @@
                                 <div class="form-group mt-3 mb-3 d-flex">
                                     <textarea name="comentario" class="form-control block" rows="5">
                                             @if(count($propuesta->comentarioProfesorConPivot)>0)
-                                                <td>{{$propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id)->first()->pivot->comentario}}</td>
+                                                {{$propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id)->first()->pivot->comentario}}
                                             @else
-                                                <td>No hay comentarios</td>
+                                                No hay comentarios
                                             @endif
                                     </textarea>
                                 </div>
