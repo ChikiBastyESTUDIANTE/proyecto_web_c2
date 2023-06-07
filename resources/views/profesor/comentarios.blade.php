@@ -22,7 +22,7 @@
                                 <div><h5>Profesor</h5></div>
                                 <select name="profeComentador" class="form-control">
                                     @foreach($profesores as $profesor)
-                                        <option value="{{$profesor->id_rut}}">{{$profesor->nombre}} {{$profesor->apellido}} (id: {{$profesor->id_rut}})</option>
+                                        <option value="{{$profesor->id}}">{{$profesor->nombre}} {{$profesor->apellido}} (id: {{$profesor->id}})</option>
                                     @endforeach
                                 </select>
                                 <hr>

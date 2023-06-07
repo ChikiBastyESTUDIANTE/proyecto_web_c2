@@ -34,7 +34,7 @@
                                                 Ingreso mal el formato por favor!!!
                                             @endif
                                         </td>
-                                        <td>dolor sit amet</td>
+                                        <td>{{$propuesta->comentarioProfesorConPivot->comentario->all()}}</td>
                                     </tr>
                                 @endforeach
                             </tbody>
