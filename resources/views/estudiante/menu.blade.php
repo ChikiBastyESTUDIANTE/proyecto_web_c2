@@ -37,6 +37,7 @@
                                         <td>
                                             @foreach($propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id) as $comentario)
                                                 {{$comentario->pivot->comentario}}
+                                                <br>
                                             @endforeach
                                         </td>
                                             {{-- @if(count($propuesta->comentarioProfesorConPivot)>0)
