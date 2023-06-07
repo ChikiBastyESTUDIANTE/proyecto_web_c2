@@ -22,9 +22,10 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @foreach($profesores as $profesor)
                                     <tr>
-                                        <td>Mark</td>
-                                        <td>awdawd@usm.cl</td>
+                                        <td>{{$profesor->nombre}} {{$profesor->apellido}}</td>
+                                        <td>{{$profesor->email}}</td>
                                         <td>
                                             <a class="btn btn-sm btn-warning pt-2 text-white" href="">
                                             <span class="material-symbols-outlined">edit</span>
@@ -34,6 +35,7 @@
                                             </a>
                                         </td>
                                     </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>

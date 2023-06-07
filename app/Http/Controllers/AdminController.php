@@ -15,7 +15,7 @@ class AdminController extends Controller
     public function menu(){
         $profesores = Profesor::all();
         $estudiantes = Estudiante::all();
-        return view('administrador.index');
+        return view('administrador.index',compact(['profesores','estudiantes']));
     }
     public function propuestas(){
         $propuestas = Propuesta::all();
