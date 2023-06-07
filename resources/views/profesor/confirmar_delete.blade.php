@@ -8,7 +8,7 @@
             <div class="col-6 offset-3 d-flex flex-column mt-5">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title text-center">Borrar comentario</h4>
+                        <h4 class="card-title text-center">Elija su perfil de profesor</h4>
                             <form action="{{route('profesor.crear.comentario',$propuesta->id)}}" method="POST">
                             @csrf
                             <div>
@@ -26,13 +26,7 @@
                                     @endforeach
                                 </select>
                                 <hr>
-                                <div>Comentario:</div>
                             </div>
-                                <div class="form-group mt-3 mb-3 d-flex">
-                                    <textarea name="comentario" class="form-control disabled" rows="5">
-                                    @if(count($propuesta->comentarioProfesorConPivot)>0){{$propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id)->first()->pivot->comentario}}@else No hay comentarios @endif
-                                    </textarea>
-                                </div>
                                 <button type="submit" class="btn btn-primary">Borrar comentario</button>
                                 <a href='{{route('profesor.menu')}}' class="btn btn-primary">Volver</a>
                             </form>
