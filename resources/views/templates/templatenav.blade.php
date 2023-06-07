@@ -34,7 +34,9 @@
                                         <span class="me-2 text-white">
                                             @if(Route::current()->getName()=='admin.menu' or Route::current()->getName()=='admin.propuestas')
                                                 Admin
-                                            @elseif(Route::current()->getName()=='estudiante.menu' or Route::current()->getName()=='estudiante.login')
+                                            @elseif(Route::current()->getName()=='estudiante.menu')
+                                                Estudiante {{$estudiante->nombre}} {{$estudiante->apellido}}
+                                            @elseif(Route::current()->getName()=='estudiante.login')
                                                 Estudiante
                                             @elseif(Route::current()->getName()=='profesor.menu')
                                                 Profesor
