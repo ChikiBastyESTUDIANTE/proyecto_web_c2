@@ -44,6 +44,6 @@ class ProfesorController extends Controller
     }
 
     public function confirmarDelete(Propuesta $propuesta,Profesor $profesor){
-        
+        dd($profesor);
     }
 }
