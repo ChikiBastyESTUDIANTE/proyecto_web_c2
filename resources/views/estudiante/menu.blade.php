@@ -35,7 +35,7 @@
                                             @endif
                                         </td>
                                             @if(count($propuesta->comentarioProfesorConPivot)>0)
-                                                <td>{{$propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id)->get()->pivot->comentario}}</td>
+                                                <td>{{$propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id)->first()->pivot->comentario}}</td>
                                             @else
                                                 <td>No hay comentarios</td>
                                             @endif
