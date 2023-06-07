@@ -32,7 +32,7 @@
                                     <textarea name="comentario" class="form-control" rows="5"></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Enviar comentario</button>
-                                <button type="reset" class="btn btn-primary">Volver</button>
+                                <a href='{{route('profesor.menu')}}' class="btn btn-primary">Volver</a>
                             </form>
                     </div>
                 </div>
