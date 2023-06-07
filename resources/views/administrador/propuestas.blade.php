@@ -10,7 +10,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header bg-secondary">
-                            <h4 class="text-white pt-2">Propuestas</h4>
+                            <h4 class="text-white">Propuestas</h4>
                         </div>
                         <div class="card-body">
                             <table class="table table-bordered">
