@@ -35,7 +35,9 @@
                                             @endif
                                         </td>
                                         {{-- <td>ashjgdasghj</td> --}}
-                                        <td>{{$propuesta->comentarioProfesorConPivot->comentario->get()}}</td>
+                                        @if(count($propuesta->comentarioProfesorConPivot)>0)
+                                            <td>{{$propuesta->comentarioProfesorConPivot->comentario->get()}}</td>
+                                        @endif
                                     </tr>
                                 @endforeach
                             </tbody>
