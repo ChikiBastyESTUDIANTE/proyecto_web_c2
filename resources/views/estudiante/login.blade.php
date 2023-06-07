@@ -12,6 +12,13 @@
     <div class="container">
         <div class="row">
             <div class="col-6 offset-3"> 
+                <div class="card">
+                    <div class="card-body">
+                        <form action="">
+                            
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

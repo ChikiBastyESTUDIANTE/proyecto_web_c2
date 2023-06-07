@@ -20,7 +20,8 @@ class EstudianteController extends Controller
     // }
 
     public function login(){
-        return view('estudinte.login');
+        $estudiantes = Estudiante::all();
+        return view('estudinte.login',compact('estudiantes'));
     }
 
     public function menu(Estudiante $estudiante){
