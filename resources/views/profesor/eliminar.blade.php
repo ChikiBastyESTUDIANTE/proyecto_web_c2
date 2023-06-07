@@ -9,7 +9,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title text-center">Elija su perfil de profesor</h4>
-                            <form action="{{route('profesor.preguntar',$propuesta->id)}}" method="POST">
+                            <form action="{{route('profesor.preguntar',$propuesta->id)}}" method="GET">
                             @csrf
                             <div>
                                 <div><h5>Rut del estudiante</h5></div>
