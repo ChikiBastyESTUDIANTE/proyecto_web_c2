@@ -26,7 +26,7 @@ Route::post('/profesor/comentarios/generar/{propuesta}',[ProfesorController::cla
 //rutas relacionados a estudiante
 Route::get('/estudiante/menu/{estudiante}',[EstudianteController::class,'menu'])->name('estudiante.menu');
 Route::get('/estudiante/login',[EstudianteController::class,'login'])->name('estudiante.login');
-Route::post('/estudiante/login',[EstudianteController::class,'login2'/*XDDDDD*/])->name('estudiante.login2');
+
 //rutas relaciondas a administrador
 Route::get('/admin/administrar',[AdminController::class,'menu'])->name('admin.menu');
 Route::get('/admin/propuestas',[AdminController::class,'propuestas'])->name('admin.propuestas');
