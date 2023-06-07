@@ -9,4 +9,10 @@
     <title>Universidad Lorem Ipsum</title>
 </head>
 <body class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 offset-3"> 
+            </div>
+        </div>
+    </div>
 </body>
