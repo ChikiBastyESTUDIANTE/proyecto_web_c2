@@ -32,7 +32,7 @@
                                                 </a>
                                             </div>
                                             <div class="text-end p-2">
-                                                <a href="{{route('estudiante.menu')}}" class="btn d-flex justify-content-center btn-secondary mb-2">
+                                                <a href="{{route('estudiante.login')}}" class="btn d-flex justify-content-center btn-secondary mb-2">
                                                     <h4> Iniciar como estudiante</h4>
                                                 </a>
                                             </div>
