@@ -24,7 +24,7 @@ Route::get('/profesor/menu',[ProfesorController::class,'menu'])->name('profesor.
 Route::get('/profesor/comentarios/generar/{propuesta}',[ProfesorController::class,'comentarios'])->name('profesor.comentarios');
 Route::post('/profesor/comentarios/generar/{propuesta}',[ProfesorController::class,'crearComentario'])->name('profesor.crear.comentario');
 Route::get('/profesor/comentarios/eliminar/{propuesta}',[ProfesorController::class,'borrar'])->name('profesor.eliminar');
-Route::post('/profesor/comentarios/eliminar/confirmar/{propuesta}',[ProfesorController::class,'preguntar'])->name('profesor.preguntardatos');
+Route::post('/profesor/comentarios/eliminar/confirmar/{propuesta}',[ProfesorController::class,'preguntarDatos'])->name('profesor.preguntar.datos');
 Route::get('/profesor/comentarios/eliminar/confirmar/{propuesta}/{profesor}',[ProfesorController::class,'preguntar'])->name('profesor.preguntar');
 Route::post('/profesor/comentarios/eliminar/{propuesta}',[ProfesorController::class,'confirmarDelete'])->name('profesor.confirmar.eliminar');
 //rutas relacionados a estudiante

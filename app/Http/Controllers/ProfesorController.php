@@ -38,7 +38,7 @@ class ProfesorController extends Controller
         return view('profesor.eliminar',compact(['propuesta','profesores']));
     }
 
-    public function preguntar(Propuesta $propuesta, Profesor $profesor){
-        return view('profesor.confirmar_delete',compact(['propuesta','profesore']));
+    public function preguntarDatos(Propuesta $propuesta, Profesor $profesor){
+        return view('profesor.confirmar_delete',compact(['propuesta','profesor']));
     }
 }
