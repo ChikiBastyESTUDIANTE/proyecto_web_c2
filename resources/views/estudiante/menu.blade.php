@@ -35,10 +35,14 @@
                                             @endif
                                         </td>
                                         <td>
-                                            @foreach($propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id) as $comentario)
+                                            @if(count($propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id))>0)
+                                                @foreach($propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id) as $comentario)
                                                 {{$comentario->pivot->comentario}}
                                                 <br>
-                                            @endforeach
+                                                @endforeach
+                                            @else
+                                                No hay comentarios
+                                            @endif
                                         </td>
                                             {{-- @if(count($propuesta->comentarioProfesorConPivot)>0)
                                                 <td>{{$propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id)->first()->pivot->comentario}}</td>
