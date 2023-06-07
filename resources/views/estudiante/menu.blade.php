@@ -34,12 +34,11 @@
                                                 Ingreso mal el formato por favor!!!
                                             @endif
                                         </td>
-                                        {{-- <td>ashjgdasghj</td> --}}
-                                        @if(count($propuesta->comentarioProfesorConPivot)>0)
-                                            <td>{{$propuesta->comentarioProfesorConPivot->comentario->get()}}</td>
-                                        @else
-                                            <td>No hay comentarios</td>
-                                        @endif
+                                            @if(count($propuesta->comentarioProfesorConPivot)>0)
+                                                <td>{{$propuesta->comentarioProfesorConPivot->pivot->comentarios}}</td>
+                                            @else
+                                                <td>No hay comentarios</td>
+                                            @endif
                                     </tr>
                                 @endforeach
                             </tbody>
