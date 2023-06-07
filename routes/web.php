@@ -23,7 +23,8 @@ Route::get('/',[InicioSesionController::class,'index'])->name('inicio.index');
 Route::get('/profesor/menu',[ProfesorController::class,'menu'])->name('profesor.menu');
 Route::get('/profesor/comentarios/generar/{propuesta}',[ProfesorController::class,'comentarios'])->name('profesor.comentarios');
 Route::post('/profesor/comentarios/generar/{propuesta}',[ProfesorController::class,'crearComentario'])->name('profesor.crear.comentario');
-Route::get('/profesor/comentarios/eliminar/{propuesta}',[ProfesorController::class,'confirmarDelete'])->name('profesor.eliminar');
+Route::get('/profesor/comentarios/eliminar/{propuesta}',[ProfesorController::class,'borrar'])->name('profesor.eliminar');
+Route::post('/profesor/comentarios/eliminar/{propuesta}',[ProfesorController::class,'confirmarDelete'])->name('profesor.eliminar');
 //rutas relacionados a estudiante
 Route::get('/estudiante/menu/{estudiante}',[EstudianteController::class,'menu'])->name('estudiante.menu');
 Route::get('/estudiante/login',[EstudianteController::class,'login'])->name('estudiante.login');
