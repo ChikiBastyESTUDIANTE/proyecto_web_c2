@@ -42,7 +42,9 @@
                                                     @endif
                                                 </div>
                                                 <div class="col-2">
-                                                    ashjkdashjk
+                                                    <a class="btn btn-sm btn-warning pt-2 text-white" href="">
+                                                        <span class="material-symbols-outlined">edit</span>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </td>
