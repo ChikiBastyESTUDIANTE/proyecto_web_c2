@@ -13,6 +13,8 @@ class AdminController extends Controller
     //     return redirect()->route('admin.menu');
     // }
     public function menu(){
+        $profesores = Profesor::all();
+        $estudiantes = Estudiante::all();
         return view('administrador.index');
     }
     public function propuestas(){
