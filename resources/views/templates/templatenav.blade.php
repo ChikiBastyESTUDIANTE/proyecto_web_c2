@@ -41,6 +41,8 @@
                                                 Admin
                                             @elseif(Route::current()->getName()=='estudiante.menu')
                                                 Estudiante
+                                            @elseif(Route::current()->getName()=='estudiante.login')
+                                                Estudiante
                                             @elseif(Route::current()->getName()=='profesor.menu')
                                                 Profesor
                                             @endif
