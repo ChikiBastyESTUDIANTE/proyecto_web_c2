@@ -9,7 +9,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title text-center">Elija su perfil de profesor</h4>
-                            <form action="{{route('profesor.preguntar',$propuesta->id)}}" method="GET">
+                            <form action="{{route('profesor.preguntar',$propuesta->id)}}" method="POST">
                             @csrf
                             <div>
                                 <div><h5>Rut del estudiante</h5></div>
@@ -19,7 +19,7 @@
                                 <div>{{$propuesta->documento}}</div>
                                 <hr>
                                 <div><h5>Profesor</h5></div>
-                                <select name="profeComentador" class="form-control">
+                                <select name="profesor" class="form-control">
                                     @foreach($profesores as $profesor)
                                         <option value="{{$profesor->id}}">{{$profesor->nombre}} {{$profesor->apellido}} (id: {{$profesor->id}})</option>
                                     @endforeach
