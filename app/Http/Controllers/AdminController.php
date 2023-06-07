@@ -13,6 +13,7 @@ class AdminController extends Controller
         return view('administrador.index');
     }
     public function propuestas(){
-        return view('administrador.propuestas');
+        $propuestas = propuesta::orderBy('id')->get();
+        return view('administrador.propuestas',compact('propuestas'));
     }
 }
