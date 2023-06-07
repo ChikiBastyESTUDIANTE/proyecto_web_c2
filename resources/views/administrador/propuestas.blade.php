@@ -18,6 +18,7 @@
                                     <tr>
                                         <th scope="col">Nombre</th>
                                         <th scope="col">Rut</th>
+                                        <th scope="col">Propuesta</th>
                                         <th scope="col">Estado</th>
                                     </tr>
                                 </thead>
@@ -25,6 +26,7 @@
                                     <tr>
                                         <td>Mark</td>
                                         <td>22.222.222-2</td>
+                                        <td>text.pdf</td>
                                         <td>
                                             Aceptado
                                         </td>
