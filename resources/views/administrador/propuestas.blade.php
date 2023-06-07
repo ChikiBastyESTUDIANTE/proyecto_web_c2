@@ -19,7 +19,6 @@
                                 <th class="text-white"><h5 class="mt-2">Rut</h5></th>
                                 <th class="text-white"><h5 class="mt-2">Propuesta</h5></th>
                                 <th class="text-white"><h5 class="mt-2">Estado</h5></th>
-                                <th class="text-white"><h5 class="mt-2">Comentario</h5></th>
                             </tr>
                             </thead>
                             <tbody>
@@ -39,14 +38,6 @@
                                             @else
                                                 Ingreso mal el formato por favor!!!
                                             @endif
-                                        </td>
-                                        <td>
-                                            <a class="btn btn-sm btn-success pt-2 text-white" href="{{route('profesor.comentarios',$propuesta->id)}}">
-                                                <span class="material-symbols-outlined">add</span>
-                                            </a>
-                                            <a class="btn btn-sm btn-danger pt-2 text-white" href="">
-                                                <span class="material-symbols-outlined"> delete </span>
-                                            </a>
                                         </td>
                                     </tr>
                                 @endforeach
