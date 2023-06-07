@@ -14,8 +14,10 @@
             <div class="col-6 offset-3"> 
                 <div class="card">
                     <div class="card-body">
-                        <form action="">
-                            
+                        <form action="" class="form-controll">
+                            @foreach($estudiantes as $estudiante)
+                                <option value="{{$estudiante->rut}}">{{$estudiante->nombre}}{{$estudiante->apellido}}{{$estudiante->rut}}</option>
+                            @endforeach
                         </form>
                     </div>
                 </div>
