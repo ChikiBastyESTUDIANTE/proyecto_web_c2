@@ -5,7 +5,8 @@
             <div class="col-6 offset-3"> 
                 <div class="card">
                     <div class="card-body">
-                        <form action="" class="form-control" for="estudiante">
+                        <form action="{{route('nombre')}}" class="form-control" for="estudiante" method="post">
+                        @csrf
                             <div>
                                 <label for="estudiante" class="form-label">Seleccione su perfil</label>
                                 <select name="rut" id="estudiante" class="form-control">
