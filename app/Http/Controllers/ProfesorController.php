@@ -38,7 +38,8 @@ class ProfesorController extends Controller
         return view('profesor.eliminar',compact(['propuesta','profesores']));
     }
 
-    public function preguntarDatos(Propuesta $propuesta, Profesor $profesor){
+    public function preguntarDatos(Propuesta $propuesta, Request $request){
+        $profesor = Profesor::where('id',$request->profesor)->first();
         return view('profesor.confirmar_delete',compact(['propuesta','profesor']));
     }
 }
