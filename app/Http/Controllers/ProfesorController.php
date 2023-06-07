@@ -44,8 +44,8 @@ class ProfesorController extends Controller
     }
 
     public function confirmarDelete(Propuesta $propuesta,Profesor $profesor){
-        $comentario = $propuesta->comentarioProfesorConPivot()->where('pivot.profesor_id',['id'=>$profesor->id]);
-        $comentario->detach(); //POR QUE BORRA TODOS LOS COMENTARIOS XDIOSS
+        $propuesta->comentarioProfesorConPivot()->where('profesor_id',$profesor->id)->first();
+        dd($propuesta->comentarioProfesorConPivot()->where('profesor_id',$profesor->id));
         return redirect()->route('profesor.menu');
     }
 }
