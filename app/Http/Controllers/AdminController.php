@@ -12,4 +12,7 @@ class AdminController extends Controller
     public function menu(){
         return view('administrador.index');
     }
+    public function propuestas(){
+        return view('administrador.propuestas');
+    }
 }
