@@ -24,6 +24,11 @@ class EstudianteController extends Controller
         return view('estudiante.login',compact('estudiantes'));
     }
 
+    public function login2(){
+        $estudiantes = Estudiante::all();
+        return redirect()->route('estudiante.login',compact('estudiantes'));
+    }
+
     public function menu(Estudiante $estudiante){
         $propuestas = Propuesta::all();
         return view('estudiante.menu',compact(['propuestas','estudiante']));
