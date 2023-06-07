@@ -34,12 +34,8 @@
                                                 Ingreso mal el formato por favor!!!
                                             @endif
                                         </td>
-                                            @foreach($propuesta->comentarioProfesorConPivot as $comentario)
-                                                @if(count($comentario)>0)
-                                                    <td>$comentario->pivot->comentario</td>
-                                                @else
-                                                    <td>No hay comentarios</td>
-                                                @endif
+                                            @foreach($propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id) as $comentario)
+                                                <td>$comentario->pivot->comentario</td>
                                             @endforeach
                                             {{-- @if(count($propuesta->comentarioProfesorConPivot)>0)
                                                 <td>{{$propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id)->first()->pivot->comentario}}</td>
