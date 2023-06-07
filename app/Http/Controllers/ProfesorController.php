@@ -32,4 +32,8 @@ class ProfesorController extends Controller
         $propuesta->comentarioProfesor()->attach($request->profeComentador,['fecha'=>Carbon::now(),'hora'=>Carbon::now(),'comentario'=>$request->comentario]); //funciono a la primera no me lo puedo creer
         return redirect()->route('profesor.menu');
     }
+    public function confirmarDelete(Propuesta $propuesta){
+        $profesores = Profesor::all();
+        return view('profesor.confirmar_delete',compact(['propuesta','profesores']));
+    }
 }

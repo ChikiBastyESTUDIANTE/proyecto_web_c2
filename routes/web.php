@@ -21,8 +21,9 @@ use App\Http\Controllers\EstudianteController;
 Route::get('/',[InicioSesionController::class,'index'])->name('inicio.index');
 //rutas relacionados a profesor
 Route::get('/profesor/menu',[ProfesorController::class,'menu'])->name('profesor.menu');
-Route::get('/profesor/comentarios/{propuesta}',[ProfesorController::class,'comentarios'])->name('profesor.comentarios');
+Route::get('/profesor/comentarios/generar/{propuesta}',[ProfesorController::class,'comentarios'])->name('profesor.comentarios');
 Route::post('/profesor/comentarios/generar/{propuesta}',[ProfesorController::class,'crearComentario'])->name('profesor.crear.comentario');
+Route::post('/profesor/comentarios/eliminar/{propuesta}',[ProfesorController::class,'confirmarDelete'])->name('profesor.crear.eliminar');
 //rutas relacionados a estudiante
 Route::get('/estudiante/menu/{estudiante}',[EstudianteController::class,'menu'])->name('estudiante.menu');
 Route::get('/estudiante/login',[EstudianteController::class,'login'])->name('estudiante.login');
