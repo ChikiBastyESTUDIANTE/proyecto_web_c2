@@ -9,7 +9,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title text-center">Eliminar comentario</h4>
-                            <form action="{{route('profesor.crear.comentario',$propuesta->id)}}" method="POST">
+                            <form action="{{route('',$propuesta->id,$profesor->id)}}" method="POST">
                             @csrf
                             <div>
                                 <div class="row">
