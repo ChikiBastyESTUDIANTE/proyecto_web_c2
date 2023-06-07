@@ -27,7 +27,7 @@ class EstudianteController extends Controller
     public function conseguirDatos(Request $request){
         return redirect()->route('estudiante.menu',$request->estudiante);
     }
-
+    //creo que debe haber una manera de hacer esto en 1 funcion pero no se me ocurre otra manera xd
     public function menu(Request $request){
         $estudiante = Estudiante::where('rut',$request->estudiante)->first();
         $propuestas = Propuesta::where('estudiante_rut',$estudiante->rut)->get();
