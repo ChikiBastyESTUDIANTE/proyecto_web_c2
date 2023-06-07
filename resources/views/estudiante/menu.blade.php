@@ -35,7 +35,7 @@
                                             @endif
                                         </td>
                                             @if(count($propuesta->comentarioProfesorConPivot)>0)
-                                                <td>{{$propuesta->comentarioProfesorConPivot->pivot->comentarios}}</td>
+                                                <td>{{$propuesta->comentarioProfesorConPivot()->all()}}</td>
                                             @else
                                                 <td>No hay comentarios</td>
                                             @endif
