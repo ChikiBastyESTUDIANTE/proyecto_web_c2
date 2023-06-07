@@ -26,8 +26,8 @@ Route::post('/profesor/comentarios/generar/{propuesta}',[ProfesorController::cla
 //rutas relacionados a estudiante
 Route::get('/estudiante/menu',[EstudianteController::class,'menu'])->name('estudiante.menu');
 //rutas relaciondas a administrador
-Route::get('/admin/menu',[AdminController::class,'menu'])->name('admin.menu');
-
+Route::get('/admin/administrar',[AdminController::class,'menu'])->name('admin.menu');
+Route::get('/admin/propuestas',[AdminController::class,'propuestas'])->name('admin.propuestas');
 //PROFE SI VE ESTO, SI ESTO NOS PASA POR NO LEER BIEN EL PDF Y QUERER HACER EL INICIO DE SESION 
 //RUTAS SIN USAR (TALVEZ SIRVAN EN ALGUN MOMENTO?)
 // Route::get('/inicio-sesion-admin',[InicioSesionController::class,'ingresarAdmin'])->name('inicio.admin');
