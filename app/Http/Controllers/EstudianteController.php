@@ -25,7 +25,8 @@ class EstudianteController extends Controller
     }
 
     public function login2(Request $request){
-        return redirect()->route('estudiante.menu',$request->estudiante);
+        $estudiante = Estudiante::where('rut',$request->estudiante);
+        return redirect()->route('estudiante.menu',$estudiante->rut);
     }
 
     public function menu(Estudiante $estudiante){
