@@ -29,7 +29,8 @@
                                 </div>
                                 <hr>
                                     <div><h5>Comentario:</h5></div>
-                                    <div class="mb-3">   @if(count($propuesta->comentarioProfesorConPivot->where('pivot.profesor_id',$profesor->id))>0)
+                                    <div class="mb-3">   
+                                            @if(count($propuesta->comentarioProfesorConPivot->where('pivot.profesor_id',$profesor->id))>0)
                                                 <td>{{$propuesta->comentarioProfesorConPivot->where('pivot.profesor_id',$profesor->id)->first()->pivot->comentario}}</td>
                                             @else
                                                 <td>No hay comentarios</td>
