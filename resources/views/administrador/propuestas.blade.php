@@ -18,7 +18,6 @@
                                 <div><h5>Documento</h5></div>
                                 <div>{{$propuesta->documento}}</div>
                                 <hr>
-                                {{-- Esto se me hace raro pero asi se hace en este caso? XD --}}
                                 <div><h5>Profesor</h5></div>
                                 <select name="profeComentador" class="form-control">
                                     @foreach($profesores as $profesor)
