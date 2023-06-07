@@ -13,26 +13,45 @@
                             <h4 class="text-white">Propuestas</h4>
                         </div>
                         <div class="card-body">
-                            <table class="table table-bordered">
-                                <thead>
+                            <table class="table table-bordered border-dark bg-white">
+                            <thead class="bg-primary">
+                            <tr>
+                                <th class="text-white"><h5 class="mt-2">Rut</h5></th>
+                                <th class="text-white"><h5 class="mt-2">Propuesta</h5></th>
+                                <th class="text-white"><h5 class="mt-2">Estado</h5></th>
+                                <th class="text-white"><h5 class="mt-2">Comentario</h5></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($propuestas as $propuesta)
                                     <tr>
-                                        <th scope="col">Nombre</th>
-                                        <th scope="col">Rut</th>
-                                        <th scope="col">Propuesta</th>
-                                        <th scope="col">Estado</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Mark</td>
-                                        <td>22.222.222-2</td>
-                                        <td>text.pdf</td>
+                                        <th scope="row">{{$propuesta->estudiante_rut}}</th>
+                                        <td>{{$propuesta->documento}}</td>
                                         <td>
-                                            Aceptado
+                                            @if($propuesta->estado === 1)
+                                                Esperando revision
+                                            @elseif($propuesta->estado === 2)
+                                                Se sugiere modificar la propuesta
+                                            @elseif($propuesta->estado === 3)
+                                                Rechazado
+                                            @elseif($propuesta->estado === 4)
+                                                Aceptado
+                                            @else
+                                                Ingreso mal el formato por favor!!!
+                                            @endif
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-sm btn-success pt-2 text-white" href="{{route('profesor.comentarios',$propuesta->id)}}">
+                                                <span class="material-symbols-outlined">add</span>
+                                            </a>
+                                            <a class="btn btn-sm btn-danger pt-2 text-white" href="">
+                                                <span class="material-symbols-outlined"> delete </span>
+                                            </a>
                                         </td>
                                     </tr>
-                                </tbody>
-                            </table>
+                                @endforeach
+                            </tbody>
+                        </table>
                         </div>
                     </div>
                 </div>

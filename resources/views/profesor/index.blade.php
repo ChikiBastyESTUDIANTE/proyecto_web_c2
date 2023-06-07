@@ -6,7 +6,12 @@
     <div class="container min-vh-100 mt-5">
                 <div class="row">
                     <div class="col">
-                        <table class="table table-bordered border-dark bg-white">
+                        <div class="card">
+                        <div class="card-header bg-secondary">
+                            <h4 class="text-white">Propuestas</h4>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-bordered border-dark bg-white">
                             <thead class="bg-primary">
                             <tr>
                                 <th class="text-white"><h5 class="mt-2">Rut</h5></th>
@@ -45,6 +50,8 @@
                                 @endforeach
                             </tbody>
                         </table>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
