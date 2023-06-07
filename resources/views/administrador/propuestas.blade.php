@@ -27,17 +27,24 @@
                                         <th scope="row">{{$propuesta->estudiante_rut}}</th>
                                         <td>{{$propuesta->documento}}</td>
                                         <td>
-                                            @if($propuesta->estado === 1)
-                                                Esperando revision
-                                            @elseif($propuesta->estado === 2)
-                                                Se sugiere modificar la propuesta
-                                            @elseif($propuesta->estado === 3)
-                                                Rechazado
-                                            @elseif($propuesta->estado === 4)
-                                                Aceptado
-                                            @else
-                                                Ingreso mal el formato por favor!!!
-                                            @endif
+                                            <div class="row">
+                                                <div class="col-10">
+                                                    @if($propuesta->estado === 1)
+                                                        Esperando revision
+                                                    @elseif($propuesta->estado === 2)
+                                                        Se sugiere modificar la propuesta
+                                                    @elseif($propuesta->estado === 3)
+                                                        Rechazado
+                                                    @elseif($propuesta->estado === 4)
+                                                        Aceptado
+                                                    @else
+                                                        Ingreso mal el formato por favor!!!
+                                                    @endif
+                                                </div>
+                                                <div class="col-2">
+                                                    ashjkdashjk
+                                                </div>
+                                            </div>
                                         </td>
                                     </tr>
                                 @endforeach
