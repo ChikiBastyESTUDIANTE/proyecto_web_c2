@@ -19,11 +19,7 @@
                                 <div>{{$propuesta->documento}}</div>
                                 <hr>
                                 <div><h5>Profesor</h5></div>
-                                <select name="profeComentador" class="form-control">
-                                    @foreach($profesores as $profesor)
-                                        <option value="{{$profesor->id}}">{{$profesor->nombre}} {{$profesor->apellido}} (id: {{$profesor->id}})</option>
-                                    @endforeach
-                                </select>
+                                <div>{{$profesor->nombre}} {{$profesor->apellido}} (id: {{$profesor->id}})</div>
                                 <hr>
                             </div>
                                 <button type="submit" class="btn btn-primary">Aceptar</button>
