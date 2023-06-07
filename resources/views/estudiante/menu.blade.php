@@ -34,7 +34,8 @@
                                                 Ingreso mal el formato por favor!!!
                                             @endif
                                         </td>
-                                        <td>{{$propuesta->comentarioProfesorConPivot->comentario->all()}}</td>
+                                        <td>ashjgdasghj</td>
+                                        {{-- <td>{{$propuesta->comentarioProfesorConPivot->comentario->all()}}</td> --}}
                                     </tr>
                                 @endforeach
                             </tbody>

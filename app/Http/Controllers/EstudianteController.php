@@ -30,6 +30,7 @@ class EstudianteController extends Controller
 
     public function menu(Request $request){
         $estudiante = Estudiante::where('rut',$request->estudiante);
+        dd($estudiante);
         $propuestas = Propuesta::all();
         return view('estudiante.menu',compact(['estudiante','propuestas']));
     }
