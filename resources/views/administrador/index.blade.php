@@ -3,7 +3,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 @endsection
 @section('codigo-principal')
-
 <div class="container min-vh-100">
     <div class="row">
         <div class="col">
