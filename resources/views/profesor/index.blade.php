@@ -7,7 +7,7 @@
                 <div class="row">
                     <div class="col">
                         <table class="table table-bordered border-dark bg-white">
-                            <thead class="bg-secondary">
+                            <thead class="bg-primary">
                             <tr>
                                 <th class="text-white"><h5 class="mt-2">Rut</h5></th>
                                 <th class="text-white"><h5 class="mt-2">Propuesta</h5></th>

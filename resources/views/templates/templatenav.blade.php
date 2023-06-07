@@ -22,7 +22,7 @@
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     {{-- Todo esto es solo para admin --}}
-                                    @if(Route::current()->getName()=='admin.menu' or Route::current()->getName()=='admin.propuestas') 
+                                    @if(Route::current()->getName()=='admin.menu' or Route::current()->getName()=='admin.propuestas') {{-- No pense que el or iba a funcionar jkasdjksjka --}}
                                         <li class="nav-item">
                                             <a class="nav-link ps-4 @if(Route::current()->getName()=='admin.menu') active @endif" aria-current="page" href="{{route('admin.menu')}}">Administrar usuarios</a>
                                         </li>
@@ -30,27 +30,11 @@
                                             <a class="nav-link ps-4 @if(Route::current()->getName()=='admin.propuestas') active @endif" aria-current="page" href="{{route('admin.propuestas')}}">Propuestas</a>
                                         </li>
                                     @endif
-                                    {{-- <li class="nav-item">
-                                        <a class="nav-link active ps-4" aria-current="page" href="#">Inicio</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Opciones
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </li> --}}
                                     </ul>
                                         <span class="me-2 text-white">
-                                            @if(Route::current()->getName()=='admin.menu')
+                                            @if(Route::current()->getName()=='admin.menu' or Route::current()->getName()=='admin.propuestas')
                                                 Admin
-                                            @elseif(Route::current()->getName()=='estudiante.menu')
-                                                Estudiante
-                                            @elseif(Route::current()->getName()=='estudiante.login')
+                                            @elseif(Route::current()->getName()=='estudiante.menu' or Route::current()->getName()=='estudiante.login')
                                                 Estudiante
                                             @elseif(Route::current()->getName()=='profesor.menu')
                                                 Profesor
