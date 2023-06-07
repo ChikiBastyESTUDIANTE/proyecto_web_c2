@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Estudiante;
+use App\Models\Propuesta;
+use App\Models\Profesor;
 
 class AdminController extends Controller
 {
@@ -13,7 +16,7 @@ class AdminController extends Controller
         return view('administrador.index');
     }
     public function propuestas(){
-        $propuestas = propuesta::orderBy('id')->get();
+        $propuestas = Propuesta::all();
         return view('administrador.propuestas',compact('propuestas'));
     }
 }

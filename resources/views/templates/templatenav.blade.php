@@ -21,6 +21,15 @@
                             </button>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    {{-- Todo esto es solo para admin --}}
+                                    @if(Route::current()->getName()=='admin.menu' or Route::current()->getName()=='admin.propuestas') 
+                                        <li class="nav-item">
+                                            <a class="nav-link ps-4 @if(Route::current()->getName()=='admin.menu') active @endif" aria-current="page" href="{{route('admin.menu')}}">Administrar usuarios</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link ps-4 @if(Route::current()->getName()=='admin.propuestas') active @endif" aria-current="page" href="{{route('admin.propuestas')}}">Propuestas</a>
+                                        </li>
+                                    @endif
                                     {{-- <li class="nav-item">
                                         <a class="nav-link active ps-4" aria-current="page" href="#">Inicio</a>
                                     </li>
