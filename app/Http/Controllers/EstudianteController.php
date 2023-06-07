@@ -29,6 +29,7 @@ class EstudianteController extends Controller
     }
 
     public function menu(Estudiante $estudiante){
+        dd($estudiante);
         $propuestas = Propuesta::all();
         return view('estudiante.menu',compact(['estudiante','propuestas']));
     }
