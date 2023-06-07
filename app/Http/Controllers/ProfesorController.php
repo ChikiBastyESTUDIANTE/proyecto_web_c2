@@ -42,4 +42,8 @@ class ProfesorController extends Controller
         $profesor = Profesor::where('id',$request->profesor)->first();
         return view('profesor.confirmar_delete',compact(['propuesta','profesor']));
     }
+
+    public function confirmarDelete(Propuesta $propuesta,Profesor $profesor){
+        
+    }
 }
