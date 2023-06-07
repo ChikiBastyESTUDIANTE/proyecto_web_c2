@@ -13,16 +13,22 @@
                             @csrf
                             <div>
                                 <div class="row">
-                                    <div><h5>Rut del estudiante</h5></div>
-                                    <div>{{$propuesta->estudiante_rut}}</div>
-                                    <hr>
-                                    <div><h5>Documento</h5></div>
-                                    <div>{{$propuesta->documento}}</div>
-                                    <hr>
-                                    <div><h5>Profesor</h5></div>
-                                    <div>{{$profesor->nombre}} {{$profesor->apellido}} (id: {{$profesor->id}})</div>
-                                    <hr>
+                                    <div class="col-4">
+                                        <div><h5>Rut del estudiante</h5></div>
+                                        <div>{{$propuesta->estudiante_rut}}</div>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <div><h5>Documento</h5></div>
+                                        <div>{{$propuesta->documento}}</div>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <div><h5>Profesor</h5></div>
+                                        <div>{{$profesor->nombre}} {{$profesor->apellido}} (id: {{$profesor->id}})</div>
+                                    </div>
                                 </div>
+                                <hr>
                             </div>
                                 <button type="submit" class="btn btn-primary">Eliminar</button>
                                 <a href='{{route('profesor.menu')}}' class="btn btn-primary">Volver</a>
