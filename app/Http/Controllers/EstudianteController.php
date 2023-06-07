@@ -19,11 +19,15 @@ class EstudianteController extends Controller
     //     return view('estudiante.index',compact(['estudiante','propuestas']));
     // }
 
+    public function login(){
+        return view('estudinte.login');
+    }
 
     public function menu(Estudiante $estudiante){
         $propuestas = Propuesta::all();
         return view('estudiante.menu',compact(['propuestas','estudiante']));
     }
+
 
     public function subirArchivo(Request $request){
         
