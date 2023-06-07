@@ -14,6 +14,7 @@
                                     @endforeach
                                 </select>
                             </div>
+                            <hr>
                             <div>
                                 <button type="submit" class="btn btn-primary">Aceptar</button>
                             </div>
