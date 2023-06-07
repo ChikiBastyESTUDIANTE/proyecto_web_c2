@@ -24,7 +24,7 @@ class EstudianteController extends Controller
         return view('estudiante.login',compact('estudiantes'));
     }
 
-    public function login2(Request $request){
+    public function conseguirDatos(Request $request){
         return redirect()->route('estudiante.menu',$request->estudiante);
     }
 

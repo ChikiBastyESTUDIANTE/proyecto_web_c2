@@ -5,12 +5,11 @@
             <div class="col-6 offset-3"> 
                 <div class="card">
                     <div class="card-body">
-                        <form action="{{route('estudiante.login2')}}" class="form-control" for="estudiante" method="post">
+                        <form action="{{route('estudiante.conseguir.datos')}}" class="form-control" for="estudiante" method="post">
                         @csrf
                             <div>
                                 <label for="estudiante" class="form-label">Seleccione su perfil</label>
                                 <select name="estudiante" id="estudiante" class="form-control">
-                                    <option value="21303221-2">Prueba</option>
                                     @foreach($estudiantes as $estudiante)
                                     <option value="{{$estudiante->rut}}">{{$estudiante->nombre}}{{$estudiante->apellido}}{{$estudiante->rut}}</option>
                                     @endforeach
