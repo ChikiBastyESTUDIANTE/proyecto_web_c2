@@ -28,14 +28,14 @@
                                 </div>
                                 <hr>
                                     <div><h5>Comentario:</h5></div>
-                                    <div>   @if(count($propuesta->comentarioProfesorConPivot->where('pivot.profesor_id',$profesor->id))>0)
+                                    <div class="mb-3">   @if(count($propuesta->comentarioProfesorConPivot->where('pivot.profesor_id',$profesor->id))>0)
                                                 <td>{{$propuesta->comentarioProfesorConPivot->where('pivot.profesor_id',$profesor->id)->first()->pivot->comentario}}</td>
                                             @else
                                                 <td>No hay comentarios</td>
                                             @endif
                                     </div>
                             </div>
-                                <button type="submit" class="btn btn-primary">Eliminar</button>
+                                @if(count($propuesta->comentarioProfesorConPivot->where('pivot.profesor_id',$profesor->id))>0)<button type="submit" class="btn btn-primary">Eliminar</button>@endif
                                 <a href='{{route('profesor.menu')}}' class="btn btn-primary">Volver</a>
                             </form>
                     </div>
