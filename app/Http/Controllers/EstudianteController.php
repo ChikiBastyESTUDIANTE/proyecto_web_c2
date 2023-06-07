@@ -25,6 +25,7 @@ class EstudianteController extends Controller
     }
 
     public function login2(Request $request){
+        dd($request);
         return redirect()->route('estudiante.menu',$request->estudiante);
     }
 
