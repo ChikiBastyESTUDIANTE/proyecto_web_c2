@@ -44,7 +44,8 @@ class ProfesorController extends Controller
     }
 
     public function confirmarDelete(Propuesta $propuesta,Profesor $profesor){
-        $propuesta->comentarioProfesorConPivot()->where('pivot.profesor_id',$profesor->id)->detach();
+        $comentario = $propuesta->comentarioProfesorConPivot()->where('pivot.profesor_id',$profesor->id);
+        dd($comentario);
         return redirect()->route('profesor.menu');
     }
 }
