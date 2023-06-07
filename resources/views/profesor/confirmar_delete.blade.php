@@ -17,18 +17,23 @@
                                         <div><h5>Rut del estudiante</h5></div>
                                         <div>{{$propuesta->estudiante_rut}}</div>
                                     </div>
-
                                     <div class="col-4">
                                         <div><h5>Documento</h5></div>
                                         <div>{{$propuesta->documento}}</div>
                                     </div>
-
                                     <div class="col-4">
                                         <div><h5>Profesor</h5></div>
                                         <div>{{$profesor->nombre}} {{$profesor->apellido}} (id: {{$profesor->id}})</div>
                                     </div>
                                 </div>
                                 <hr>
+                                    <div><h5>Comentario:</h5></div>
+                                    <div>   @if(count($propuesta->comentarioProfesorConPivot->where('pivot.profesor_id',$profesor->id))>0)
+                                                <td>{{$propuesta->comentarioProfesorConPivot->where('pivot.profesor_id',$profesor->id)->first()->pivot->comentario}}</td>
+                                            @else
+                                                <td>No hay comentarios</td>
+                                            @endif
+                                    </div>
                             </div>
                                 <button type="submit" class="btn btn-primary">Eliminar</button>
                                 <a href='{{route('profesor.menu')}}' class="btn btn-primary">Volver</a>
