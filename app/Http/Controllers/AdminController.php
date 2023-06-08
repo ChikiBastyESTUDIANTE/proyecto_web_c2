@@ -21,4 +21,8 @@ class AdminController extends Controller
         $propuestas = Propuesta::all();
         return view('administrador.propuestas',compact('propuestas'));
     }
+    public function estado(){
+        return view('admin.estado');
+    }
+
 }
