@@ -19,7 +19,7 @@
                                     <tr>
                                         <th class="text-white"><h5 class="mt-2">Nombre</h5></th>
                                         <th class="text-white"><h5 class="mt-2">Email</h5></th>
-                                        <th class="text-white"><h5 class="mt-2">Modificar</h5></th>
+                                        <th class="text-white"><h5 class="mt-2">Eliminar</h5></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -27,10 +27,7 @@
                                     <tr>
                                         <td>{{$profesor->nombre}} {{$profesor->apellido}}</td>
                                         <td>{{$profesor->email}}</td>
-                                        <td>
-                                            <a class="btn btn-sm btn-warning pt-2 text-white" href="{{route('admin.modificarProfesor',$profesor->id)}}">
-                                            <span class="material-symbols-outlined">edit</span>
-                                            </a>
+                                        <td class="text-center">
                                             <a class="btn btn-sm btn-danger pt-2 text-white" href="">
                                             <span class="material-symbols-outlined">delete</span>
                                             </a>
@@ -55,7 +52,7 @@
                                         <th class="text-white"><h5 class="mt-2">Nombre</h5></th>
                                         <th class="text-white"><h5 class="mt-2">Rut</h5></th>
                                         <th class="text-white"><h5 class="mt-2">Email</h5></th>
-                                        <th class="text-white"><h5 class="mt-2">Modificar</h5></th>
+                                        <th class="text-white"><h5 class="mt-2">Eliminar</h5></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -64,10 +61,7 @@
                                         <td>{{$estudiante->nombre}} {{$estudiante->apellido}}</td>
                                         <td>{{$estudiante->rut}}</td>
                                         <td>{{$estudiante->email}}</td>
-                                        <td>
-                                            <a class="btn btn-sm btn-warning pt-2 text-white" href="{{route('admin.modificarEstudiante',$estudiante->rut)}}">
-                                            <span class="material-symbols-outlined">edit</span>
-                                            </a>
+                                        <td class="text-center">
                                             <a class="btn btn-sm btn-danger pt-2 text-white" href="">
                                             <span class="material-symbols-outlined">delete</span>
                                             </a>

@@ -19,7 +19,7 @@
                                 <th class="text-white"><h5 class="mt-2">Rut</h5></th>
                                 <th class="text-white"><h5 class="mt-2">Propuesta</h5></th>
                                 <th class="text-white"><h5 class="mt-2">Estado</h5></th>
-                                <th class="text-white"><h5 class="mt-2">Editar</h5></th>
+                                <th class="text-white"><h5 class="mt-2">Editar estado</h5></th>
                             </tr>
                             </thead>
                             <tbody>
@@ -40,7 +40,7 @@
                                                 Ingreso mal el formato por favor!!!
                                             @endif
                                         </td>
-                                        <td>
+                                        <td class="text-center">
                                             <a class="btn btn-sm btn-warning pt-2 text-white" href="{{route('admin.estado',$propuesta->id)}}">
                                                 <span class="material-symbols-outlined">edit</span>
                                             </a>
