@@ -17,9 +17,9 @@
                             <table class="table table-bordered">
                                 <thead class="bg-primary">
                                     <tr>
-                                        <th class="text-white"><h5>Nombre</h5></th>
-                                        <th class="text-white"><h5>Email</h5></th>
-                                        <th class="text-white"><h5>Modificar</h5></th>
+                                        <th class="text-white"><h5 class="mt-2">Nombre</h5></th>
+                                        <th class="text-white"><h5 class="mt-2">Email</h5></th>
+                                        <th class="text-white"><h5 class="mt-2">Modificar</h5></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -52,10 +52,10 @@
                             <table class="table table-bordered">
                                 <thead class="bg-primary">
                                     <tr>
-                                        <th class="text-white"><h5>Nombre</h5></th>
-                                        <th class="text-white"><h5>Rut</h5></th>
-                                        <th class="text-white"><h5>Email</h5></th>
-                                        <th class="text-white"><h5>Modificar</h5></th>
+                                        <th class="text-white"><h5 class="mt-2">Nombre</h5></th>
+                                        <th class="text-white"><h5 class="mt-2">Rut</h5></th>
+                                        <th class="text-white"><h5 class="mt-2">Email</h5></th>
+                                        <th class="text-white"><h5 class="mt-2">Modificar</h5></th>
                                     </tr>
                                 </thead>
                                 <tbody>
