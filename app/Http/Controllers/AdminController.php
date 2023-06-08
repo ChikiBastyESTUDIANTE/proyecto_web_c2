@@ -30,4 +30,8 @@ class AdminController extends Controller
         $propuesta->save();
         return redirect()->route('admin.propuestas');
     }
+
+    public function añadirEstudiante(){
+        
+    }
 }
