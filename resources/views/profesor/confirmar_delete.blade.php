@@ -9,10 +9,6 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title text-center">Eliminar comentario</h4>
-                        {{$propuesta->id}}
-                        {{$propuesta->id}}
-
-                        {{$propuesta->id}}
                             <form action="{{route('profesor.confirmarEliminar',[$propuesta->id, $profesor->id])}}" method="POST">
                             @method('delete')
                             @csrf
