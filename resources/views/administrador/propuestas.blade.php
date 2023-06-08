@@ -17,7 +17,7 @@
                             <thead class="bg-primary">
                             <tr>
                                 <th class="text-white"><h5 class="mt-2">Rut</h5></th>
-                                <th class="text-white"><h5 class="mt-2">Propuesta</h5></th>
+                                <th class="text-white"><h5 class="mt-2">Propuesta {{$propuesta-id}}</h5></th>
                                 <th class="text-white"><h5 class="mt-2">Estado</h5></th>
                                 <th class="text-white"><h5 class="mt-2">Editar</h5></th>
                             </tr>
