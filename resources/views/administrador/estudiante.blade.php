@@ -8,12 +8,12 @@
             <div class="col-6 offset-3 d-flex flex-column mt-5">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title text-center">Editar estado</h4>
+                        <h4 class="card-title text-center">Añadir estudiante</h4>
                             <form action="{{route('admin.cambiar.estado', $propuesta->id)}}" method="POST">
                             @csrf
                             <div>
                                 <div><h5>Rut del estudiante</h5></div>
-                                <div>{{$propuesta->estudiante_rut}}</div>
+                                <input type="text" class="form-control" name="nombre">
                                 <hr>
                                 <div><h5>Documento</h5></div>
                                 <div>{{$propuesta->documento}}</div>
