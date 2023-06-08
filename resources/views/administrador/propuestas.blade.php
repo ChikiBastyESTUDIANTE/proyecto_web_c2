@@ -13,7 +13,7 @@
                             <h4 class="text-white">Propuestas</h4>
                         </div>
                         <div class="card-body">
-                            <table class="table table-bordered border-dark bg-white align-center">
+                            <table class="table table-bordered border-dark bg-white" align="center">
                             <thead class="bg-primary">
                             <tr>
                                 <th class="text-white"><h5 class="mt-2">Rut</h5></th>
