@@ -9,7 +9,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title text-center">Añadir estudiante</h4>
-                            <form action="{{route('admin.cambiar.estado', $propuesta->id)}}" method="POST">
+                            <form action="{{route('')}}" method="POST">
                             @csrf
                             <div>
                                 <div><h5>Rut</h5></div>
