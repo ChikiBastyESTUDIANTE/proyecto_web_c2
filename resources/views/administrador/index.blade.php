@@ -54,6 +54,7 @@
                                     <tr>
                                         <th class="text-white"><h5>Nombre</h5></th>
                                         <th class="text-white"><h5>Rut</h5></th>
+                                        <th class="text-white"><h5>Email</h5></th>
                                         <th class="text-white"><h5>Modificar</h5></th>
                                     </tr>
                                 </thead>
@@ -62,6 +63,7 @@
                                     <tr>
                                         <td>{{$estudiante->nombre}} {{$estudiante->apellido}}</td>
                                         <td>{{$estudiante->rut}}</td>
+                                        <td>{{$estudiante->email}}</td>
                                         <td>
                                             <a class="btn btn-sm btn-warning pt-2 text-white" href="">
                                             <span class="material-symbols-outlined">edit</span>
