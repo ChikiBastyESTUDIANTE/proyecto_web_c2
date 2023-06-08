@@ -42,7 +42,7 @@
                                                     @endif
                                                 </div>
                                                 <div class="col-2">
-                                                    <a class="btn btn-sm btn-warning pt-2 text-white" href="">
+                                                    <a class="btn btn-sm btn-warning pt-2 text-white" href="{{route('administador.estado')}}">
                                                         <span class="material-symbols-outlined">edit</span>
                                                     </a>
                                                 </div>
