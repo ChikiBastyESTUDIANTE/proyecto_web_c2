@@ -26,6 +26,6 @@ class AdminController extends Controller
     }
 
     public function cambiarEstado(Propuesta $propuesta, Request $request){
-        dd($request);
+        $propuesta->estado = $request->estado;
     }
 }
