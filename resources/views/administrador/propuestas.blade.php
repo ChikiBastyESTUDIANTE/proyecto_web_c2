@@ -19,6 +19,7 @@
                                 <th class="text-white"><h5 class="mt-2">Rut</h5></th>
                                 <th class="text-white"><h5 class="mt-2">Propuesta</h5></th>
                                 <th class="text-white"><h5 class="mt-2">Estado</h5></th>
+                                <th class="text-white"><h5 class="mt-2">Editar</h5></th>
                             </tr>
                             </thead>
                             <tbody>
@@ -27,26 +28,22 @@
                                         <th scope="row">{{$propuesta->estudiante_rut}}</th>
                                         <td>{{$propuesta->documento}}</td>
                                         <td>
-                                            <div class="row">
-                                                <div class="col-10">
-                                                    @if($propuesta->estado === 1)
-                                                        Esperando revision
-                                                    @elseif($propuesta->estado === 2)
-                                                        Se sugiere modificar la propuesta
-                                                    @elseif($propuesta->estado === 3)
-                                                        Rechazado
-                                                    @elseif($propuesta->estado === 4)
-                                                        Aceptado
-                                                    @else
-                                                        Ingreso mal el formato por favor!!!
-                                                    @endif
-                                                </div>
-                                                <div class="col-2">
-                                                    <a class="btn btn-sm btn-warning pt-2 text-white" href="{{route('admin.estado')}}">
-                                                        <span class="material-symbols-outlined">edit</span>
-                                                    </a>
-                                                </div>
-                                            </div>
+                                            @if($propuesta->estado === 1)
+                                                Esperando revision
+                                            @elseif($propuesta->estado === 2)
+                                                Se sugiere modificar la propuesta
+                                            @elseif($propuesta->estado === 3)
+                                                Rechazado
+                                            @elseif($propuesta->estado === 4)
+                                                Aceptado
+                                            @else
+                                                Ingreso mal el formato por favor!!!
+                                            @endif
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-sm btn-warning pt-2 text-white" href="{{route('admin.estado')}}">
+                                                <span class="material-symbols-outlined">edit</span>
+                                            </a>
                                         </td>
                                     </tr>
                                 @endforeach
