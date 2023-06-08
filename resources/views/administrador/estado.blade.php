@@ -12,7 +12,7 @@
                             <form action="">
                             @csrf
                             <div>
-                                <div><h5>Rut del estudiante</h5></div>
+                                <div><h5>Documento</h5></div>
                                 <hr>
                                 <div><h5>Documento</h5></div>
 
