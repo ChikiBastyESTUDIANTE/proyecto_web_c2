@@ -38,4 +38,12 @@ class AdminController extends Controller
     public function añadirProfesor(){
         return view('administrador.profesor');
     }
+
+    public function modificarEstudiante(){
+        return view('administrador.estudiante');
+    }
+
+    public function modificarProfesor(){
+        return view('administrador.profesor');
+    }
 }
