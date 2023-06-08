@@ -13,7 +13,7 @@
                             <h4 class="text-white">Profesores</h4>
                         </div>
                         <div class="card-body">
-                            <a href="" class="btn btn-primary">Añadir profesor</a>
+                            <a href="" class="btn btn-primary mb-3">Añadir profesor</a>
                             <table class="table table-bordered">
                                 <thead class="bg-primary">
                                     <tr>
@@ -48,7 +48,7 @@
                             <h4 class="text-white">Alumnos</h4>
                         </div>
                         <div class="card-body">
-                            <a href="" class="btn btn-primary">Añadir alumno</a>
+                            <a href="" class="btn btn-primary mb-3">Añadir alumno</a>
                             <table class="table table-bordered">
                                 <thead class="bg-primary">
                                     <tr>
