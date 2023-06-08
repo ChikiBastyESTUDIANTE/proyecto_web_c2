@@ -13,6 +13,7 @@
                             @csrf
                             <div>
                                 <div><h5>Documento</h5></div>
+                                <div>{{$propuesta->documento}}</div>
                                 <hr>
                                 <div><h5>Estado</h5></div>
                                 <hr>

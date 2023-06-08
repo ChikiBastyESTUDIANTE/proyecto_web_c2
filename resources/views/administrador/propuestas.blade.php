@@ -41,7 +41,7 @@
                                             @endif
                                         </td>
                                         <td>
-                                            <a class="btn btn-sm btn-warning pt-2 text-white" href="{{route('admin.estado')}}">
+                                            <a class="btn btn-sm btn-warning pt-2 text-white" href="{{route('admin.estado',$propuesta->id)}}">
                                                 <span class="material-symbols-outlined">edit</span>
                                             </a>
                                         </td>
