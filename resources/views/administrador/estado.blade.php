@@ -9,8 +9,6 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title text-center">Editar estado</h4>
-                            <form action="">
-                            @csrf
                             <div>
                                 <div><h5>Rut del estudiante</h5></div>
                                 <div>{{$propuesta->estudiante_rut}}</div>
@@ -19,9 +17,15 @@
                                 <div>{{$propuesta->documento}}</div>
                                 <hr>
                             </div>
-                                <div class="form-group mt-3 mb-3 d-flex">
-                                    <textarea name="comentario" class="form-control" rows="1"></textarea>
-                                </div>
+                                <div><h5>Estado</h5></div>
+                            <form action="">
+                            @csrf
+                                <select name="" id="" class="form-control">
+                                    <option value="1">Esperando revision</option>
+                                    <option value="2">Se sugiere modificar</option>
+                                    <option value="3">Rechazado</option>
+                                    <option value="4">Aceptado</option>
+                                </select>
                                 <button type="submit" class="btn btn-primary">Confirmar</button>
                                 <a href='#' class="btn btn-primary">Volver</a>
                             </form>
