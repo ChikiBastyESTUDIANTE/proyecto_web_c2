@@ -25,4 +25,7 @@ class AdminController extends Controller
         return view('administrador.estado',compact('propuesta'));
     }
 
+    public function cambiarEstado(Propuesta $propuesta, Request $request){
+        dd($request);
+    }
 }

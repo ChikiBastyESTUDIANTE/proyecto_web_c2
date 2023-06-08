@@ -21,7 +21,7 @@
                             </div>
                                 <div><h5>Estado</h5></div>
                                 <div class="form-group mt-3 mb-3 d-flex">
-                                <select name="" id="" class="form-control">
+                                <select name="estado" class="form-control">
                                     <option value="1">Esperando revision</option>
                                     <option value="2">Se sugiere modificar</option>
                                     <option value="3">Rechazado</option>
