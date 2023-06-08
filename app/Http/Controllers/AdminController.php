@@ -27,6 +27,7 @@ class AdminController extends Controller
 
     public function cambiarEstado(Propuesta $propuesta, Request $request){
         $propuesta->estado = $request->estado;
+        $propuesta->save();
         return redirect()->route('admin.propuestas');
     }
 }
