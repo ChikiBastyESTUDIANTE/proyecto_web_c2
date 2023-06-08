@@ -22,7 +22,7 @@ class AdminController extends Controller
         return view('administrador.propuestas',compact('propuestas'));
     }
     public function estado(){
-        return view('admin.estado');
+        return view('administrador.estado');
     }
 
 }
