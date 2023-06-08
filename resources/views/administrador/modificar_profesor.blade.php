@@ -8,18 +8,18 @@
             <div class="col-6 offset-3 d-flex flex-column mt-5">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title text-center">Añadir profesor</h4>
+                        <h4 class="card-title text-center">Modificar profesor</h4>
                             <form action="{{route('admin.menu')}}" method="POST">
                             @csrf
                             <div class="mb-3">
                                 <div><h5>Nombre</h5></div>
-                                <input type="text" class="form-control" name="nombre">
+                                <input type="text" class="form-control" name="nombre" placeholder='{{$profesor->nombre}}'>
                                 <hr>
                                 <div><h5>Apellido</h5></div>
-                                <input type="text" class="form-control" name="apellido">
+                                <input type="text" class="form-control" name="apellido" placeholder='{{$profesor->apellido}}'>
                                 <hr>
                                 <div><h5>Email</h5></div>
-                                <input type="email" class="form-control" name="email">
+                                <input type="email" class="form-control" name="email" placeholder='{{$profesor->email}}'>
                             </div>
                                 <button type="submit" class="btn btn-primary">Confirmar</button>
                                 <a href='{{route('admin.menu')}}' class="btn btn-primary">Volver</a>
