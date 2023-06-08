@@ -8,7 +8,7 @@
             <div class="col-6 offset-3 d-flex flex-column mt-5">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title text-center">Añadir comentario</h4>
+                        <h4 class="card-title text-center">Editar estado</h4>
                             <form action="">
                             @csrf
                             <div>
@@ -17,7 +17,6 @@
                                 <div><h5>Documento</h5></div>
 
                                 <hr>
-                                {{-- Esto se me hace raro pero asi se hace en este caso? XD --}}
                                 <div><h5>Profesor</h5></div>
                                 <hr>
                                 <div>Escriba su comentario:</div>
