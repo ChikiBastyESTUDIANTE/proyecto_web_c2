@@ -39,11 +39,11 @@ class AdminController extends Controller
         return view('administrador.añadir_profesor');
     }
 
-    public function modificarEstudiante(){
-        return view('administrador.estudiante');
+    public function modificarEstudiante(Estudiante $estudiante){
+        return view('administrador.modificar_estudiante',compact('estudiante'));
     }
 
-    public function modificarProfesor(){
-        return view('administrador.profesor');
+    public function modificarProfesor(Profesor $profesor){
+        return view('administrador.profesor',compact('profesor'));
     }
 }
