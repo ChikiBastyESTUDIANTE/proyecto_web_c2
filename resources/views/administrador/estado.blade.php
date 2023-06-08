@@ -14,17 +14,13 @@
                             <div>
                                 <div><h5>Documento</h5></div>
                                 <hr>
-                                <div><h5>Documento</h5></div>
-
+                                <div><h5>Estado</h5></div>
                                 <hr>
-                                <div><h5>Profesor</h5></div>
-                                <hr>
-                                <div>Escriba su comentario:</div>
                             </div>
                                 <div class="form-group mt-3 mb-3 d-flex">
-                                    <textarea name="comentario" class="form-control" rows="5"></textarea>
+                                    <textarea name="comentario" class="form-control" rows="1"></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Enviar comentario</button>
+                                <button type="submit" class="btn btn-primary">Confirmar</button>
                                 <a href='#' class="btn btn-primary">Volver</a>
                             </form>
                     </div>
