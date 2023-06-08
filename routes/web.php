@@ -35,6 +35,7 @@ Route::get('/admin/administrar',[AdminController::class,'menu'])->name('admin.me
 Route::get('/admin/propuestas',[AdminController::class,'propuestas'])->name('admin.propuestas');
 Route::get('/admin/estado/{propuesta}',[AdminController::class,'estado'])->name('admin.estado');
 Route::post('/admin/estado/{propuesta}',[AdminController::class,'cambiarEstado'])->name('admin.cambiar.estado');
+Route::get('/admin/estudiante/añadir/{estudiante}',[AdminController::class,'añadir'])->name('admin.añadir.estudiante'); //ya llevo mucho del trabajo pero creo que los nombres de las rutas con los . no van asi XD
 //PROFE SI VE ESTO, SI ESTO NOS PASA POR NO LEER BIEN EL PDF Y QUERER HACER EL INICIO DE SESION 
 //RUTAS SIN USAR (TALVEZ SIRVAN EN ALGUN MOMENTO?)
 // Route::get('/inicio-sesion-admin',[InicioSesionController::class,'ingresarAdmin'])->name('inicio.admin');
