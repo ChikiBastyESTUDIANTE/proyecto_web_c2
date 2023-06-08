@@ -28,7 +28,7 @@
                                         <td>{{$profesor->nombre}} {{$profesor->apellido}}</td>
                                         <td>{{$profesor->email}}</td>
                                         <td>
-                                            <a class="btn btn-sm btn-warning pt-2 text-white" href="">
+                                            <a class="btn btn-sm btn-warning pt-2 text-white" href="{{route('admin.modificarProfesor')}}">
                                             <span class="material-symbols-outlined">edit</span>
                                             </a>
                                             <a class="btn btn-sm btn-danger pt-2 text-white" href="">
@@ -65,7 +65,7 @@
                                         <td>{{$estudiante->rut}}</td>
                                         <td>{{$estudiante->email}}</td>
                                         <td>
-                                            <a class="btn btn-sm btn-warning pt-2 text-white" href="">
+                                            <a class="btn btn-sm btn-warning pt-2 text-white" href="{{route('admin.modificarEstudiante')}}">
                                             <span class="material-symbols-outlined">edit</span>
                                             </a>
                                             <a class="btn btn-sm btn-danger pt-2 text-white" href="">
