@@ -12,10 +12,11 @@
                             <form action="">
                             @csrf
                             <div>
+                                <div><h5>Rut del estudiante</h5></div>
+                                <div>{{$propuesta->estudiante_rut}}</div>
+                                <hr>
                                 <div><h5>Documento</h5></div>
                                 <div>{{$propuesta->documento}}</div>
-                                <hr>
-                                <div><h5>Estado</h5></div>
                                 <hr>
                             </div>
                                 <div class="form-group mt-3 mb-3 d-flex">
