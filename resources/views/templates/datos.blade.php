@@ -1,1 +1,0 @@
-@extends('tempates.template_nav')
