@@ -1,4 +1,4 @@
-@extends('templates.templatenav')
+@extends('templates.template_nav')
 @section('links')
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 @endsection
@@ -8,28 +8,21 @@
             <div class="col-6 offset-3 d-flex flex-column mt-5">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title text-center">Editar estado</h4>
-                            <form action="{{route('admin.cambiarEstado', $propuesta->id)}}" method="POST">
+                        <h4 class="card-title text-center">Añadir profesor</h4>
+                            <form action="{{route('admin.menu')}}" method="POST">
                             @csrf
-                            <div>
-                                <div><h5>Rut del estudiante</h5></div>
-                                <div>{{$propuesta->estudiante_rut}}</div>
+                            <div class="mb-3">
+                                <div><h5>Nombre</h5></div>
+                                <input type="text" class="form-control" name="nombre">
                                 <hr>
-                                <div><h5>Documento</h5></div>
-                                <div>{{$propuesta->documento}}</div>
+                                <div><h5>Apellido</h5></div>
+                                <input type="text" class="form-control" name="apellido">
                                 <hr>
+                                <div><h5>Email</h5></div>
+                                <input type="email" class="form-control" name="email">
                             </div>
-                                <div><h5>Estado</h5></div>
-                                <div class="form-group mt-3 mb-3 d-flex">
-                                <select name="estado" class="form-control">
-                                    <option value="1">Esperando revision</option>
-                                    <option value="2">Se sugiere modificar</option>
-                                    <option value="3">Rechazado</option>
-                                    <option value="4">Aceptado</option>
-                                </select>
-                                </div>
                                 <button type="submit" class="btn btn-primary">Confirmar</button>
-                                <a href='{{route('admin.propuestas')}}' class="btn btn-primary">Volver</a>
+                                <a href='{{route('admin.menu')}}' class="btn btn-primary">Volver</a>
                             </form>
                     </div>
                 </div>

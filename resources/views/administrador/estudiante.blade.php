@@ -11,7 +11,7 @@
                         <h4 class="card-title text-center">Añadir estudiante</h4>
                             <form action="{{route('admin.menu')}}" method="POST">
                             @csrf
-                            <div>
+                            <div class="mb-3">
                                 <div><h5>Rut</h5></div>
                                 <input type="text" class="form-control" name="rut">
                                 <hr>
@@ -21,18 +21,11 @@
                                 <div><h5>Apellido</h5></div>
                                 <input type="text" class="form-control" name="apellido">
                                 <hr>
+                                <div><h5>Email</h5></div>
+                                <input type="email" class="form-control" name="email">
                             </div>
-                                <div><h5>Estado</h5></div>
-                                <div class="form-group mt-3 mb-3 d-flex">
-                                <select name="estado" class="form-control">
-                                    <option value="1">Esperando revision</option>
-                                    <option value="2">Se sugiere modificar</option>
-                                    <option value="3">Rechazado</option>
-                                    <option value="4">Aceptado</option>
-                                </select>
-                                </div>
                                 <button type="submit" class="btn btn-primary">Confirmar</button>
-                                <a href='{{route('admin.propuestas')}}' class="btn btn-primary">Volver</a>
+                                <a href='{{route('admin.menu')}}' class="btn btn-primary">Volver</a>
                             </form>
                     </div>
                 </div>
