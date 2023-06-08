@@ -29,7 +29,7 @@
                                 </select>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Confirmar</button>
-                                <a href='#' class="btn btn-primary">Volver</a>
+                                <a href='{{route('admin.propuestas')}}' class="btn btn-primary">Volver</a>
                             </form>
                     </div>
                 </div>
