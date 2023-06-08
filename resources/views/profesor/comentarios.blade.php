@@ -9,7 +9,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title text-center">Añadir comentario</h4>
-                            <form action="{{route('profesor.crear.comentario',$propuesta->id)}}" method="POST">
+                            <form action="{{route('profesor.crearComentario',$propuesta->id)}}" method="POST">
                             @csrf
                             <div>
                                 <div><h5>Rut del estudiante</h5></div>

@@ -22,22 +22,21 @@ Route::get('/',[InicioSesionController::class,'index'])->name('inicio.index');
 //rutas relacionados a profesor
 Route::get('/profesor/menu',[ProfesorController::class,'menu'])->name('profesor.menu');
 Route::get('/profesor/comentarios/generar/{propuesta}',[ProfesorController::class,'comentarios'])->name('profesor.comentarios');
-Route::post('/profesor/comentarios/generar/{propuesta}',[ProfesorController::class,'crearComentario'])->name('profesor.crear.comentario');
+Route::post('/profesor/comentarios/generar/{propuesta}',[ProfesorController::class,'crearComentario'])->name('profesor.crearComentario');
 Route::get('/profesor/comentarios/eliminar/{propuesta}',[ProfesorController::class,'borrar'])->name('profesor.eliminar');
-Route::post('/profesor/comentarios/eliminar/confirmar/{propuesta}',[ProfesorController::class,'preguntarDatos'])->name('profesor.preguntar.datos');
-Route::delete('/profesor/comentarios/eliminar/{propuesta}/{profesor}',[ProfesorController::class,'confirmarDelete'])->name('profesor.confirmar.eliminar');
+Route::post('/profesor/comentarios/eliminar/confirmar/{propuesta}',[ProfesorController::class,'preguntarDatos'])->name('profesor.preguntarDatos');
+Route::delete('/profesor/comentarios/eliminar/{propuesta}/{profesor}',[ProfesorController::class,'confirmarDelete'])->name('profesor.confirmarEliminar');
 //rutas relacionados a estudiante
 Route::get('/estudiante/menu/{estudiante}',[EstudianteController::class,'menu'])->name('estudiante.menu');
 Route::get('/estudiante/login',[EstudianteController::class,'login'])->name('estudiante.login');
-Route::post('/estudiante/login',[EstudianteController::class,'conseguirDatos'])->name('estudiante.conseguir.datos');
+Route::post('/estudiante/login',[EstudianteController::class,'conseguirDatos'])->name('estudiante.conseguirDatos');
 //rutas relaciondas a administrador
 Route::get('/admin/administrar',[AdminController::class,'menu'])->name('admin.menu');
 Route::get('/admin/propuestas',[AdminController::class,'propuestas'])->name('admin.propuestas');
 Route::get('/admin/estado/{propuesta}',[AdminController::class,'estado'])->name('admin.estado');
-Route::post('/admin/estado/{propuesta}',[AdminController::class,'cambiarEstado'])->name('admin.cambiar.estado');
-Route::get('/admin/estudiante/añadir/{estudiante}',[AdminController::class,'añadir'])->name('admin.añadir.estudiante'); 
-//ya llevo mucho del trabajo pero creo que los nombres de las rutas con los . no van asi XD
-//Aparte no segui las convenciones de los nombres ups no me rete profe :(
+Route::post('/admin/estado/{propuesta}',[AdminController::class,'cambiarEstado'])->name('admin.cambiarEstado');
+Route::get('/admin/estudiante/añadir/{estudiante}',[AdminController::class,'añadir'])->name('admin.añadirEstudiante'); 
+//no segui las convenciones de los nombres ups no me rete profe :(
 //PROFE SI VE ESTO, SI ESTO NOS PASA POR NO LEER BIEN EL PDF Y QUERER HACER EL INICIO DE SESION 
 //RUTAS SIN USAR (TALVEZ SIRVAN EN ALGUN MOMENTO?)
 // Route::get('/inicio-sesion-admin',[InicioSesionController::class,'ingresarAdmin'])->name('inicio.admin');
