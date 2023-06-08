@@ -1,4 +1,4 @@
-@extends('templates.templatenav')
+@extends('templates.template_nav')
 @section('codigo-principal')
     <div class="container">
         <div class="row mt-lg-5">
