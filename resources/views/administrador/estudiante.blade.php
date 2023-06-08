@@ -1,4 +1,4 @@
-@extends('templates.templatenav')
+@extends('templates.template_nav')
 @section('links')
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 @endsection
@@ -9,7 +9,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title text-center">Añadir estudiante</h4>
-                            <form action="{{route('')}}" method="POST">
+                            <form action="{{route('admin.menu')}}" method="POST">
                             @csrf
                             <div>
                                 <div><h5>Rut</h5></div>
