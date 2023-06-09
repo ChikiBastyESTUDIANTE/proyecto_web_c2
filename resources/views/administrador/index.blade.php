@@ -66,9 +66,13 @@
                                         <td>{{$estudiante->rut}}</td>
                                         <td>{{$estudiante->email}}</td>
                                         <td class="text-center">
-                                            <a class="btn btn-sm btn-secondary-rojo pt-2 text-white" href="">
-                                                <span class="material-symbols-outlined">delete</span>
-                                            </a>
+                                            <form action="{{route('admin.eliminarEstudiante',$estudiante->rut)}}" method="POST">
+                                            @method('delete')
+                                            @csrf
+                                                <button class="btn btn-sm btn-secondary-rojo pt-2 text-white" type="submit">
+                                                    <span class="material-symbols-outlined">delete</span>
+                                                </button>
+                                            </form>
                                         </td>
                                     </tr>
                                     @endforeach
