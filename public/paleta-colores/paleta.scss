@@ -12,7 +12,10 @@ $theme-colors: (
 // Colores 2
 $colores-custom:(
     "primary-verde": #1d753a,
-    "secondary-verde": #1cb34e
+    "secondary-verde": #1cb34e,
+    "color-1":#473746, //creo que son los peores nombres que se me han ocurrido por lejos XDDD 
+    "color-2":#a36b56,
+    "color-3":#c4a958
 );
 //merge
 $theme-colors: map-merge($theme-colors , $colores-custom );
