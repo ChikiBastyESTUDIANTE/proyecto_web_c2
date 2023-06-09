@@ -59,6 +59,7 @@ class AdminController extends Controller
     }
 
     public function eliminarProfesor($profesor){
-        dd($profesor);
+        $profeEliminado = Profesor::where('id',$profesor)->first();
+        dd($profeEliminado);
     }
 }
