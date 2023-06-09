@@ -11,8 +11,9 @@ $theme-colors: (
 );
 // Colores 2
 $colores-custom:(
-    "primary-amarillo": #febd49,
-    "secondary-amarillo": #ffc870, //nos parecio una pesima idea usar este color XDD no creo que lo usemos, es basura dentro del codigo :p
+    "primary-rojo": #46090c,
+    "secondary-rojo": #790608
+    
 );
 //merge
 $theme-colors: map-merge($theme-colors , $colores-custom );
