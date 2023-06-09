@@ -49,7 +49,7 @@ class AdminController extends Controller
         $estudianteEliminado = Estudiante::where('rut',$estudiante)->first();
         $propuestaEliminadas =  Propuesta::where('estudiante_rut',$estudiante)->get();
         foreach($propuestaEliminadas as $propuestaEliminada){
-            dd($propuestaEliminada);
+            $propuestaEliminada->comentarioProfesorConPivot()->detach();
             $propuestaEliminada->delete();
         }
         $estudianteEliminado->delete();
