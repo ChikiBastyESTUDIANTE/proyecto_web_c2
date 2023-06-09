@@ -35,13 +35,13 @@
                                                 Ingreso mal el formato por favor!!!
                                             @endif
                                         </td>
-                                        <td class="text-center">
+                                        <td class="@if(count($propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id))<0) text-center @endif">
                                             @if(count($propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id))>0)
-                                                {{-- @foreach($propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id) as $comentario)
+                                                @foreach($propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id) as $comentario)
                                                 {{$comentario->pivot->comentario}}
                                                 <br>
-                                                @endforeach --}}
-                                                <a href="" class="btn btn-outline-secondary">Ver comentarios</a>
+                                                @endforeach
+                                                {{-- <a href="" class="btn btn-outline-secondary">Ver comentarios</a> --}}
                                             @else
                                                 <a href="" class="btn btn-outline-primary disabled">No hay comentarios</a>
                                             @endif
