@@ -69,5 +69,8 @@ return [
     |
     */
 
+    'links' => [
+        public_path('archivos_propuestas') => storage_path('app/public/archivos_propuestas'),
+    ],
 
 ];
