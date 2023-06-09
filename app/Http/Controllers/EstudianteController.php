@@ -46,4 +46,9 @@ class EstudianteController extends Controller
         $propuesta->save();
         return redirect()->route('estudiante.menu',$request->estudiante);
     }
+
+    public function descargarArchivo(Propuesta $propuesta){
+        
+        return redirect()->route('inicio.index');
+    }
 }
