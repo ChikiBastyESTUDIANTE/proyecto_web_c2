@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Estudiante;
 use App\Models\Propuesta;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Storage;
 
 class EstudianteController extends Controller
 {
@@ -36,9 +37,9 @@ class EstudianteController extends Controller
 
 
     public function subirArchivo($estudiante,Request $request){
-        $request->file('archivo')->storeAs('archivos_propuestas','prueba','public');
+        $request->file('archivo')->storeAs('archivos_propuestas',$name.".".$file->extension(),'public');
         $propuesta = new Propuesta();
-        $propuesta->documento = $request->file('archivo');
+        $propuesta->documento = $request->file('archivo')->$name;
         $propuesta->fecha = Carbon::now();
         $propuesta->estado = 1;
         $propuesta->estudiante_rut = $estudiante;
