@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Profesor;
 use App\Models\Propuesta;
+use App\Models\Estudiante;
 use Carbon\Carbon;
 
 class ProfesorController extends Controller
