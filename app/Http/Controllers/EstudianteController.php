@@ -48,7 +48,6 @@ class EstudianteController extends Controller
     }
 
     public function descargarArchivo(Propuesta $propuesta){
-        
-        return redirect()->route('inicio.index');
+        return Storage::download($propuesta->documento); //??????
     }
 }

@@ -69,8 +69,5 @@ return [
     |
     */
 
-    'links' => [
-        public_path('archivos_propuestas') => storage_path('app/archivos_propuesta'),//No entendi bien como funciona esto XDD
-    ],
 
 ];
