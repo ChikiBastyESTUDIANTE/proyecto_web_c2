@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Estudiante;
 use App\Models\Propuesta;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Storage;
 
 class EstudianteController extends Controller
 {
