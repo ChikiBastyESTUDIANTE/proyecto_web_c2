@@ -39,7 +39,7 @@ class EstudianteController extends Controller
     public function subirArchivo($estudiante,Request $request){
         $request->file('archivo')->store('archivos_propuestas');
         $propuesta = new Propuesta();
-        $propuesta->documento = $request->file('archivo');
+        $propuesta->documento = $request->file('archivo')->getClientOriginalName();
         $propuesta->fecha = Carbon::now();
         $propuesta->estado = 1;
         $propuesta->estudiante_rut = $estudiante;
