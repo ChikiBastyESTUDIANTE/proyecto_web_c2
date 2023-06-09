@@ -41,13 +41,13 @@
                 </div>
                 <div class="col-6">
                     <div class="card">
-                        <div class="card-header bg-secondary-color-3">
+                        <div class="card-header bg-color2">
                             <h4 class="text-white">Alumnos</h4>
                         </div>
                         <div class="card-body">
-                            <a href="{{route('admin.añadirEstudiante')}}" class="btn btn-primary-verde mb-3">Añadir alumno</a>
+                            <a href="{{route('admin.añadirEstudiante')}}" class="btn btn-color1 mb-3">Añadir alumno</a>
                             <table class="table table-bordered">
-                                <thead class="bg-primary-verde">
+                                <thead class="bg-color1">
                                     <tr>
                                         <th class="text-white"><h5 class="mt-2">Nombre</h5></th>
                                         <th class="text-white"><h5 class="mt-2">Rut</h5></th>
