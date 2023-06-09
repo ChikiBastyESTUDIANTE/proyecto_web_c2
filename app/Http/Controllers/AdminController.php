@@ -48,7 +48,7 @@ class AdminController extends Controller
     public function eliminarEstudiante($estudiante){
         $estudianteEliminado = Estudiante::where('rut',$estudiante)->first();
         $propuestaEliminadas =  Propuesta::where('estudiante_rut',$estudiante)->get();
-        foreach($propuestaEliminadas as $propuestaEliminada){
+        foreach($propuestaEliminadas as $propuestaEliminada){ 
             $propuestaEliminada->comentarioProfesorConPivot()->detach();
             $propuestaEliminada->delete();
         }
@@ -71,6 +71,7 @@ class AdminController extends Controller
 
     public function eliminarProfesor($profesor){
         $profeEliminado = Profesor::where('id',$profesor)->first();
+        $profeEliminado->comentarioConPivot()->detach();
         $profeEliminado->delete();
         return redirect()->route('admin.menu');
     }
