@@ -35,6 +35,16 @@ class AdminController extends Controller
         return view('administrador.añadir_estudiante');
     }
 
+    public function crearEstudiante(Request $request){
+        $estudiante = new Estudiante();
+        $estudiante->rut = $request->rut;
+        $estudiante->nombre = $request->nombreEstudiante;
+        $estudiante->apellido = $request->apellidoEstudiante;
+        $estudiante->email = $request->emailEstudiante;
+        $estudiante->save();
+        return redirect()->route('admin.menu');
+    }
+
     public function datosProfesor(){
         return view('administrador.añadir_profesor');
     }

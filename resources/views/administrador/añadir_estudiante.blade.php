@@ -13,16 +13,16 @@
                             @csrf
                             <div class="mb-3">
                                 <div><h5>Rut</h5></div>
-                                <input type="text" class="form-control" name="rut">
+                                <input type="text" class="form-control" name="rut" autocomplete="nope">
                                 <hr>
                                 <div><h5>Nombre</h5></div>
-                                <input type="text" class="form-control" name="nombreEstudiante">
+                                <input type="text" class="form-control" name="nombreEstudiante" autocomplete="nope">
                                 <hr>
                                 <div><h5>Apellido</h5></div>
-                                <input type="text" class="form-control" name="apellidoEstudiante">
+                                <input type="text" class="form-control" name="apellidoEstudiante" autocomplete="nope">
                                 <hr>
                                 <div><h5>Email</h5></div>
-                                <input type="email" class="form-control" name="emailEstudiante">
+                                <input type="email" class="form-control" name="emailEstudiante" autocomplete="nope">
                             </div>
                                 <button type="submit" class="btn btn-primary">Confirmar</button>
                                 <a href='{{route('admin.menu')}}' class="btn btn-primary">Volver</a>
