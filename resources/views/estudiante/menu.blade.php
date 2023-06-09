@@ -41,9 +41,9 @@
                                                 {{$comentario->pivot->comentario}}
                                                 <br>
                                                 @endforeach --}}
-                                                <a href="" class="btn btn-outline-secondary d-flex flex-column align-items-center justify-content-center mx-2 ms-lg-3" style="width:10rem; height:3rem">Ver comentarios</a>
+                                                <a href="" class="btn btn-outline-secondary">Ver comentarios</a>
                                             @else
-                                                <a href="" class="btn btn-outline-primary disabled d-flex flex-column align-items-center justify-content-center mx-2 ms-lg-3" style="width:10rem; height:3rem">No hay comentarios</a>
+                                                <a href="" class="btn btn-outline-primary disabled">No hay comentarios</a>
                                             @endif
                                         </td>
                                             {{-- @if(count($propuesta->comentarioProfesorConPivot)>0)
