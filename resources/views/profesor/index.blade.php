@@ -24,7 +24,7 @@
                                 @foreach($propuestas as $propuesta)
                                     <tr>
                                         <th>{{$estudiantes->where('rut',$propuesta->estudiante_rut)->first()->email}}</th>
-                                        <td>{{$propuesta->documento}}</td>
+                                        <td><a href="">{{$propuesta->documento}}</a></td>
                                         <td>
                                             @if($propuesta->estado === 1)
                                                 Esperando revision
