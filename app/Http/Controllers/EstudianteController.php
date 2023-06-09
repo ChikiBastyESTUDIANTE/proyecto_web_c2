@@ -37,7 +37,7 @@ class EstudianteController extends Controller
 
 
     public function subirArchivo($estudiante,Request $request){
-        $request->file('archivo')->storeAs('archivos_propuestas',$request->file('archivo')->getClientOriginalName()); //PROFE NO SE LEER, NO ENCONTRABA LO DE getClientOriginalName() EN LA DOCUMENTACION DE LARAVEL CASI ME VUELVO LOCO BUSCANDO ESTO
+        $request->file('archivo')->storeAs('',$request->file('archivo')->getClientOriginalName()); //PROFE NO SE LEER, NO ENCONTRABA LO DE getClientOriginalName() EN LA DOCUMENTACION DE LARAVEL CASI ME VUELVO LOCO BUSCANDO ESTO
         $propuesta = new Propuesta();
         $propuesta->documento = $request->file('archivo')->getClientOriginalName();
         $propuesta->fecha = Carbon::now();
