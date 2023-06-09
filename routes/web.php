@@ -36,6 +36,8 @@ Route::get('/admin/propuestas',[AdminController::class,'propuestas'])->name('adm
 Route::get('/admin/estado/{propuesta}',[AdminController::class,'estado'])->name('admin.estado');
 Route::post('/admin/estado/{propuesta}',[AdminController::class,'cambiarEstado'])->name('admin.cambiarEstado');
 Route::get('/admin/estudiante/datos',[AdminController::class,'datosEstudiante'])->name('admin.datosEstudiante');
+Route::post('/admin/estudiante/crear',[AdminController::class,'crearEstudiante'])->name('admin.crearEstudiante');
+Route::delete('/admin/estudiante/{id}/eliminar',[AdminController::class,'eliminarEstudiante'])->name('admin.eliminarEstudiante');
 Route::get('/admin/profesor/datos',[AdminController::class,'datosProfesor'])->name('admin.datosProfesor');
 Route::post('/admin/profesor/crear',[AdminController::class,'crearProfesor'])->name('admin.crearProfesor');
 Route::delete('/admin/profesor/{id}/eliminar',[AdminController::class,'eliminarProfesor'])->name('admin.eliminarProfesor');

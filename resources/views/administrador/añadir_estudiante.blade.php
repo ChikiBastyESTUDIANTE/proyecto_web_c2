@@ -9,7 +9,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h3 class="card-title text-center">Añadir estudiante</h3>
-                            <form action="{{route('admin.menu')}}" method="GET">
+                            <form action="{{route('admin.crearEstudiante')}}" method="POST">
                             @csrf
                             <div class="mb-3">
                                 <div><h5>Rut</h5></div>
