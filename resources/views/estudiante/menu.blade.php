@@ -66,9 +66,8 @@
                     </div>
                     <div class="card-body">
                         <form action="" enctype="multipart/form-data">
-                            <input type="file" name="archivo" id="archivo" class="form-label">
-                            <label for="enviar" class="form-label"></label>
-                            <div><button type="submit" class="btn btn-primary-rojo">Subir propuesta</button></div>
+                            <div><input type="file" name="archivo" id="archivo" class="form-control"></div>
+                            <div class="mt-3"><button type="submit" class="btn btn-primary-rojo">Subir propuesta</button></div>
                         </form>
                     </div>
                 </div>
