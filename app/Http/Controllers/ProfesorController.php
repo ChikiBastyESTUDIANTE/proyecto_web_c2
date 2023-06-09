@@ -24,7 +24,7 @@ class ProfesorController extends Controller
     public function menu(){
         $propuestas = Propuesta::all();
         $estudiantes = Estudiante::all();
-        return view('profesor.index',compact(['propuestas','estudiante']));
+        return view('profesor.index',compact(['propuestas','estudiantes']));
     }
     public function comentarios(Propuesta $propuesta){
         $profesores = Profesor::all();
