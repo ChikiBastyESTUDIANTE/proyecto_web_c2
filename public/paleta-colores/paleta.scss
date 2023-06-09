@@ -9,6 +9,13 @@ $theme-colors: (
     "light": #d5e9fa, 
     "dark": #250c51
 );
+// Colores 2
+$colores-custom:(
+    "primary-verde": #1d753a,
+    "secondary-verde": #1cb34e
+);
+//merge
+$theme-colors: map-merge($theme-colors , $colores-custom );
 // imports
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
