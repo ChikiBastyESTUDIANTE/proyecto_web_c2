@@ -10,7 +10,7 @@
                 <div class="col-6">
                     <div class="card">
                         <div class="card-header bg-secondary">
-                            <h4 class="text-white">Profesores</h4>
+                            <h3 class="text-white pt-2">Profesores</h3>
                         </div>
                         <div class="card-body">
                             <a href="{{route('admin.añadirProfesor')}}" class="btn btn-primary mb-3">Añadir profesor</a>
@@ -42,7 +42,7 @@
                 <div class="col-6">
                     <div class="card">
                         <div class="card-header bg-primary">
-                            <h4 class="text-white">Alumnos</h4>
+                            <h3 class="text-white pt-2">Alumnos</h3>
                         </div>
                         <div class="card-body">
                             <a href="{{route('admin.añadirEstudiante')}}" class="btn btn-secondary mb-3">Añadir alumno</a>

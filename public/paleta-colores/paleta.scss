@@ -12,7 +12,7 @@ $theme-colors: (
 // Colores 2
 $colores-custom:(
     "primary-amarillo": #febd49,
-    "secondary-amarillo": #ffc870,
+    "secondary-amarillo": #ffc870, //nos parecio una pesima idea usar este color XDD no creo que lo usemos, es basura dentro del codigo :p
 );
 //merge
 $theme-colors: map-merge($theme-colors , $colores-custom );
