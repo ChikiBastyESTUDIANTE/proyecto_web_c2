@@ -9,17 +9,17 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title text-center">Añadir profesor</h4>
-                            <form action="{{route('admin.menu')}}" method="POST">
+                            <form action="{{route('admin.menu')}}" method="GET">
                             @csrf
                             <div class="mb-3">
                                 <div><h5>Nombre</h5></div>
-                                <input type="text" class="form-control" name="nombre">
+                                <input type="text" class="form-control" name="nombreProfesor">
                                 <hr>
                                 <div><h5>Apellido</h5></div>
-                                <input type="text" class="form-control" name="apellido">
+                                <input type="text" class="form-control" name="apellidoProfesor">
                                 <hr>
                                 <div><h5>Email</h5></div>
-                                <input type="email" class="form-control" name="email">
+                                <input type="email" class="form-control" name="emailProfesor">
                             </div>
                                 <button type="submit" class="btn btn-primary">Confirmar</button>
                                 <a href='{{route('admin.menu')}}' class="btn btn-primary">Volver</a>

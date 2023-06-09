@@ -16,13 +16,13 @@
                                 <input type="text" class="form-control" name="rut">
                                 <hr>
                                 <div><h5>Nombre</h5></div>
-                                <input type="text" class="form-control" name="nombre">
+                                <input type="text" class="form-control" name="nombreEstudiante">
                                 <hr>
                                 <div><h5>Apellido</h5></div>
-                                <input type="text" class="form-control" name="apellido">
+                                <input type="text" class="form-control" name="apellidoEstudiante">
                                 <hr>
                                 <div><h5>Email</h5></div>
-                                <input type="email" class="form-control" name="email">
+                                <input type="email" class="form-control" name="emailEstudiante">
                             </div>
                                 <button type="submit" class="btn btn-primary">Confirmar</button>
                                 <a href='{{route('admin.menu')}}' class="btn btn-primary">Volver</a>
