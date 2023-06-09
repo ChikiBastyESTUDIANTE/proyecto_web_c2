@@ -13,7 +13,7 @@
                             <h3 class="text-white pt-2">Profesores</h3>
                         </div>
                         <div class="card-body">
-                            <a href="{{route('admin.añadirProfesor')}}" class="btn btn-primary mb-3">Añadir profesor</a>
+                            <a href="{{route('admin.datosProfesor')}}" class="btn btn-primary mb-3">Añadir profesor</a>
                             <table class="table table-bordered">
                                 <thead class="bg-primary">
                                     <tr>
