@@ -12,10 +12,7 @@
                             <form action="{{route('admin.cambiarEstado', $propuesta->id)}}" method="POST">
                             @csrf
                             <div>
-                                <div><h5>Rut del estudiante</h5></div>
-                                <div>{{$propuesta->estudiante_rut}}</div>
-                                <hr>
-                                <div><h5>Documento</h5></div>
+                                <div><h5>Propuesta</h5></div>
                                 <div>{{$propuesta->documento}}</div>
                                 <hr>
                             </div>

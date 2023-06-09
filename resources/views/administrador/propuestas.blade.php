@@ -16,7 +16,6 @@
                             <table class="table table-bordered border-dark bg-white">
                             <thead class="bg-primary">
                             <tr>
-                                <th class="text-white"><h5 class="mt-2">Rut</h5></th>
                                 <th class="text-white"><h5 class="mt-2">Propuesta</h5></th>
                                 <th class="text-white"><h5 class="mt-2">Estado</h5></th>
                                 <th class="text-white"><h5 class="mt-2">Editar estado</h5></th>
@@ -25,7 +24,6 @@
                             <tbody>
                                 @foreach($propuestas as $propuesta)
                                     <tr>
-                                        <th scope="row">{{$propuesta->estudiante_rut}}</th>
                                         <td>{{$propuesta->documento}}</td>
                                         <td>
                                             @if($propuesta->estado === 1)
