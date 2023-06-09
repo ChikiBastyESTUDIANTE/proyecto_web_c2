@@ -48,6 +48,6 @@ class EstudianteController extends Controller
     }
 
     public function descargarArchivo(Propuesta $propuesta){
-        return Storage::download($propuesta->documento); //??????
+        return Storage::disk('public')->download($propuesta->documento); //??????
     }
 }
