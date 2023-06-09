@@ -3,6 +3,7 @@
 @section('codigo-principal')
     <div class="container min-vh-100">
         <div class="row mt-lg-5">
+            {{-- VER TUS PROPUESTAS --}}
             <div class="col-12 col-lg-6">
                 <div class="card">
                     <div class="card-header bg-secondary">
@@ -57,6 +58,7 @@
                     </div>
                 </div>
             </div>
+            {{-- CREAR PROPUESTA --}}
             <div class="col-12 col-lg-6">
                 <div class="card">
                     <div class="card-header bg-secondary-rojo">
