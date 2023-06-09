@@ -37,7 +37,7 @@ class EstudianteController extends Controller
 
 
     public function subirArchivo($estudiante,Request $request){
-        dd($request);
+        dd($request->archivo);
         $request->file('archivo')->store('archivos');
         return redirect()->route('estudiante.menu',$request->estudiante);
     }
