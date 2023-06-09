@@ -24,7 +24,7 @@
                                 @foreach($propuestas as $propuesta)
                                     <tr>
                                         <th>{{$estudiantes->where('rut',$propuesta->estudiante_rut)->first()->email}}</th>
-                                        <td><a href="">{{$propuesta->documento}}</a></td>
+                                        <td><a href="{{route('estudiante.descargarArchivo')}}">{{$propuesta->documento}}</a></td>
                                         <td>
                                             @if($propuesta->estado === 1)
                                                 Esperando revision
