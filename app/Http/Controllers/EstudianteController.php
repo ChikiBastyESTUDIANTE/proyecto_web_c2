@@ -36,7 +36,7 @@ class EstudianteController extends Controller
     }
 
 
-    public function subirArchivo(Request $request){
-        
+    public function subirArchivo($estudiante,Request $request){
+        dd($estudiante);
     }
 }
