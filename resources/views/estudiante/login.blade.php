@@ -11,7 +11,7 @@
                                 <label for="estudiante" class="form-label">Seleccione su perfil</label>
                                 <select name="estudiante" id="estudiante" class="form-control">
                                     @foreach($estudiantes as $estudiante)
-                                    <option value="{{$estudiante->rut}}">{{$estudiante->nombre}}{{$estudiante->apellido}}{{$estudiante->rut}}</option>
+                                    <option value="{{$estudiante->rut}}">{{$estudiante->nombre}} {{$estudiante->apellido}} {{$estudiante->rut}}</option>
                                     @endforeach
                                 </select>
                             </div>
