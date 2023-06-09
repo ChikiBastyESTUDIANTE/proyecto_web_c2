@@ -11,11 +11,8 @@ $theme-colors: (
 );
 // Colores 2
 $colores-custom:(
-    "primary-verde": #1d753a,
-    "secondary-verde": #1cb34e,
-    "color1":#473746, //creo que son los peores nombres que se me han ocurrido por lejos XDDD 
-    "color2":#a36b56,
-    "color3":#c4a958
+    "primary-amarillo": #febd49,
+    "secondary-amarillo": #ffc870,
 );
 //merge
 $theme-colors: map-merge($theme-colors , $colores-custom );
