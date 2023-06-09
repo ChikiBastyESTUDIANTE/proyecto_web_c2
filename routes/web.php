@@ -38,7 +38,7 @@ Route::post('/admin/estado/{propuesta}',[AdminController::class,'cambiarEstado']
 Route::get('/admin/estudiante/datos',[AdminController::class,'datosEstudiante'])->name('admin.datosEstudiante');
 Route::get('/admin/profesor/datos',[AdminController::class,'datosProfesor'])->name('admin.datosProfesor');
 Route::post('/admin/profesor/crear',[AdminController::class,'crearProfesor'])->name('admin.crearProfesor');
-Route::delete('/admin/profesor/eliminar',[AdminController::class,'eliminarProfesor'])->name('admin.eliminarProfesor');
+Route::delete('/admin/profesor/{id}/eliminar',[AdminController::class,'eliminarProfesor'])->name('admin.eliminarProfesor');
 //no segui las convenciones de los nombres ups no me rete profe :(
 //PROFE SI VE ESTO, SI ESTO NOS PASA POR NO LEER BIEN EL PDF Y QUERER HACER EL INICIO DE SESION 
 //RUTAS SIN USAR (TALVEZ SIRVAN EN ALGUN MOMENTO?)
