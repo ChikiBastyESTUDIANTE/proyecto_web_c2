@@ -13,13 +13,13 @@
                             @csrf
                             <div class="mb-3">
                                 <div><h5>Nombre</h5></div>
-                                <input type="text" class="form-control" name="nombreProfesor" id="profe">
+                                <input type="text" class="form-control" name="nombreProfesor" autocomplete="nope">
                                 <hr>
                                 <div><h5>Apellido</h5></div>
-                                <input type="text" class="form-control" name="apellidoProfesor" id="profe">
+                                <input type="text" class="form-control" name="apellidoProfesor" autocomplete="nope">
                                 <hr>
                                 <div><h5>Email</h5></div>
-                                <input type="email" class="form-control" name="emailProfesor" id="profe">
+                                <input type="email" class="form-control" name="emailProfesor" autocomplete="nope">
                             </div>
                                 <button type="submit" class="btn btn-primary">Confirmar</button>
                                 <a href='{{route('admin.menu')}}' class="btn btn-primary">Volver</a>
