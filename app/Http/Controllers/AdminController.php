@@ -31,16 +31,15 @@ class AdminController extends Controller
         return redirect()->route('admin.propuestas');
     }
 
-    public function añadirEstudiante(){
+    public function datosEstudiante(){
         return view('administrador.añadir_estudiante');
     }
 
-    public function añadirProfesor(){
+    public function datosProfesor(){
         return view('administrador.añadir_profesor');
     }
 
     public function crearProfesor(Request $request){
-        dd($request);
         $profesor = new Profesor();
         $profesor->nombre = $request->nombreProfesor;
         $profesor->apellido = $request->apellidoProfesor;

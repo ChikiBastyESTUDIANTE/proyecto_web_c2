@@ -35,9 +35,9 @@ Route::get('/admin/administrar',[AdminController::class,'menu'])->name('admin.me
 Route::get('/admin/propuestas',[AdminController::class,'propuestas'])->name('admin.propuestas');
 Route::get('/admin/estado/{propuesta}',[AdminController::class,'estado'])->name('admin.estado');
 Route::post('/admin/estado/{propuesta}',[AdminController::class,'cambiarEstado'])->name('admin.cambiarEstado');
-Route::get('/admin/añadir/estudiante',[AdminController::class,'añadirEstudiante'])->name('admin.añadirEstudiante');
-Route::get('/admin/añadir/profesor',[AdminController::class,'añadirProfesor'])->name('admin.datosProfesor');
-Route::get('/admin/añadir/profesor',[AdminController::class,'crearProfesor'])->name('admin.crearProfesor');
+Route::get('/admin/estudiante/datos',[AdminController::class,'datosEstudiante'])->name('admin.datosEstudiante');
+Route::get('/admin/profesor/datos',[AdminController::class,'datosProfesor'])->name('admin.datosProfesor');
+Route::post('/admin/profesor/crear',[AdminController::class,'crearProfesor'])->name('admin.crearProfesor');
 //no segui las convenciones de los nombres ups no me rete profe :(
 //PROFE SI VE ESTO, SI ESTO NOS PASA POR NO LEER BIEN EL PDF Y QUERER HACER EL INICIO DE SESION 
 //RUTAS SIN USAR (TALVEZ SIRVAN EN ALGUN MOMENTO?)
