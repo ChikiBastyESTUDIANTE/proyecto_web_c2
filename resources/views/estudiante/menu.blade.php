@@ -36,10 +36,11 @@
                                         </td>
                                         <td>
                                             @if(count($propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id))>0)
-                                                @foreach($propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id) as $comentario)
+                                                {{-- @foreach($propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id) as $comentario)
                                                 {{$comentario->pivot->comentario}}
                                                 <br>
-                                                @endforeach
+                                                @endforeach --}}
+                                                <a href="" class="btn btn-primary">Ver comentarios</a>
                                             @else
                                                 No hay comentarios
                                             @endif
