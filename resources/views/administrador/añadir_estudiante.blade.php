@@ -9,11 +9,11 @@
                 <div class="card">
                     <div class="card-body">
                         <h3 class="card-title text-center">Añadir estudiante</h3>
-                            <form action="{{route('admin.menu')}}" method="POST">
+                            <form action="{{route('admin.menu')}}" method="GET">
                             @csrf
                             <div class="mb-3">
                                 <div><h5>Rut</h5></div>
-                                <input type="text" class="form-control" name="rut" autocomplete="nope">
+                                <input type="text" class="form-control" name="rutEstudiante" autocomplete="nope">
                                 <hr>
                                 <div><h5>Nombre</h5></div>
                                 <input type="text" class="form-control" name="nombreEstudiante" autocomplete="nope">

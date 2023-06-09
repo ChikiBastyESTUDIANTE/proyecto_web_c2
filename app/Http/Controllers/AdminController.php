@@ -37,7 +37,7 @@ class AdminController extends Controller
 
     public function crearEstudiante(Request $request){
         $estudiante = new Estudiante();
-        $estudiante->rut = $request->rut;
+        $estudiante->rut = $request->rutEstudiante;
         $estudiante->nombre = $request->nombreEstudiante;
         $estudiante->apellido = $request->apellidoEstudiante;
         $estudiante->email = $request->emailEstudiante;
