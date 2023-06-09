@@ -28,9 +28,13 @@
                                         <td>{{$profesor->nombre}} {{$profesor->apellido}}</td>
                                         <td>{{$profesor->email}}</td>
                                         <td class="text-center">
-                                            <button class="btn btn-sm btn-secondary pt-2 text-white" href="{{route('admin.eliminarProfesor',$profesor->id)}}">
-                                                <span class="material-symbols-outlined">delete</span>
-                                            </button>
+                                            <form action="{{route('admin.eliminarProfesor',$profesor->id)}}" method="POST">
+                                            @method('delete')
+                                            @csrf
+                                                <button class="btn btn-sm btn-secondary pt-2 text-white" type="submit">
+                                                    <span class="material-symbols-outlined">delete</span>
+                                                </button>
+                                            </form>
                                         </td>
                                     </tr>
                                     @endforeach

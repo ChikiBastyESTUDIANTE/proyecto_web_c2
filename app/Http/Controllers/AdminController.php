@@ -58,7 +58,7 @@ class AdminController extends Controller
         return redirect()->route('admin.menu');
     }
 
-    public function eliminarProfesor(Profesor $profesor){
+    public function eliminarProfesor($profesor){
         dd($profesor);
     }
 }
