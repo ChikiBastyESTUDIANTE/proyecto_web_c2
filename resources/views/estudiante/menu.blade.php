@@ -35,7 +35,7 @@
                                                 Ingreso mal el formato por favor!!!
                                             @endif
                                         </td>
-                                        <td class="@if(count($propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id))<0) text-center @endif">
+                                        <td>
                                             @if(count($propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id))>0)
                                                 @foreach($propuesta->comentarioProfesorConPivot->where('pivot.propuesta_id',$propuesta->id) as $comentario)
                                                 {{$comentario->pivot->comentario}}
@@ -43,7 +43,8 @@
                                                 @endforeach
                                                 {{-- <a href="" class="btn btn-outline-secondary">Ver comentarios</a> --}}
                                             @else
-                                                <a href="" class="btn btn-outline-primary disabled">No hay comentarios</a>
+                                                {{-- <a href="" class="btn btn-outline-primary disabled">No hay comentarios</a> --}}
+                                                No hay comentarios
                                             @endif
                                         </td>
                                             {{-- @if(count($propuesta->comentarioProfesorConPivot)>0)
