@@ -58,14 +58,14 @@
             </div>
             <div class="col-12 col-lg-6">
                 <div class="card">
-                    <div class="card-header bg-secondary">
+                    <div class="card-header bg-secondary-rojo">
                         <h3 class="text-white pt-2">Crear propuesta</h3>
                     </div>
                     <div class="card-body">
                         <form action="" enctype="multipart/form-data">
                             <input type="file" name="archivo" id="archivo" class="form-label">
                             <label for="enviar" class="form-label"></label>
-                            <div><button type="submit" class="btn btn-secondary">Subir propuesta</button></div>
+                            <div><button type="submit" class="btn btn-primary-rojo">Subir propuesta</button></div>
                         </form>
                     </div>
                 </div>
