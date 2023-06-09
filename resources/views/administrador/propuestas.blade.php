@@ -18,7 +18,7 @@
                             <tr>
                                 <th class="text-white"><h5 class="mt-2">Propuesta</h5></th>
                                 <th class="text-white"><h5 class="mt-2">Estado</h5></th>
-                                <th class="text-white"><h5 class="mt-2">Editar estado</h5></th>
+                                <th class="text-white"><h5 class="mt-2">Cambiar estado</h5></th>
                             </tr>
                             </thead>
                             <tbody>
