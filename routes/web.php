@@ -23,9 +23,9 @@ Route::get('/',[InicioSesionController::class,'index'])->name('inicio.index');
 Route::get('/profesor/menu',[ProfesorController::class,'menu'])->name('profesor.menu');
 Route::get('/profesor/comentarios/generar/{propuesta}',[ProfesorController::class,'comentarios'])->name('profesor.comentarios');
 Route::post('/profesor/comentarios/generar/{propuesta}',[ProfesorController::class,'crearComentario'])->name('profesor.crearComentario');
-Route::get('/profesor/comentarios/eliminar/{propuesta}',[ProfesorController::class,'borrar'])->name('profesor.eliminar');
+Route::get('/profesor/comentarios/eliminar/{propuesta}',[ProfesorController::class,'eliminar'])->name('profesor.eliminar');
 Route::post('/profesor/comentarios/eliminar/confirmar/{propuesta}',[ProfesorController::class,'preguntarDatos'])->name('profesor.preguntarDatos');
-Route::delete('/profesor/comentarios/eliminar/{propuesta}/{profesor}',[ProfesorController::class,'confirmarDelete'])->name('profesor.confirmarEliminar');
+Route::delete('/profesor/comentarios/eliminar/{propuesta}/{profesor}',[ProfesorController::class,'confirmarEliminar'])->name('profesor.confirmarEliminar');
 //rutas relacionados a estudiante
 Route::get('/estudiante/menu/{estudiante}',[EstudianteController::class,'menu'])->name('estudiante.menu');
 Route::get('/estudiante/login',[EstudianteController::class,'login'])->name('estudiante.login');
@@ -38,6 +38,7 @@ Route::post('/admin/estado/{propuesta}',[AdminController::class,'cambiarEstado']
 Route::get('/admin/estudiante/datos',[AdminController::class,'datosEstudiante'])->name('admin.datosEstudiante');
 Route::get('/admin/profesor/datos',[AdminController::class,'datosProfesor'])->name('admin.datosProfesor');
 Route::post('/admin/profesor/crear',[AdminController::class,'crearProfesor'])->name('admin.crearProfesor');
+Route::delete('/admin/profesor/eliminar',[AdminController::class,'eliminarProfesor'])->name('admin.eliminarProfesor');
 //no segui las convenciones de los nombres ups no me rete profe :(
 //PROFE SI VE ESTO, SI ESTO NOS PASA POR NO LEER BIEN EL PDF Y QUERER HACER EL INICIO DE SESION 
 //RUTAS SIN USAR (TALVEZ SIRVAN EN ALGUN MOMENTO?)

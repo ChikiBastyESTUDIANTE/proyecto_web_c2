@@ -33,7 +33,7 @@ class ProfesorController extends Controller
         return redirect()->route('profesor.menu');
     }
 
-    public function borrar(Propuesta $propuesta){
+    public function eliminar(Propuesta $propuesta){
         $profesores = Profesor::all();
         return view('profesor.eliminar',compact(['propuesta','profesores']));
     }
@@ -43,7 +43,7 @@ class ProfesorController extends Controller
         return view('profesor.confirmar_delete',compact(['propuesta','profesor']));
     }
 
-    public function confirmarDelete(Propuesta $propuesta,Profesor $profesor){
+    public function confirmarEliminar(Propuesta $propuesta,Profesor $profesor){
         $propuesta->comentarioProfesorConPivot()->detach($profesor->id); //moraleja: leer la documentacion 
         return redirect()->route('profesor.menu');
     }
