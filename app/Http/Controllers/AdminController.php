@@ -45,6 +45,12 @@ class AdminController extends Controller
         return redirect()->route('admin.menu');
     }
 
+    public function eliminarEstudiante($estudiante){
+        $estudianteEliminado = estudiante::where('rut',$estudiante)->first();
+        $estudianteEliminado->delete();
+        return redirect()->route('admin.menu');
+    }
+
     public function datosProfesor(){
         return view('administrador.añadir_profesor');
     }
