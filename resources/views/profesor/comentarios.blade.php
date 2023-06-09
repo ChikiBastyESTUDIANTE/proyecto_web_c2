@@ -8,7 +8,7 @@
             <div class="col-6 offset-3 d-flex flex-column mt-5">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title text-center">Añadir comentario</h4>
+                        <h3 class="card-title text-center">Añadir comentario</h3>
                             <form action="{{route('profesor.crearComentario',$propuesta->id)}}" method="POST">
                             @csrf
                             <div>

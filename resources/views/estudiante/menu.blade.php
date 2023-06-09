@@ -6,7 +6,7 @@
             <div class="col-12 col-lg-6">
                 <div class="card">
                     <div class="card-header bg-secondary">
-                        <h4 class="text-white">Tus propuestas</h4>
+                        <h3 class="text-white pt-2">Tus propuestas</h3>
                     </div>
                     <div class="card-body">
                         <table class="table table-bordered border-dark bg-white">
@@ -59,7 +59,7 @@
             <div class="col-12 col-lg-6">
                 <div class="card">
                     <div class="card-header bg-secondary">
-                        <h4 class="text-white">Crear propuesta</h4>
+                        <h3 class="text-white pt-2">Crear propuesta</h3>
                     </div>
                     <div class="card-body">
                         <form action="" enctype="multipart/form-data">

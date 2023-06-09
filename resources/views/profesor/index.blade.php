@@ -8,7 +8,7 @@
                     <div class="col">
                         <div class="card">
                         <div class="card-header bg-secondary">
-                            <h4 class="text-white">Propuestas</h4>
+                            <h3 class="text-white pt-2">Propuestas</h3>
                         </div>
                         <div class="card-body">
                             <table class="table table-bordered border-dark bg-white">
