@@ -8,7 +8,7 @@
             <div class="col-6 offset-3 d-flex flex-column mt-5">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title text-center">Añadir profesor</h4>
+                        <h3 class="card-title text-center">Añadir profesor</h3>
                             <form action="{{route('admin.menu')}}" method="GET">
                             @csrf
                             <div class="mb-3">
