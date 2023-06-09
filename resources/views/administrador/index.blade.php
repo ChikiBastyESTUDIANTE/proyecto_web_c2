@@ -28,7 +28,7 @@
                                         <td>{{$profesor->nombre}} {{$profesor->apellido}}</td>
                                         <td>{{$profesor->email}}</td>
                                         <td class="text-center">
-                                            <a class="btn btn-sm btn-danger pt-2 text-white" href="">
+                                            <a class="btn btn-sm btn-secondary pt-2 text-white" href="">
                                             <span class="material-symbols-outlined">delete</span>
                                             </a>
                                         </td>
@@ -41,13 +41,13 @@
                 </div>
                 <div class="col-6">
                     <div class="card">
-                        <div class="card-header bg-primary-rojo">
+                        <div class="card-header bg-secondary-rojo">
                             <h3 class="text-white pt-2">Alumnos</h3>
                         </div>
                         <div class="card-body">
-                            <a href="{{route('admin.añadirEstudiante')}}" class="btn btn-secondary-rojo mb-3">Añadir alumno</a>
+                            <a href="{{route('admin.añadirEstudiante')}}" class="btn btn-primary-rojo mb-3">Añadir alumno</a>
                             <table class="table table-bordered">
-                                <thead class="bg-secondary-rojo">
+                                <thead class="bg-primary-rojo">
                                     <tr>
                                         <th class="text-white"><h5 class="mt-2">Nombre</h5></th>
                                         <th class="text-white"><h5 class="mt-2">Rut</h5></th>
@@ -62,7 +62,7 @@
                                         <td>{{$estudiante->rut}}</td>
                                         <td>{{$estudiante->email}}</td>
                                         <td class="text-center">
-                                            <a class="btn btn-sm btn-danger pt-2 text-white" href="">
+                                            <a class="btn btn-sm btn-secondary-rojo pt-2 text-white" href="">
                                             <span class="material-symbols-outlined">delete</span>
                                             </a>
                                         </td>
