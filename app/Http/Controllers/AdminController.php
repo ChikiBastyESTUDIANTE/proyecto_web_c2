@@ -60,6 +60,7 @@ class AdminController extends Controller
 
     public function eliminarProfesor($profesor){
         $profeEliminado = Profesor::where('id',$profesor)->first();
-        dd($profeEliminado);
+        $profeEliminado->delete();
+        return redirect()->route('admin.menu');
     }
 }
