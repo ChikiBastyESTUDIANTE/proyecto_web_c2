@@ -47,7 +47,8 @@ class AdminController extends Controller
 
     public function eliminarEstudiante($estudiante){
         $estudianteEliminado = Estudiante::where('rut',$estudiante)->first();
-        $propuestaEliminada = 
+        $propuestaEliminada =  Propuesta::where('estudiante_rut',$estudiante)->get();
+        $propuestaEliminada->delete();
         $estudianteEliminado->delete();
         return redirect()->route('admin.menu');
     }
