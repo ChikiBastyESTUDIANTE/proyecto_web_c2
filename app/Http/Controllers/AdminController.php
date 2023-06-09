@@ -57,4 +57,8 @@ class AdminController extends Controller
         $profesor->save();
         return redirect()->route('admin.menu');
     }
+
+    public function eliminarProfesor(Profesor $profesor){
+        dd($profesor);
+    }
 }
