@@ -43,7 +43,7 @@
                                                 @endforeach --}}
                                                 <a href="" class="btn btn-outline-secondary">Ver comentarios</a>
                                             @else
-                                                No hay comentarios
+                                                <a href="" class="btn btn-outline-primary disabled">No hay comentarios</a>
                                             @endif
                                         </td>
                                             {{-- @if(count($propuesta->comentarioProfesorConPivot)>0)
