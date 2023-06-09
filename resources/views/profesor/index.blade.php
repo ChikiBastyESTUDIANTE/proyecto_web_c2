@@ -23,7 +23,7 @@
                             <tbody>
                                 @foreach($propuestas as $propuesta)
                                     <tr>
-                                        <th>{{$estudiantes->where('rut',$propuesta->estudiante_rut)}}</th>
+                                        <th>{{$estudiantes->where('rut',$propuesta->estudiante_rut)->first()->email}}</th>
                                         <td>{{$propuesta->documento}}</td>
                                         <td>
                                             @if($propuesta->estado === 1)
