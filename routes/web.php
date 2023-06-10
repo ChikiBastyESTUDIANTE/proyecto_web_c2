@@ -30,6 +30,7 @@ Route::delete('/profesor/comentarios/eliminar/{propuesta}/{profesor}',[ProfesorC
 Route::get('/estudiante/menu/{estudiante}',[EstudianteController::class,'menu'])->name('estudiante.menu');
 Route::get('/estudiante/login',[EstudianteController::class,'login'])->name('estudiante.login');
 Route::post('/estudiante/login',[EstudianteController::class,'conseguirDatos'])->name('estudiante.conseguirDatos');
+Route::get('/estudiante/retroalimentacion/{estudiante}/{propuesta}',[EstudianteController::class,'descargarArchivo'])->name('estudiante.retroalimentacion');
 Route::post('/estudiante/subir/{estudiante}',[EstudianteController::class,'subirArchivo'])->name('estudiante.subirArchivo');
 Route::get('/estudiante/descargar/{propuesta}',[EstudianteController::class,'descargarArchivo'])->name('estudiante.descargarArchivo');
 //rutas relaciondas a administrador
