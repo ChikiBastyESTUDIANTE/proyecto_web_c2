@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Estudiante;
 use App\Models\Propuesta;
+use App\Models\Profesor;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Storage;
 
