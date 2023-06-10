@@ -21,7 +21,7 @@
                             <tbody>
                                 @foreach($propuestas as $propuesta)
                                     <tr>
-                                        <td>{{$propuesta->documento}}</td>
+                                        <td><a href="(estudiante.descargarArchivo)">{{$propuesta->documento}}</a></td>
                                         <td>
                                             @if($propuesta->estado === 1)
                                                 Esperando revision
