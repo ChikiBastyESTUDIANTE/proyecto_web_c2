@@ -32,7 +32,8 @@ class EstudianteController extends Controller
     public function menu(Request $request){
         $estudiante = Estudiante::where('rut',$request->estudiante)->first();
         $propuestas = Propuesta::where('estudiante_rut',$estudiante->rut)->get();
-        return view('estudiante.menu',compact(['estudiante','propuestas']));
+        $profesores = Profesor::all();
+        return view('estudiante.menu',compact(['estudiante','propuestas','profesores']));
     }
 
 
