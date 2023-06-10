@@ -24,7 +24,7 @@
                             <tbody>
                                 @foreach($propuestas as $propuesta)
                                     <tr>
-                                        <td>{{$propuesta->documento}}</td>
+                                        <td><a href="{{route('estudiante.descargarArchivo',$propuesta->id)}}">{{$propuesta->documento}}</a></td>
                                         <td>
                                             @if($propuesta->estado === 1)
                                                 Esperando revision
