@@ -17,7 +17,7 @@
                             </div>
                             <hr>
                             <div>
-                                <button type="submit" class="btn btn-primary">Aceptar</button>
+                                <button type="submit" class="btn btn-primary mb-2">Aceptar</button>
                             </div>
                         </form>
                     </div>
