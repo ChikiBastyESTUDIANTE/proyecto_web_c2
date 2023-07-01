@@ -61,8 +61,7 @@
                         <h3 class="text-white pt-2">Crear propuesta</h3>
                     </div>
                     <div class="card-body">
-                        <form action="{{route('estudiante.subirArchivo',$estudiante->rut)}}" enctype="multipart/form-data" method="POST">
-                            @csrf
+                        <form action="" method="POST">
                             <div><input type="file" name="archivo" id="archivo" class="form-control"></div>
                             <div class="mt-3"><button type="submit" class="btn btn-secondary-rojo">Subir propuesta</button></div>
                         </form>
